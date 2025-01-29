@@ -32,7 +32,7 @@ function parseFrontMatter(content) {
     return frontMatter;
 }
 
-console.log(`Zendesk user: ${process.env.ZENDESK_API_USER}`);
+console.log(`Zendesk user: ${process.env.ZENDESK_API_USER.split('@')[0]}`);
 
 
 fs.readdirSync(CONSTANTS.content.dir).forEach(category => {
