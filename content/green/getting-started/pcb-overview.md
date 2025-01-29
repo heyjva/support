@@ -1,6 +1,6 @@
 ---
 article_id: 24791405338525
-name: PCB Overview
+name: PCB Guide
 ---
 
-This has been updated from GitHub 🎉🎉
+This is cool
