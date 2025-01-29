@@ -17,8 +17,7 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: npm install
-      - name: Setup environment variables
+      - name: Run parser test
         env:
           ZENDESK_API_USER: ${{ secrets.ZENDESK_API_USER }}
-      - name: Run parser test
         run: node parse.js
