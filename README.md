@@ -5,6 +5,6 @@ This repo is made to sync source content to Zendesk using their API. It will pro
 
 The ideal goals for this repo are as follows:
 
-[] To keep all support documentation open source
-[] To standardise the way support documentation is written
-[] To maintain the theme within Zendesk
+- To keep all support documentation open source
+- To standardise the way support documentation is written
+- To maintain the theme within Zendesk
