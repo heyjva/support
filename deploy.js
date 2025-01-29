@@ -147,7 +147,6 @@ function updateCategory(category){
         return;
     }
 
-    console.log(ZENDESK_API.base + setParam(ZENDESK_API.category.id, 'id', category.frontMatter.category_id));
     fetch(ZENDESK_API.base + setParam(ZENDESK_API.category.id, 'id', category.frontMatter.category_id), {
         method: 'PUT',
         headers: {
