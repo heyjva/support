@@ -1,0 +1,7 @@
+{
+  "name": "nabucasa-support",
+  "version": "1.0.0",
+  "description": "Content for the Zendesk Help Center",
+  "main": "parse.js",
+  "type": "module"
+}
