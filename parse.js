@@ -32,6 +32,8 @@ function parseFrontMatter(content) {
     return frontMatter;
 }
 
+console.log('Zendesk user: ${process.env.ZENDESK_API_USER}');
+
 
 fs.readdirSync(CONSTANTS.content.dir).forEach(category => {
     let categoryMeta = fs.readFileSync(`${CONSTANTS.content.dir}/${category}/${CONSTANTS.content.categoryMeta}`, 'utf-8');

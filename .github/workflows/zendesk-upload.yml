@@ -1,0 +1,24 @@
+name: Deploy to Zendesk
+run-name: ${{ github.actor }} - ${{ github.event_name }} - ${{ github.sha }}
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy-to-zendesk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out files from GitHub
+        uses: actions/checkout@v4.2.2
+      - name: Setting up Node.js
+        uses: actions/setup-node@v4.2.0
+        with:
+          node-version: 20
+          cache: "npm"
+      - name: Install dependencies
+        run: npm install
+      - name: Setup environment variables
+        env:
+          ZENDESK_API_USER: ${{ secrets.ZENDESK_API_USER }}
+      - name: Run parser test
+        run: node parse.js
