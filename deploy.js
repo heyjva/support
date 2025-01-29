@@ -88,8 +88,9 @@ function updateArticle(article, section, category) {
             'Content-Type': 'application/json',
             'Authorization': `Basic ${ZENDESK_API.token}`
         },
-        body: JSON.stringify({
-            body: article.content
+        body: JSON.stringify({  
+            body: article.content,
+            title: article.frontMatter.name,
         })
     }).then(response => {
         if(response.ok) {
