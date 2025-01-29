@@ -14,33 +14,170 @@ const CONSTANTS = {
     }
 }
 
+const ZENDESK_API = {
+    token: btoa(process.env.ZENDESK_API_USER + ':' + process.env.ZENDESK_API_TOKEN),
+    base: 'https://nabucasa.zendesk.com/api/v2/help_center',
+    category: {
+        id: '/categories/{id}/translations/en-us',
+    },
+    section: {
+        update: '/en-us/sections/{id}',
+    },
+    article: {
+        update: '/articles/{id}/translations/en-us',
+    }
+}
 
-function parseFrontMatter(content) {
-    const contentLines = content.split('\n');
-    const frontMatter = {};
-    let isFrontMatter = false;
+function setParam(string, param, value) {
+    return string.replace(`{${param}}`, value);
+}
 
-    contentLines.forEach(line => {
-        if (line === '---') {
-            isFrontMatter = !isFrontMatter;
-        } else if (isFrontMatter) {
-            const [key, value] = line.split(':');
-            frontMatter[key.trim()] = value.trim();
+function parseFile(raw) {
+   // split up the front matter and the content, return both
+    let frontMatter = {};
+    let content = '';
+
+    const lines = raw.split('\n');
+    let inFrontMatter = false;
+    let frontMatterEnd = false;
+
+    lines.forEach(line => {
+        if(line === '---' && !frontMatterEnd) {
+            if(inFrontMatter) {
+                frontMatterEnd = true;
+            }
+            inFrontMatter = !inFrontMatter;
+        } else if(inFrontMatter) {
+            // split : but only on the first one
+            const split = line.split(':');
+            const key = split.shift().trim();
+            const value = split.join(':').trim();
+            frontMatter[key] = value;
+        } else {
+            content += line + '\n';
         }
     });
 
-    return frontMatter;
+    return {
+        frontMatter,
+        content
+    };
 }
 
-console.log(`Zendesk user: ${process.env.ZENDESK_API_USER.split('@')[0]}`);
+function updateArticle(article, section, category) {
+    if(!article || !section || !category) return;
+    
+    if(!article.frontMatter.article_id) {
+        console.log('Article does not have an ID, skipping');
+        return;
+    }
 
+    if(!section.frontMatter.section_id) {
+        console.log('Section does not have an ID, skipping');
+        return;
+    }
+
+    if(!category.frontMatter.category_id) {
+        console.log('Category does not have an ID, skipping');
+        return;
+    }
+
+    fetch(ZENDESK_API.base + setParam(ZENDESK_API.article.update, 'id', article.frontMatter.article_id), {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Basic ${ZENDESK_API.token}`
+        },
+        body: JSON.stringify({
+            body: article.content
+        })
+    }).then(response => {
+        if(response.ok) {
+            console.log(`Successfully updated article ${article.frontMatter.name}`);
+        } else {
+            console.error(`Failed to update article ${article.frontMatter.name}`);
+            console.error(response);
+        }
+    }).catch(error => {
+        console.error(`Failed to update article ${article.frontMatter.name}`);
+        console.error(error);
+    });
+}
+
+function updateSection(section, category){
+    if(!section || !category) return;
+
+    if(!section.frontMatter.section_id) {
+        console.log('Section does not have an ID, skipping');
+        return;
+    }
+
+    if(!category.frontMatter.category_id) {
+        console.log('Category does not have an ID, skipping');
+        return;
+    }
+
+    fetch(ZENDESK_API.base + setParam(ZENDESK_API.section.update, 'id', section.frontMatter.section_id), {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Basic ${ZENDESK_API.token}`
+        },
+        body: JSON.stringify({
+            section:{
+                name: section.frontMatter.name,
+            }
+        })
+    }).then(response => {
+        if(response.ok) {
+            console.log(`Successfully updated section ${section.frontMatter.name} [${response.status}]`);
+        } else {
+            console.error(`Failed to update section ${section.frontMatter.name}`);
+            console.error(response);
+        }
+    });
+}
+
+function updateCategory(category){
+    if(!category) return;
+
+    if(!category.frontMatter.category_id) {
+        console.log('Category does not have an ID, skipping');
+        return;
+    }
+
+    console.log(ZENDESK_API.base + setParam(ZENDESK_API.category.id, 'id', category.frontMatter.category_id));
+    fetch(ZENDESK_API.base + setParam(ZENDESK_API.category.id, 'id', category.frontMatter.category_id), {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Basic ${ZENDESK_API.token}`
+        },
+        body: JSON.stringify({
+            translation:{
+                title: category.frontMatter.name,
+            }
+        })
+    }).then(response => {
+        if(response.ok) {
+            console.log(`Successfully updated category ${category.frontMatter.name}`);
+        } else {
+            console.error(`Failed to update category ${category.frontMatter.name}`);
+            console.error(response);
+        }
+    });
+}
+
+let hierarchy = [];
 
 fs.readdirSync(CONSTANTS.content.dir).forEach(category => {
     let categoryMeta = fs.readFileSync(`${CONSTANTS.content.dir}/${category}/${CONSTANTS.content.categoryMeta}`, 'utf-8');
     if(!categoryMeta) return;
 
-    categoryMeta = parseFrontMatter(categoryMeta);
-    console.log(`[C] ${categoryMeta.name} (${categoryMeta.category_id})`);
+    categoryMeta = parseFile(categoryMeta);
+    hierarchy.push(`[C] ${categoryMeta.frontMatter.name} (${categoryMeta.frontMatter.category_id})`);
+
+    updateCategory(categoryMeta);
 
     // Find sections
     fs.readdirSync(`${CONSTANTS.content.dir}/${category}`).forEach(section => {
@@ -51,9 +188,11 @@ fs.readdirSync(CONSTANTS.content.dir).forEach(category => {
         let sectionMeta = fs.readFileSync(`${CONSTANTS.content.dir}/${category}/${section}/${CONSTANTS.content.sectionMeta}`, 'utf-8');
         if(!sectionMeta) return;
 
-        sectionMeta = parseFrontMatter(sectionMeta);
+        sectionMeta = parseFile(sectionMeta);
 
-        console.log(`[S] -- ${sectionMeta.name} (${sectionMeta.section_id})`);
+        hierarchy.push(`[S] -- ${sectionMeta.frontMatter.name} (${sectionMeta.frontMatter.section_id})`);
+
+        updateSection(sectionMeta, categoryMeta);
 
         // Find articles
         fs.readdirSync(`${CONSTANTS.content.dir}/${category}/${section}`).forEach(articleF => {
@@ -65,10 +204,16 @@ fs.readdirSync(CONSTANTS.content.dir).forEach(category => {
             let article = fs.readFileSync(`${CONSTANTS.content.dir}/${category}/${section}/${articleF}`, 'utf-8');
             if(!article) return;
 
-            let articleMeta = parseFrontMatter(article);
+            let articleMeta = parseFile(article);
 
-            console.log(`[A] ---- ${articleMeta.name} (${articleMeta.article_id})`);
+            hierarchy.push(`[A] ---- ${articleMeta.frontMatter.name} (${articleMeta.frontMatter.article_id})`);
+
+            updateArticle(articleMeta, sectionMeta, categoryMeta);
         });
     });
-
 });
+
+console.log('Hierarchy:');
+hierarchy.forEach(h => console.log(h));
+console.log('\n');
+console.log('REST Status:');
