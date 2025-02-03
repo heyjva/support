@@ -322,7 +322,7 @@ parts:
       key: "txt.help_center_copenhagen_theme.community_post_group_label"
       title: "Label for the community post elements settings group"
       screenshot: "https://drive.google.com/open?id=1uZaNe12E-A_snTd_7AjcqirB4ROLF4bB"
-      value: "Community post elements"
+      value: "Community post elements 1"
   - translation:
       key: "txt.help_center_copenhagen_theme.follow_post_label"
       title: "Label for the follow post setting"
