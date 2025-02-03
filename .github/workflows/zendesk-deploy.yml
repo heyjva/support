@@ -32,5 +32,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: $
-          BRANCH: main # The branch the action should deploy to.
-          FOLDER: assets/images
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: dist
