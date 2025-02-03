@@ -5,7 +5,7 @@ name: Prerequisites
 
 There are a few things you require to start using your Home Assistant Green, some of which comes in the box.
 
-![Home Assistant Green with Power Supply](../../_assets/green-box-contents.png)
+![Home Assistant Green with Power Supply](/assets/images/green-box-contents.webp)
 
 - The Home Assistant Green device itself
 - An Ethernet connection to your local network with internet access (cable included)

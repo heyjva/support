@@ -25,4 +25,4 @@ jobs:
           touch .env
           echo ZENDESK_API_USER=$ZENDESK_API_USER >> .env
           echo ZENDESK_API_TOKEN=$ZENDESK_API_TOKEN >> .env
-          node deploy.js
+          node content/deploy.js

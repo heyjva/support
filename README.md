@@ -21,4 +21,3 @@ All `.md` files within the `content/` folder will be treated as something that r
         - `{section}/` - Used to group articles together. Purely for organisation in the repo
             - `_section.md` - Metadata that describes the section for Zendesk
             - `{article}.md` - The article that will be sent to Zendesk
-- `theme/` - The theme that will be used in Zendesk

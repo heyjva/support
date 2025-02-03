@@ -1,9 +1,6 @@
 import fs from 'fs';
 
 const CONSTANTS = {
-    assets: {
-        dir: './assets',
-    },
     content: {
         dir: './content',
         categoryMeta: '_category.md',
@@ -171,6 +168,8 @@ function updateCategory(category){
 let hierarchy = [];
 
 fs.readdirSync(CONSTANTS.content.dir).forEach(category => {
+    if(category === 'deploy.js') return; // Skip this file
+
     let categoryMeta = fs.readFileSync(`${CONSTANTS.content.dir}/${category}/${CONSTANTS.content.categoryMeta}`, 'utf-8');
     if(!categoryMeta) return;
 
