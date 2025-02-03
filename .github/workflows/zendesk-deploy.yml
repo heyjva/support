@@ -28,9 +28,3 @@ jobs:
           echo ZENDESK_API_USER=$ZENDESK_API_USER >> .env
           echo ZENDESK_API_TOKEN=$ZENDESK_API_TOKEN >> .env
           node content/deploy.js
-      - name: Deploy images to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@3.7.1
-        with:
-          GITHUB_TOKEN: $
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: static/img
