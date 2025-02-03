@@ -1,4 +1,18 @@
 import fs from 'fs';
+import Showdown from 'showdown';
+
+const showdown = new Showdown.Converter();
+
+// find src="/assets/xyz" and replace with src="{{ asset 'xyz' }}"
+showdown.setFlavor('github');
+showdown.addExtension({
+    type: 'output',
+    filter: function (text, converter, options) {
+        return text.replace(/src="\/assets\/(.*?)"/g, (match, p1) => {
+            return `src="\"{{ asset '${p1}' }}\""`;
+       })
+    }
+});
 
 const CONSTANTS = {
     content: {
@@ -61,6 +75,13 @@ function parseFile(raw) {
     };
 }
 
+function fixAssetEscape(content) {
+    // replace src="{{%20asset%20'green-connect-ethernet.webp'%20}}" with src="{{ asset 'green-connect-ethernet.webp' }}"
+    return content.replace(/src="{{%20asset%20'(.*?)'%20}}"/g, (match, p1) => {
+        return `src="{{ asset '${p1}' }}"`;
+    });
+    
+}
 function updateArticle(article, section, category) {
     if(!article || !section || !category) return;
     
@@ -86,7 +107,7 @@ function updateArticle(article, section, category) {
             'Authorization': `Basic ${ZENDESK_API.token}`
         },
         body: JSON.stringify({  
-            body: article.content,
+            body: showdown.makeHtml(article.content),
             title: article.frontMatter.name,
         })
     }).then(response => {

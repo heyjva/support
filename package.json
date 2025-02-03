@@ -45,6 +45,7 @@
     "react-dropzone": "^14.2.3",
     "react-i18next": "^14.1.0",
     "react-is": "^17.0.2",
+    "showdown": "^2.1.0",
     "styled-components": "^5.3.11"
   },
   "devDependencies": {
