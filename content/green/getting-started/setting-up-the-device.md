@@ -8,7 +8,6 @@ Whilst the Home Assistant Green is plug-and-play, it's important to follow these
 **Step 1 - Ethernet connection**
 
 ![](/static/img/green-connect-ethernet.webp)
-{{ asset "green-connect-ethernet.webp" }}
 
 1.  Plug in your Ethernet cable and make sure it is locked into place.
 2.  Connect the other end of the Ethernet cable to your router or switch.

@@ -3,12 +3,11 @@ import Showdown from 'showdown';
 
 const showdown = new Showdown.Converter();
 
-// find src="/static/img/xyz" and replace with src="{{ asset 'xyz' }}"
 showdown.setFlavor('github');
 showdown.addExtension({
     type: 'output',
-    filter: function (text, converter, options) {
-        return text.replace(/src="\/static\/img\/(.*?)"/g, 'alt="{{asset \'$1\'}}"');
+    filter: function(text, converter, options) {
+        return text.replace(/src="\/static/g, 'src="https://raw.githubusercontent.com/NabuCasa/support/refs/heads/main/static');
     }
 });
 
