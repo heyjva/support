@@ -107,10 +107,5 @@
   "resolutions": {
     "@types/react": "^17.x"
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
   "packageManager": "yarn@1.22.22"
 }
