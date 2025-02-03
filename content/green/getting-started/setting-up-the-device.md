@@ -7,7 +7,7 @@ Whilst the Home Assistant Green is plug-and-play, it's important to follow these
 
 **Step 1 - Ethernet connection**
 
-![](../_assets/green-connect-ethernet.webp)
+![]({{ asset 'green-connect-ethernet.webp' }})
 
 1.  Plug in your Ethernet cable and make sure it is locked into place.
 2.  Connect the other end of the Ethernet cable to your router or switch.
@@ -15,14 +15,14 @@ Whilst the Home Assistant Green is plug-and-play, it's important to follow these
 
 **Step 2 - Turn it on!**
 
-![](../_assets/green-connect-power.webp)
+![]({{ asset 'green-connect-power.webp' }})
 
 Connect the power to the electrical outlet and then to the Home Assistant Green
 
 
 **Step 3 - Check the status light**
 
-![](../_assets/green-heartbeat.webp)
+![]({{ asset 'green-heartbeat.webp' }})
 
 Wait for a few minutes until the yellow light starts blinking in a heartbeat pattern.
 
@@ -36,7 +36,7 @@ Initial start-up may take a while, depending on your internet connection. Whilst
     -   Desktop: Visit http://homeassistant.local:8123 to access the Home Assistant user interface.
 
 
-![](../_assets/home-assistant-app-qr-codes.webp)
+![]({{ asset 'home-assistant-app-qr-codes.webp' }})
 
 The Home Assistant user interface will guide you though the initial onboarding.
 

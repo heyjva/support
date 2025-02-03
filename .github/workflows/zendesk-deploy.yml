@@ -26,3 +26,40 @@ jobs:
           echo ZENDESK_API_USER=$ZENDESK_API_USER >> .env
           echo ZENDESK_API_TOKEN=$ZENDESK_API_TOKEN >> .env
           node content/deploy.js
+                - name: Build HTML5 + Bootstrap
+        uses: dita-ot/dita-ot-action@master
+        with:
+          plugins: |
+            net.infotexture.dita-bootstrap
+          input: document.ditamap
+          transtype: html5-bootstrap
+          output-path: out
+      - name: Build PDF
+        uses: dita-ot/dita-ot-action@master
+        with:
+          install: |
+            # Run some arbitrary installation commands
+            apt-get update -q
+            apt-get install -qy --no-install-recommends nodejs
+            nodejs -v
+
+            # Install plugins
+            dita install fox.jason.extend.css
+            dita install org.doctales.xmltask
+            dita install fox.jason.prismjs
+          build: |
+            # Use the dita command line
+            dita -i document.ditamap -o out -f pdf --filter=filter1.ditaval
+
+      - name: Upload DITA Output to a ZIP file
+        uses: actions/upload-artifact@v2
+        with:
+          name: dita-artifact
+          path: 'out'
+
+      - name: Deploy DITA Output to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: $
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: out # The folder the action should deploy.
