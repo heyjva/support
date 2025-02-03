@@ -26,7 +26,7 @@ jobs:
           echo ZENDESK_API_USER=$ZENDESK_API_USER >> .env
           echo ZENDESK_API_TOKEN=$ZENDESK_API_TOKEN >> .env
           node content/deploy.js
-                - name: Build HTML5 + Bootstrap
+      - name: Build HTML5 + Bootstrap
         uses: dita-ot/dita-ot-action@master
         with:
           plugins: |
