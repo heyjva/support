@@ -1,23 +1,28 @@
-# Zendesk support integration
-This is a work in progress and is currently not ready for use.
+# Nabu Casa Support
+This repo provides the theme, content and assets for Zendesk support for Nabu Casa. It allows anyone to contribute to the support documentation in one place and have it automatically deployed to Zendesk.
 
-This repo is made to sync source content to Zendesk using their API. It will provide documentation and support articles instead of using the Zendesk editor.
+## How does it work?
+There are a few moving parts to this repository:
 
-The ideal goals for this repo are as follows:
-
-- To keep all support documentation open source
-- To standardise the way support documentation is written
-- To maintain the theme within Zendesk
+- Zendesk - Uses this repo as the theme for the Nabu Casa support website
+- GitHub Actions - Responsible for deploying content to Zendesk via the REST API and uploading static assets to Cloudflare R2
 
 # Folder structure
-The folder structure of this repo is purely for organisation and to make it easier to understand but also mimics the structure of articles in Zendesk.
+### Zendesk theme
+The Zendesk theme is stored in the root of the repository as per the [requirements of Zendesk](https://support.zendesk.com/hc/en-us/articles/4408832476698-Setting-up-the-GitHub-integration-with-your-Guide-theme#topic_i3v_kyk_chb).
 
-All `.md` files within the `content/` folder will be treated as something that relates to a Zendesk object. The folder structure is as follows:
+### Content
+This is a custom implementation of using version control to manage content for Zendesk. The goal is to use DITA as the publishing arhitecture with the [Markdown flavour](https://www.dita-ot.org/dev/reference/markdown/markdown-dita-syntax).
 
-- `_assets/` - Assets (such as images) for articles to use directly (not uploaded to Zendesk)
-- `content/` - Content that will be sent to Zendesk. 
-    - `{category}/` - Used to group sections together. Purely for organisation in the repo
-        - `_category.md` - Metadata that describes the category for Zendesk
-        - `{section}/` - Used to group articles together. Purely for organisation in the repo
-            - `_section.md` - Metadata that describes the section for Zendesk
-            - `{article}.md` - The article that will be sent to Zendesk
+Upon a push to the `main` branch, the GitHub Action will validate the DITA syntax, convert the Markdown to HTML and upload the content to Zendesk via the REST API.
+
+Since we want to manage all content in Zendesk (including categories and sections), there is a specific structure to the `/content` folder.
+
+All `.md` files within the `content/` folder will be treated as something that relates to a Zendesk object. Metadata is defined using frontmatter syntax. The folder structure under `/content` is as follows:
+
+ 
+- `{category}/` - Used to group sections together. Purely for organisation in the repo
+    - `_category.md` - (required) Metadata that describes the category for Zendesk
+    - `{section}/` - Used to group articles together. Purely for organisation in the repo
+        - `_section.md` - (required) Metadata that describes the section for Zendesk
+        - `{article}.md` - The article that will be sent to Zendesk. It also contains metadata for the article
