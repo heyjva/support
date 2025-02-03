@@ -30,6 +30,7 @@ jobs:
         uses: dita-ot/dita-ot-action@master
         with:
           plugins: |
+            fox.jason.extend.css
             net.infotexture.dita-bootstrap
           input: document.ditamap
           transtype: html5-bootstrap
