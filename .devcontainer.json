@@ -1,0 +1,11 @@
+{
+	"name": "NabuCasa/support",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"esbenp.prettier-vscode"
+			]
+		}
+	}
+}
