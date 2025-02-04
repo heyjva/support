@@ -40,7 +40,7 @@ function setParam(string, param, value) {
     return string.replace(`{${param}}`, value);
 }
 
-function parseFile(raw) {
+function parseFile(raw, path) {
    // split up the front matter and the content, return both
     let frontMatter = {};
     let content = '';
@@ -68,10 +68,20 @@ function parseFile(raw) {
 
     return {
         frontMatter,
-        content
+        content,
+        path
     };
 }
 
+function addEditLink(path) {
+    // path: ./content/green/getting-started/setting-up-the-device.md
+    // Link to: https://github.com/NabuCasa/support/blob/main/content/green/getting-started/setting-up-the-device.md
+    let newLink = path.replace('./content', 'https://github.com/NabuCasa/support/blob/main/content');
+
+    return `<a href="${newLink}" class="gh-edit" target="_blank">Edit this article on GitHub</a></p>`;
+
+    
+}
 function updateArticle(article, section, category) {
     if(!article || !section || !category) return;
     
@@ -90,6 +100,11 @@ function updateArticle(article, section, category) {
         return;
     }
 
+    
+
+    let htmlContent = showdown.makeHtml(article.content);
+    htmlContent += addEditLink(article.path);
+
     fetch(ZENDESK_API.base + setParam(ZENDESK_API.article.update, 'id', article.frontMatter.article_id), {
         method: 'PUT',
         headers: {
@@ -97,7 +112,7 @@ function updateArticle(article, section, category) {
             'Authorization': `Basic ${ZENDESK_API.token}`
         },
         body: JSON.stringify({  
-            body: showdown.makeHtml(article.content),
+            body: htmlContent,
             title: article.frontMatter.name,
         })
     }).then(response => {
@@ -184,7 +199,7 @@ fs.readdirSync(CONSTANTS.content.dir).forEach(category => {
     let categoryMeta = fs.readFileSync(`${CONSTANTS.content.dir}/${category}/${CONSTANTS.content.categoryMeta}`, 'utf-8');
     if(!categoryMeta) return;
 
-    categoryMeta = parseFile(categoryMeta);
+    categoryMeta = parseFile(categoryMeta, `${CONSTANTS.content.dir}/${category}/${CONSTANTS.content.categoryMeta}`);
     hierarchy.push(`[C] ${categoryMeta.frontMatter.name} (${categoryMeta.frontMatter.category_id})`);
 
     updateCategory(categoryMeta);
@@ -198,7 +213,7 @@ fs.readdirSync(CONSTANTS.content.dir).forEach(category => {
         let sectionMeta = fs.readFileSync(`${CONSTANTS.content.dir}/${category}/${section}/${CONSTANTS.content.sectionMeta}`, 'utf-8');
         if(!sectionMeta) return;
 
-        sectionMeta = parseFile(sectionMeta);
+        sectionMeta = parseFile(sectionMeta, `${CONSTANTS.content.dir}/${category}/${section}/${CONSTANTS.content.sectionMeta}`);
 
         hierarchy.push(`[S] -- ${sectionMeta.frontMatter.name} (${sectionMeta.frontMatter.section_id})`);
 
@@ -214,7 +229,7 @@ fs.readdirSync(CONSTANTS.content.dir).forEach(category => {
             let article = fs.readFileSync(`${CONSTANTS.content.dir}/${category}/${section}/${articleF}`, 'utf-8');
             if(!article) return;
 
-            let articleMeta = parseFile(article);
+            let articleMeta = parseFile(article, `${CONSTANTS.content.dir}/${category}/${section}/${articleF}`);
 
             hierarchy.push(`[A] ---- ${articleMeta.frontMatter.name} (${articleMeta.frontMatter.article_id})`);
 
