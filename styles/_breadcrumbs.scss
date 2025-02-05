@@ -15,13 +15,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
 
-    + li::before {
+    +li::before {
       content: ">";
       margin: 0 4px;
-    }
-
-    a:visited {
-      color: $link_color;
     }
   }
 }

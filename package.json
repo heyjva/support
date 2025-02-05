@@ -4,7 +4,7 @@
   "repository": "git@github.com:nabucasa/support.git",
   "type": "module",
   "scripts": {
-    "start": "concurrently -k -r 'rollup -c -w' 'wait-on script.js style.css && zcli themes:preview'",
+    "start": "concurrently -k -r 'rollup -c -w' 'wait-on script.js style.css && npm run zendesk-preview'",
     "build": "NODE_ENV=production rollup -c",
     "prebuild": "rm -f assets/*-bundle.js",
     "eslint": "eslint src",
@@ -14,7 +14,8 @@
     "test-a11y": "node bin/lighthouse/index.js",
     "i18n:extract": "node bin/extract-strings.mjs",
     "i18n:update-translations": "node bin/update-modules-translations.mjs",
-    "zcli": "zcli"
+    "zcli": "zcli",
+    "zendesk-preview": "export $(grep -v -E '^\\s*#|^\\s*$' .env | sed 's/\\s*#.*//' | xargs) && zcli themes:preview --bind 127.0.0.1 --port 4568"
   },
   "dependencies": {
     "@types/dompurify": "3.0.2",

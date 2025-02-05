@@ -1,0 +1,78 @@
+/***** Item Cards *****/
+$icon-images: (
+  "Home Assistant Green": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Cpath d='M40 0H4C1.79086 0 0 1.79086 0 4V40C0 42.2091 1.79086 44 4 44H40C42.2091 44 44 42.2091 44 40V4C44 1.79086 42.2091 0 40 0Z' fill='%2314CC9E'/%3E%3Cpath d='M30.0231 28.9584C30.0231 29.5441 29.5417 30.0233 28.9533 30.0233H15.0459C14.4575 30.0233 13.9761 29.5441 13.9761 28.9584V23.1012C13.9761 22.5155 14.3184 21.6955 14.7303 21.2855L21.24 14.8054C21.6573 14.3901 22.3366 14.3901 22.7538 14.8054L29.2636 21.2855C29.6808 21.7008 30.0231 22.5181 30.0231 23.1038V28.9584Z' fill='%23fff'/%3E%3C/svg%3E"
+);
+$icon-colors: (
+  "Home Assistant Green": #14CC9E
+);
+
+.item-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.item-card {
+  display: flex;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+  color: #000;
+  padding: 2rem;
+  gap: 24px;
+  transition: box-shadow 0.15s ease-in-out, border-color 0.15s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+
+  &:before {
+    display: block;
+    height: 44px;
+    width: 44px;
+    flex-shrink: 0;
+  }
+
+  @each $icon, $url in $icon-images {
+    &[data-icon="#{$icon}"] {
+      &:before {
+        background-image: url("#{$url}");
+        content: '';
+      }
+    }
+  }
+
+  @each $icon, $color in $icon-colors {
+    &[data-icon="#{$icon}"] {
+      &:hover {
+        border-color: $color;
+      }
+    }
+  }
+
+  &-details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &-title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  &-description {
+    opacity: .67;
+  }
+
+  a {
+    padding: 0;
+  }
+}
