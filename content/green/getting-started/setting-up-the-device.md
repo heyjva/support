@@ -5,7 +5,7 @@ name: Setting up the device
 
 Whilst the Home Assistant Green is plug-and-play, it's important to follow these steps to ensure that the device boots up correctly.
 
-**Step 1 - Ethernet connection**
+**Step 1 - Ethernet connection :)**
 
 ![](/static/img/green-connect-ethernet.webp)
 
