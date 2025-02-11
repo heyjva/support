@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: $background_color;
+  background-color: #F8FDFF;
   color: $text_color;
   font-family: $text_font;
   font-size: $font-size-base;
@@ -12,7 +12,14 @@ body {
   -webkit-font-smoothing: antialiased;
 
   >main {
+    padding-top: 1rem;
+
+    @include tablet {
+      padding-top: 2rem;
+    }
+
     @include desktop {
+      padding-top: 3rem;
       min-height: 65vh;
     }
   }

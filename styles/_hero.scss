@@ -1,4 +1,8 @@
 /***** Hero component *****/
+section.section.hero {
+  margin-bottom: 0;
+}
+
 .hero {
   background-image: url($assets-hero-webp);
   background-position: center;

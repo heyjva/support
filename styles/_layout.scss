@@ -1,0 +1,19 @@
+/***** Layout *****/
+.layout {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  .column {
+    flex: 1;
+
+    &.sidebar {
+      flex: 0 0 300px;
+    }
+  }
+}

@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   gap: 15px 30px;
   justify-content: space-between;
-  margin-bottom: 55px;
+  margin-bottom: 1rem;
 
   @include tablet {
     flex-direction: row;
@@ -27,8 +27,8 @@
   }
 
   input[type="search"] {
-    &::after { 
-      font-size: $font-size-base; 
+    &::after {
+      font-size: $font-size-base;
     }
   }
 }

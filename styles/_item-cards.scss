@@ -22,6 +22,20 @@ $icon-colors: (
   gap: 1rem;
 }
 
+a.item-card {
+  cursor: pointer;
+  transition: box-shadow 0.15s ease-in-out, border-color 0.15s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+}
+
 .item-card {
   display: flex;
   border: 1px solid #CCC;
@@ -29,12 +43,7 @@ $icon-colors: (
   color: #000;
   padding: 2rem;
   gap: 24px;
-  transition: box-shadow 0.15s ease-in-out, border-color 0.15s ease-in-out;
 
-  &:hover {
-    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-  }
 
   &:before {
     display: block;
@@ -60,6 +69,11 @@ $icon-colors: (
     }
   }
 
+  &.primary {
+    background-color: #CCEFFE;
+    border-color: #99DFFC;
+  }
+
   &-details {
     display: flex;
     flex-direction: column;
@@ -68,6 +82,7 @@ $icon-colors: (
 
   &-content {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     gap: 1rem;
   }
@@ -82,7 +97,25 @@ $icon-colors: (
     opacity: .67;
   }
 
-  a {
-    padding: 0;
+  &-pills {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  &-pill {
+    background-color: #CCEFFE;
+    color: #5A7D8C;
+    padding: 4px 8px;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+
+    &:hover {
+      background-color: #00AEF8;
+      color: #fff;
+    }
   }
 }
