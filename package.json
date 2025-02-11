@@ -15,7 +15,8 @@
     "i18n:extract": "node bin/extract-strings.mjs",
     "i18n:update-translations": "node bin/update-modules-translations.mjs",
     "zcli": "zcli",
-    "zendesk-preview": "export $(grep -v -E '^\\s*#|^\\s*$' .env | sed 's/\\s*#.*//' | xargs) && zcli themes:preview --bind 127.0.0.1 --port 4568"
+    "zendesk-preview": "export $(grep -v -E '^\\s*#|^\\s*$' .env | sed 's/\\s*#.*//' | xargs) && zcli themes:preview --bind 127.0.0.1 --port 4568",
+    "zendesk-deploy": "export $(grep -v -E '^\\s*#|^\\s*$' .env | sed 's/\\s*#.*//' | xargs) && node content/deploy.js"
   },
   "dependencies": {
     "@types/dompurify": "3.0.2",
