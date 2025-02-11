@@ -415,12 +415,12 @@ ul {
 }
 
 .button-secondary {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   border: 1px solid #87929D;
   background-color: transparent;
 }
 .button-secondary:visited {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
 }
 .button-secondary:hover, .button-secondary:focus, .button-secondary:active {
   color: $text_color;
@@ -548,7 +548,7 @@ ul {
 }
 .table th,
 .table th a {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   font-size: 14px;
   text-align: left;
 }
@@ -655,12 +655,12 @@ ul {
 }
 
 .form-field .optional {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   margin-left: 4px;
 }
 
 .form-field p {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   font-size: 12px;
   margin: 5px 0;
 }
@@ -671,7 +671,7 @@ ul {
 }
 
 .form footer a {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   cursor: pointer;
   margin-right: 15px;
 }
@@ -1026,7 +1026,7 @@ ul {
   padding: 30px 0;
 }
 .footer a {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
 }
 .footer-inner {
   max-width: 1160px;
@@ -1037,15 +1037,15 @@ ul {
   justify-content: space-between;
 }
 .footer-language-selector button {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   display: inline-block;
 }
 
 /***** Breadcrumbs *****/
 .breadcrumbs {
-  margin: 0 0 15px 0;
-  padding: 0;
+  padding: 1rem 0;
   display: flex;
+  gap: 8px;
 }
 @media (min-width: 768px) {
   .breadcrumbs {
@@ -1053,15 +1053,29 @@ ul {
   }
 }
 .breadcrumbs li {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   font-size: 14px;
   max-width: 450px;
   overflow: hidden;
+  font-weight: 400;
   text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .breadcrumbs li + li::before {
-  content: ">";
-  margin: 0 4px;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='7' viewBox='0 0 4 7' fill='none'%3E%3Cpath d='M0.383721 6.79995C0.281395 6.79995 0.19186 6.76478 0.115116 6.69443C0.0383721 6.62408 0 6.53135 0 6.41623V0.583672C0 0.468556 0.0383721 0.375823 0.115116 0.305474C0.19186 0.235126 0.281395 0.199951 0.383721 0.199951C0.409302 0.199951 0.498837 0.238323 0.652326 0.315067L3.4343 3.09704C3.49826 3.161 3.54302 3.22495 3.5686 3.2889C3.59419 3.35286 3.60698 3.42321 3.60698 3.49995C3.60698 3.5767 3.59419 3.64704 3.5686 3.711C3.54302 3.77495 3.49826 3.8389 3.4343 3.90286L0.652326 6.68484C0.613954 6.72321 0.572384 6.75199 0.527616 6.77117C0.482849 6.79036 0.434884 6.79995 0.383721 6.79995Z' fill='%237C7F80'/%3E%3C/svg%3E");
+  width: 4px;
+  height: 7px;
+}
+.breadcrumbs li:last-child {
+  color: $text_color;
+  pointer-events: none;
+  font-weight: 600;
+}
+.breadcrumbs li a {
+  color: #7C7F80;
 }
 
 /***** Search field *****/
@@ -1628,8 +1642,43 @@ ul {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Cpath d='M40 0H4C1.79086 0 0 1.79086 0 4V40C0 42.2091 1.79086 44 4 44H40C42.2091 44 44 42.2091 44 40V4C44 1.79086 42.2091 0 40 0Z' fill='%2314CC9E'/%3E%3Cpath d='M30.0231 28.9584C30.0231 29.5441 29.5417 30.0233 28.9533 30.0233H15.0459C14.4575 30.0233 13.9761 29.5441 13.9761 28.9584V23.1012C13.9761 22.5155 14.3184 21.6955 14.7303 21.2855L21.24 14.8054C21.6573 14.3901 22.3366 14.3901 22.7538 14.8054L29.2636 21.2855C29.6808 21.7008 30.0231 22.5181 30.0231 23.1038V28.9584Z' fill='%23fff'/%3E%3C/svg%3E");
   content: "";
 }
+.item-card[data-icon="Home Assistant Yellow"]:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Cpath d='M40 0H4C1.79086 0 0 1.79086 0 4V40C0 42.2091 1.79086 44 4 44H40C42.2091 44 44 42.2091 44 40V4C44 1.79086 42.2091 0 40 0Z' fill='%23FBB03B'/%3E%3Cpath d='M30.0241 28.9591C30.0241 29.5448 29.5427 30.024 28.9543 30.024H15.0469C14.4585 30.024 13.9771 29.5448 13.9771 28.9591V23.102C13.9771 22.5162 14.3194 21.6962 14.7313 21.2862L21.241 14.8061C21.6582 14.3908 22.3376 14.3908 22.7548 14.8061L29.2645 21.2862C29.6818 21.7016 30.0241 22.5188 30.0241 23.1045V28.9591Z' fill='white'/%3E%3C/svg%3E");
+  content: "";
+}
+.item-card[data-icon="Home Assistant Voice Preview Edition"]:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Cpath d='M40 0H4C1.79086 0 0 1.79086 0 4V40C0 42.2091 1.79086 44 4 44H40C42.2091 44 44 42.2091 44 40V4C44 1.79086 42.2091 0 40 0Z' fill='%23DB582E'/%3E%3Cpath d='M22 29.5059C17.8634 29.5059 14.4941 26.1366 14.4941 22C14.4941 17.8634 17.8634 14.4941 22 14.4941C26.1366 14.4941 29.5059 17.8634 29.5059 22C29.5059 26.1366 26.1366 29.5059 22 29.5059Z' fill='white'/%3E%3C/svg%3E");
+  content: "";
+}
+.item-card[data-icon="Home Assistant Voice PE"]:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Cpath d='M40 0H4C1.79086 0 0 1.79086 0 4V40C0 42.2091 1.79086 44 4 44H40C42.2091 44 44 42.2091 44 40V4C44 1.79086 42.2091 0 40 0Z' fill='%23DB582E'/%3E%3Cpath d='M22 29.5059C17.8634 29.5059 14.4941 26.1366 14.4941 22C14.4941 17.8634 17.8634 14.4941 22 14.4941C26.1366 14.4941 29.5059 17.8634 29.5059 22C29.5059 26.1366 26.1366 29.5059 22 29.5059Z' fill='white'/%3E%3C/svg%3E");
+  content: "";
+}
+.item-card[data-icon="Home Assistant ZBT-1"]:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Cpath d='M40 0H4C1.79086 0 0 1.79086 0 4V40C0 42.2091 1.79086 44 4 44H40C42.2091 44 44 42.2091 44 40V4C44 1.79086 42.2091 0 40 0Z' fill='%2300AEF8'/%3E%3Cpath d='M27.9527 13.6545C27.9527 12.6887 27.154 11.9058 26.1688 11.9058H18.3488C17.3637 11.9058 16.5649 12.6887 16.5649 13.6545L16.5649 28.4705H18.6355V33.6469H25.8826V28.4705H27.9532L27.9527 13.6545Z' fill='white'/%3E%3C/svg%3E");
+  content: "";
+}
+.item-card[data-icon="Home Assistant Cloud"]:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Cpath d='M40 0H4C1.79086 0 0 1.79086 0 4V40C0 42.2091 1.79086 44 4 44H40C42.2091 44 44 42.2091 44 40V4C44 1.79086 42.2091 0 40 0Z' fill='%23174B62'/%3E%3Cpath d='M31.6404 21.9952C31.6404 21.9201 31.6466 21.8461 31.6466 21.7701C31.6454 20.1893 31.1182 18.6516 30.1445 17.3895C29.1708 16.1276 27.8037 15.2098 26.2494 14.775C24.6953 14.3402 23.0386 14.4118 21.5297 14.9793C20.0209 15.5467 18.7418 16.579 17.886 17.9201C17.0104 17.6077 16.0757 17.4867 15.1473 17.5653C14.2188 17.644 13.3193 17.9208 12.5119 18.3758C11.7046 18.831 11.0088 19.4535 10.4738 20.1997C9.93869 20.9459 9.57737 21.7977 9.415 22.6953C9.25263 23.5927 9.29318 24.5141 9.53389 25.3946C9.77459 26.2751 10.2096 27.0934 10.8083 27.7918C11.4071 28.4902 12.1549 29.052 12.9994 29.4375C13.8438 29.8231 14.7644 30.023 15.6961 30.0233H25.9792L26.1412 30.0234H26.4L27.6954 30.0233H31.0521C32.099 30.0293 33.1089 29.6456 33.8771 28.9502C34.6453 28.2548 35.1145 27.2998 35.1892 26.2785C35.2641 25.2574 34.939 24.2465 34.2798 23.4511C33.6209 22.6557 32.6774 22.1352 31.6404 21.9952Z' fill='white'/%3E%3C/svg%3E");
+  content: "";
+}
 .item-card[data-icon="Home Assistant Green"]:hover {
   border-color: #14CC9E;
+}
+.item-card[data-icon="Home Assistant Yellow"]:hover {
+  border-color: #FBB03B;
+}
+.item-card[data-icon="Home Assistant Voice Preview Edition"]:hover {
+  border-color: #DB582E;
+}
+.item-card[data-icon="Home Assistant Voice PE"]:hover {
+  border-color: #DB582E;
+}
+.item-card[data-icon="Home Assistant ZBT-1"]:hover {
+  border-color: #00AEF8;
+}
+.item-card[data-icon="Home Assistant Cloud"]:hover {
+  border-color: #174B62;
 }
 .item-card-details {
   display: flex;
@@ -1656,16 +1705,6 @@ ul {
 /***** Category pages *****/
 .category-container {
   display: flex;
-  justify-content: flex-end;
-}
-.category-content {
-  flex: 1;
-  max-width: 100%;
-}
-@media (min-width: 1024px) {
-  .category-content {
-    flex: 0 0 80%;
-  }
 }
 
 .section-tree {
@@ -1685,7 +1724,8 @@ ul {
 }
 @media (min-width: 768px) {
   .section-tree .section {
-    flex: 0 0 45%; /* Two columns for tablet and desktop. Leaving 5% separation between columns */
+    flex: 0 0 45%;
+    /* Two columns for tablet and desktop. Leaving 5% separation between columns */
   }
 }
 .section-tree-title {
@@ -1941,7 +1981,7 @@ ul {
 }
 .article-body blockquote {
   border-left: 1px solid #ddd;
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   font-style: italic;
   padding: 0 15px;
 }
@@ -1960,7 +2000,7 @@ ul {
   padding-bottom: 20px;
 }
 .article-comment-count {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
 }
 .article-comment-count:hover {
   text-decoration: none;
@@ -2112,7 +2152,7 @@ ul {
 }
 
 .upload-dropzone span {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
 }
 
 /***** Social share links *****/
@@ -2131,7 +2171,7 @@ ul {
 }
 
 .share a {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
 }
 .share a:hover {
   text-decoration: none;
@@ -2165,7 +2205,7 @@ ul {
   margin-top: 0;
 }
 .comment-callout {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   display: inline-block;
   font-size: 14px;
   margin-bottom: 0;
@@ -2185,7 +2225,7 @@ ul {
   float: right;
 }
 .comment-sorter .dropdown-toggle {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   font-size: 14px;
 }
 [dir=rtl] .comment-sorter {
@@ -2410,7 +2450,7 @@ ul {
 }
 .comment-body blockquote {
   border-left: 1px solid #ddd;
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   font-style: italic;
   padding: 0 15px;
 }
@@ -2430,7 +2470,7 @@ ul {
 }
 
 .vote-sum {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   display: block;
   margin: 3px 0;
 }
@@ -2454,7 +2494,7 @@ ul {
   appearance: none;
   background-color: transparent;
   border: none;
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   cursor: pointer;
   min-height: 35px;
   min-width: 35px;
@@ -2669,7 +2709,7 @@ ul {
   margin: 5px 0;
 }
 .striped-list-count {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   font-size: 14px;
   justify-content: flex-start;
   text-transform: capitalize;
@@ -2746,7 +2786,7 @@ ul {
 }
 .status-label-not-planned, .status-label-closed {
   background-color: #e9ebed;
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
 }
 .status-label-pending, .status-label-pending-moderation {
   background-color: #1f73b7;
@@ -2977,7 +3017,7 @@ ul {
 }
 .post-body blockquote {
   border-left: 1px solid #ddd;
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   font-style: italic;
   padding: 0 15px;
 }
@@ -2988,7 +3028,7 @@ ul {
   padding-bottom: 20px;
 }
 .post-comment-count {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
 }
 .post-comment-count:hover {
   text-decoration: none;
@@ -3495,7 +3535,7 @@ ul {
 
 /* Contributions table */
 .contributions-table td:last-child {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   font-size: 14px;
 }
 @media (min-width: 768px) {
@@ -3507,7 +3547,7 @@ ul {
 }
 
 .no-activities {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
 }
 
 /***** Request *****/
@@ -3563,7 +3603,7 @@ ul {
 .request-main .comment-show-container {
   border-radius: 2px;
   border: 1px solid #ddd;
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   text-align: inherit;
   padding: 8px 25px;
   width: 100%;
@@ -3657,7 +3697,7 @@ ul {
 }
 .request-details dt {
   line-break: strict;
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   width: 40%;
 }
 .request-details .request-collaborators {
@@ -3743,7 +3783,7 @@ ul {
 }
 
 .meta-data {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   font-size: 14px;
 }
 .meta-data:not(:last-child)::after {
@@ -3871,7 +3911,7 @@ ul {
 }
 
 .profile-stats .stat-label {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   flex: 0 0 100px;
   margin-right: 10px;
 }
@@ -4021,7 +4061,7 @@ ul {
 .profile-section-description {
   flex-basis: 100%;
   padding: 10px 0;
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   font-size: 14px;
   white-space: nowrap;
   overflow: hidden;
@@ -4104,7 +4144,7 @@ ul {
   font-weight: 600;
 }
 .profile-badges-item-description, .profile-badges-item-metadata-description {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   font-size: 14px;
   margin: 0;
 }
@@ -4506,7 +4546,7 @@ ul {
   margin-bottom: 0;
 }
 .search-result-votes, .search-result-meta-count {
-  color: lighten($text_color, 20%);
+  color: #7C7F80;
   font-size: 14px;
 }
 .search-result-votes-icon, .search-result-meta-count-icon {
