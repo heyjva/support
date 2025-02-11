@@ -998,8 +998,8 @@ ul {
 
 /***** User avatar *****/
 .user-avatar {
-  height: 25px;
-  width: 25px;
+  height: 44px;
+  width: 44px;
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
@@ -1632,6 +1632,7 @@ section.section.hero {
 }
 
 a.item-card {
+  background-color: #fff;
   cursor: pointer;
   transition: box-shadow 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -1788,16 +1789,6 @@ a.item-card:focus {
 /***** Section pages *****/
 .section-container {
   display: flex;
-  justify-content: flex-end;
-}
-.section-content {
-  flex: 1;
-  max-width: 100%;
-}
-@media (min-width: 1024px) {
-  .section-content {
-    flex: 0 0 80%;
-  }
 }
 .section-list {
   margin: 40px 0;

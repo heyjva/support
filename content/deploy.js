@@ -171,6 +171,7 @@ function updateSection(section, category) {
       body: JSON.stringify({
         section: {
           name: section.frontMatter.name,
+          description: section.frontMatter.description,
           position: section.frontMatter.position,
         },
       }),
