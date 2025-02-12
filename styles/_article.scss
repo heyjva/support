@@ -7,11 +7,7 @@
 
     @include desktop {
       margin-top: 2rem;
-      flex-direction: row;
     }
-
-    display: flex;
-    flex-direction: column;
   }
 
   &-header {

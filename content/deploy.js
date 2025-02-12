@@ -8,8 +8,8 @@ showdown.addExtension({
   type: "output",
   filter: function (text, converter, options) {
     return text.replace(
-      /src="\/static/g,
-      'src="https://raw.githubusercontent.com/NabuCasa/support/refs/heads/main/static'
+      /(src|href)="\/static/g,
+      '$1="https://raw.githubusercontent.com/NabuCasa/support/refs/heads/main/static'
     );
   },
 });

@@ -1844,13 +1844,10 @@ a.item-card:focus {
 }
 .article-container {
   margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
 }
 @media (min-width: 1024px) {
   .article-container {
     margin-top: 2rem;
-    flex-direction: row;
   }
 }
 .article-header {
