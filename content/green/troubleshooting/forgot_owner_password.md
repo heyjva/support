@@ -18,7 +18,9 @@ If you forgot the owner's password, you need to connect an external monitor and 
      **Info**: The ha command line does not support all special characters.
      - Use a short and simple password without special characters when resetting via the command line.
 
-     **Example**: To reset the password for the user `yelena` to `12345`, enter: `auth reset --username 'yelena' --password '12345'` ![Command Line Example](../../../static/img/green/home-assistant-cli.webp)
+     **Example**: To reset the password for the user `yelena` to `12345`, enter: `auth reset --username 'yelena' --password '12345'`
+
+     ![Command Line Example](/static/img/green/home-assistant-cli.webp)
 
 3.  Log in with the new password.
 
