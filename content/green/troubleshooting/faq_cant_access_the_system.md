@@ -1,5 +1,5 @@
 ---
-article_id: 01JKZXBP1HJHJ88PV6NN21C6KB
+article_id: 25140903526301
 name: I can’t access the system via http://homeassistant.local:8123, what can I do?
 position: 1
 labels: green, troubleshooting
