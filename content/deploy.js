@@ -86,7 +86,7 @@ function addEditLink(path) {
     "https://github.com/NabuCasa/support/blob/main/content"
   );
 
-  return `<a href="${newLink}" class="gh-edit" target="_blank">Edit this article on GitHub</a></p>`;
+  return `<hr><a href="${newLink}" class="gh-edit" target="_blank">Edit this article on GitHub</a></p>`;
 }
 function updateArticle(article, section, category) {
   if (!article || !section || !category) return;
@@ -125,6 +125,7 @@ function updateArticle(article, section, category) {
       body: JSON.stringify({
         body: htmlContent,
         title: article.frontMatter.name,
+        position: article.frontMatter.position,
       }),
     }
   )

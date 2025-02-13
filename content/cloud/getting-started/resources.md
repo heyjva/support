@@ -1,6 +1,6 @@
 ---
 article_id: 24738091655197
-title: Resources
+name: Resources
 ---
 
 - [Quick Start Guide](/static/docs/ha-green_quick-start-guide_v1-0.pdf) (Included in box)

@@ -1,6 +1,7 @@
 ---
 article_id: 24737318435357
 name: Prerequisites
+position: 2
 ---
 
 There are a few things you require to start using your Home Assistant Green, some of which comes in the box.
