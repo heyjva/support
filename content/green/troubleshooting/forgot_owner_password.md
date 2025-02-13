@@ -20,7 +20,7 @@ If you forgot the owner's password, you need to connect an external monitor and 
 
      **Example**: To reset the password for the user `yelena` to `12345`, enter: `auth reset --username 'yelena' --password '12345'`
 
-     ![Command Line Example](/static/img/green/home-assistant-cli.webp)
+     ![Clip showing how to enter the command into the command line](/static/img/green/home-assistant-cli.webp)
 
 3.  Log in with the new password.
 
