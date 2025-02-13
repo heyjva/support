@@ -1,3 +1,4 @@
+---
 article_id: 25142896227357
 name: I forgot the owner password for the Home Assistant Green. How can I reset it?
 position: 3
