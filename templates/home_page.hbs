@@ -1,10 +1,10 @@
 <h1 class="visibility-hidden">{{ help_center.name }}</h1>
 
 <div class="container">
+  <h2>Choose a category</h2>
   <div class="layout">
     <div class="column">
       <section class="section knowledge-base">
-        <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
         <section class="categories blocks">
           <div class="item-cards">
             {{#each categories}}
@@ -45,12 +45,26 @@
       </section>
     </div>
     <div class="column sidebar">
-      <div class="item-card primary">
-        <div class="item-card-details">
-          <div class="item-card-content">
-            <span class="item-card-title">Still need help?</span>
-            <span class="item-card-description">Feel free to open a ticket and talk with our Customer Service team</span>
-            {{#link 'new_request' class='item-card-button btn btn-primary'}}Submit a ticket{{/link}}
+      <div class="item-cards">
+        <div class="item-card primary">
+          <div class="item-card-details">
+            <div class="item-card-content">
+              <span class="item-card-title">Still need help?</span>
+              <span class="item-card-description">Feel free to open a ticket and talk with our Customer Service team</span>
+              {{#link 'new_request' class='item-card-button btn btn-primary'}}Submit a ticket{{/link}}
+            </div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="item-card-details">
+            <div class="item-card-content">
+              <span class="item-card-title">Our Community</span>
+              <span class="item-card-description">The community is happy to be of help, just visit the forums or join our Discord server</span>
+              <div class="item-card-buttons">
+                <a href="https://community.home-assistant.io" class="item-card-button btn btn-primary external-link" target="_blank" rel="noopener">Community Forum</a>
+                <a href="https://community.home-assistant.io" class="item-card-button btn btn-primary external-link" target="_blank" rel="noopener">Discord Server</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

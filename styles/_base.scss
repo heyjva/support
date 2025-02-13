@@ -19,7 +19,7 @@ body {
     }
 
     @include desktop {
-      padding-top: 3rem;
+      padding-top: 2.5rem;
       min-height: 65vh;
     }
   }
@@ -32,6 +32,7 @@ h4,
 h5,
 h6 {
   font-family: $heading_font;
+  font-weight: 600;
   margin-top: 0;
 }
 
@@ -40,7 +41,7 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 28px;
 }
 
 h3 {
@@ -60,6 +61,30 @@ a {
   &:active,
   &:focus {
     text-decoration: underline;
+  }
+
+  &.external-link {
+    &::after {
+      content: "";
+      mask-image: $open-external-icon;
+      mask-size: 100%;
+      width: 18px;
+      height: 18px;
+      background-color: #fff;
+      opacity: 1;
+      margin-left: 0.25rem;
+    }
+  }
+}
+
+hr {
+  margin: 1rem 0;
+  border: unset;
+  height: 1px;
+  background-color: #ddd;
+
+  @include tablet {
+    margin: 2rem 0;
   }
 }
 

@@ -131,6 +131,9 @@
 
 
   .menu-button-mobile {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
     background: none;
     border: 0;
     width: auto;
@@ -148,7 +151,8 @@
 
     &[aria-expanded="true"] {
       .icon-menu {
-        background: #f3f3f3;
+        color: #174B62;
+        background: #F8FDFF;
       }
     }
   }
@@ -234,8 +238,8 @@
     }
 
     .menu-profile-avatar {
-      height: 20px;
-      width: 20px;
+      height: 40px;
+      width: 40px;
       border-radius: 50%;
       display: inline-block;
       margin-right: 8px;

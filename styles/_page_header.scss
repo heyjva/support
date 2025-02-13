@@ -12,7 +12,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 10px 0;
 
   .section-subscribe {
     @include tablet {
@@ -31,9 +30,9 @@
   &-description {
     @include desktop {
       flex-basis: 100%;
+      margin: 0 0 32px 0;
     }
 
-    margin: 0 0 32px 0;
     word-break: break-word;
   }
 

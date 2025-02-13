@@ -2,13 +2,7 @@
 .article {
   flex: 1 0 auto; //Explicit values needed whith flex-direction: column for IE11
 
-  &-container {
-    margin-top: 1rem;
-
-    @include desktop {
-      margin-top: 2rem;
-    }
-  }
+  &-container {}
 
   &-header {
     @include tablet {
@@ -77,6 +71,27 @@
 
     >p:last-child {
       margin-bottom: 0;
+    }
+
+    a.gh-edit {
+      display: flex;
+      gap: .25rem;
+      align-items: center;
+      font-size: 14px;
+      text-decoration: none;
+      line-height: 1;
+      color: $text-color;
+      text-decoration: underline;
+
+      &:before {
+        content: "";
+        background-image: $pencil-icon;
+        background-size: 100%;
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        margin-top: -2px;
+      }
     }
   }
 
