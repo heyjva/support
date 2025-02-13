@@ -1,5 +1,5 @@
 ---
-article_id: 24791405338525
+article_id: 01JKZXBP1HJHJ88PV6NN21C6KB
 name: I can’t access the system via http://homeassistant.local:8123, what can I do?
 position: 1
 labels: green, troubleshooting
@@ -11,7 +11,7 @@ labels: green, troubleshooting
 
 2.  Check if the Home Assistant Green is plugged in and the yellow LED blinks in a heartbeat pattern. For more information on the LED patterns, see [Home Assistant Green LEDs](https://green.home-assistant.io/documentation/green-leds/).
 
-    ![](../../../static/img/green/green_yellow_led_heartbeat.webp)
+    ![Clip showing the yellow LED blinking in a heartbeat pattern](../../../static/img/green/green_yellow_led_heartbeat.webp)
 
 3.  Check if the LED on the Ethernet port is active. If it is not active, try the following:
 
