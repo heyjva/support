@@ -2,7 +2,7 @@
 article_id: 25141560076701
 name: Can I connect a Wi-Fi dongle?
 position: 5
-label: green, troubleshooting
+labels: green, troubleshooting
 ---
 
 It is not recommended to use Home Assistant Green with a Wi-Fi dongle.
