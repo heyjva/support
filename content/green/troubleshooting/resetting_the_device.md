@@ -15,7 +15,7 @@ Perform this procedure if you have Home Assistant 13.1 or later and you want to 
 - PC with internet access
 - You have [created a backup](/hc/en-us/articles/25154828325917-Creating-a-backup) and stored it on another system.
 
-![image showing a green without an SD card](green_without_sd_card.png)
+![image showing a green without an SD card](/static/img/green/green_without_sd_card.png)
 
 > **Note**
 > This process clears the data disk on your Green. Unless you [create a backup](/guides/create-backup/), you will lose all data and configuration settings.
