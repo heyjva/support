@@ -15,6 +15,8 @@ Connecting to Home Assistant Green via console may be required for some troubles
 - External USB keyboard
 - HDMI cable and external monitor
 
+![Image showing the Home Assistant Green with a yellow heartbeat](/static/img/green/icons/green_yellow_heartbeat.webp)
+
 ## To use the console on the HDMI display
 
 1. Connect an HDMI monitor to Home Assistant Green.
@@ -31,4 +33,4 @@ Connecting to Home Assistant Green via console may be required for some troubles
          `auth reset --username 'existing_user' --password 'new_password'`
       - Log in with the new password.
       - Go to your [User profile](https://my.home-assistant.io/redirect/profile/) and on the **Security** tab, replace the simple password with a complex one.
-   ![Clip showing how to use the Home Assistant command line](/static/img/home-assistant-cli.webp)
+   ![Clip showing how to use the Home Assistant command line](/static/img/green/home-assistant-cli.webp)
