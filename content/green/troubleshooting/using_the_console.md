@@ -15,7 +15,7 @@ Connecting to Home Assistant Green via console may be required for some troubles
 - External USB keyboard
 - HDMI cable and external monitor
 
-![Image showing the Home Assistant Green with a yellow heartbeat](/static/img/green/icons/green_yellow_heartbeat.webp)
+![Image showing the Home Assistant Green with a yellow heartbeat](/static/img/green/green_yellow_heartbeat.webp)
 
 ## To use the console on the HDMI display
 
