@@ -13,7 +13,7 @@ This sections shows you how to setup your device and get started with Home Assis
 -   Web browser, tablet, or phone (Android or iOS)
 -   Electrical outlet
 
-![Home Assistant Green with Power Supply](/static/img/green-box-contents.webp)
+![Home Assistant Green with power supply](/static/img/green-box-contents.webp)
 
 ## To get started with Home Assistant Green
 
