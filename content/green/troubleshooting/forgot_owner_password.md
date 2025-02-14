@@ -9,7 +9,7 @@ If you forgot the owner's password, you need to connect an external monitor and 
 
 1. Connect an external monitor and keyboard to Home Assistant Green.
 
-   - Follow the steps outlined in [Using the console on the HDMI display](/25153288092829-Using-the-console-on-the-HDMI-display).
+   - Follow the steps outlined in [Using the console on the HDMI display](/hc/en-us/articles/25153288092829-Using-the-console-on-the-HDMI-display).
 
 2. Reset the password via the terminal.
 
