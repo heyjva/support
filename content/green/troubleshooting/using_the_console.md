@@ -1,6 +1,6 @@
 ---
 article_id: 25153288092829
-name: I forgot the owner password for the Home Assistant Green. How can I reset it?
+name: Using the console on the HDMI display
 position: 10
 labels: green, troubleshooting
 ---
