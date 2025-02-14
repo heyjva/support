@@ -37,7 +37,8 @@ const ZENDESK_API = {
     update: "/en-us/sections/{id}",
   },
   article: {
-    update: "/articles/{id}/translations/en-us",
+    update: "/en-us/articles/{id}",
+    updateTranslation: "/articles/{id}/translations/en-us",
   },
 };
 
@@ -123,9 +124,7 @@ function updateArticle(article, section, category) {
         Authorization: `Basic ${ZENDESK_API.token}`,
       },
       body: JSON.stringify({
-        body: htmlContent,
-        title: article.frontMatter.name,
-        position: article.frontMatter.position,
+        position: article.frontMatter.position || 0,
       }),
     }
   )
@@ -139,6 +138,44 @@ function updateArticle(article, section, category) {
     })
     .catch((error) => {
       console.error(`Failed to update article ${article.frontMatter.name}`);
+      console.error(error);
+    });
+
+  fetch(
+    ZENDESK_API.base +
+      setParam(
+        ZENDESK_API.article.updateTranslation,
+        "id",
+        article.frontMatter.article_id
+      ),
+    {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Basic ${ZENDESK_API.token}`,
+      },
+      body: JSON.stringify({
+        body: htmlContent,
+        title: article.frontMatter.name,
+      }),
+    }
+  )
+    .then((response) => {
+      if (response.ok) {
+        console.log(
+          `Successfully updated article translation ${article.frontMatter.name}`
+        );
+      } else {
+        console.error(
+          `Failed to update article translation ${article.frontMatter.name}`
+        );
+        console.error(response);
+      }
+    })
+    .catch((error) => {
+      console.error(
+        `Failed to update article translation ${article.frontMatter.name}`
+      );
       console.error(error);
     });
 }
