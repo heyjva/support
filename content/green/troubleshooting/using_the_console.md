@@ -5,8 +5,6 @@ position: 10
 labels: green, troubleshooting
 ---
 
-This sections shows you how to use the console and HDMI monitor with Home Assistant Green.
-
 Connecting to Home Assistant Green via console may be required for some troubleshooting tasks, such as resetting the owner's password if you are locked out.
 
 ## Prerequisites
