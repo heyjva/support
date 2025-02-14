@@ -111,4 +111,4 @@ Perform this procedure if you want to perform a factory reset on your device.
 
 - [Creating a backup](/hc/en-us/articles/25154828325917-Creating-a-backup)
 - [Onboarding](https://www.home-assistant.io/getting-started/onboarding/)
-- [Can't access homeassistant.local:8123](/faq/#i-can-t-access-the-system-via-http-homeassistant-local-8123-what-can-i-do)
+- [Can't access homeassistant.local:8123](/hc/en-us/articles/25140903526301-I-can-t-access-the-system-via-http-homeassistant-local-8123-what-can-I-do)
