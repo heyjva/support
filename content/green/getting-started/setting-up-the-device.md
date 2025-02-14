@@ -1,6 +1,6 @@
 ---
 article_id: 24737667232413
-name: Getting Started with Home Assistant Green
+name: Getting started with Home Assistant Green
 position: 1
 ---
 
@@ -12,6 +12,8 @@ This sections shows you how to setup your device and get started with Home Assis
 -   Ethernet connection to your local network and internet access
 -   Web browser, tablet, or phone (Android or iOS)
 -   Electrical outlet
+
+![Home Assistant Green with Power Supply](/static/img/green-box-contents.webp)
 
 ## To get started with Home Assistant Green
 
