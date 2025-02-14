@@ -1,7 +1,7 @@
 ---
 article_id: 25160431579165
 name: Restoring or migrating from a backup
-position: 1
+position: 2
 labels: green, data
 ---
 
