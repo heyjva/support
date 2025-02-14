@@ -22,6 +22,7 @@ Perform this procedure if you have Home Assistant 13.1 or later and you want to 
 > A device reset wipes the data partition of your device. It removes all user data as well as Home Assistant Core, Supervisor, and any installed add-ons. The Home Assistant operating system stays on the system.
 > Once a device wipe is initiated, the data partition is marked as to be cleared on boot. Then, the system reinstalls the latest version of all Home Assistant components.
 
+## To reset the device
 
 1. Shut down the system
 
@@ -43,7 +44,7 @@ Perform this procedure if you have Home Assistant 13.1 or later and you want to 
       - The LEDs start blinking.
       - The Home Assistant operating system now downloads the latest version of Home Assistant Supervisor and Home Assistant Core.
       - Due to the downloads, it can take a while until Home Assistant becomes accessible again.
-   ![Powering up the system](/static/img/green/green_reset.webp)
+      ![Powering up the system](/static/img/green/green_reset.webp)
 
 3. Getting started with Home Assistant
    - **Info**: Initial startup may take a while, depending on your internet connection.
