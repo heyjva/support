@@ -15,7 +15,7 @@ Perform this procedure if you want to perform a factory reset on your device.
 - Computer with internet access
 - You have [created a backup](/hc/en-us/articles/25154828325917-Creating-a-backup) and stored it on another system
 
-![Image showing a Home Assistant Green without an SD card](green_without_sd_card.png)
+![Image showing a Home Assistant Green without an SD card](/static/img/green/green_without_sd_card.png)
 
 > **Note**
 > This process clears the data disk on your Green. Unless you [create a backup](https://www.home-assistant.io/guides/create-backup/), you will lose all data and configuration settings.
