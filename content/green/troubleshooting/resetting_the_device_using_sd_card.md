@@ -22,6 +22,36 @@ Perform this procedure if you want to perform a factory reset on your device.
 > A device reset wipes the data partition of your device. It removes all user data as well as Home Assistant Core, Supervisor, and any installed add-ons. The Home Assistant operating system stays on the system.
 > Once a device wipe is initiated, the data partition is marked as to be cleared on boot. Then, the system reinstalls the latest version of all Home Assistant components.
 
+## To copy the Home Assistant Green OS to the SD card
+
+## To copy the Home Assistant Green OS to the SD card
+
+1. To download the Home Assistant Green OS installer, paste this [URL](https://github.com/NabuCasa/buildroot-installer/releases/tag/green-installer-20240410) into your browser.
+   - To start the download, select the file *green-installer-20240410.img.xz*.
+   - Download and start [Balena Etcher](https://www.balena.io/etcher).
+      - You may need to run it with administrator privileges on Windows.
+   ![Downloading the required software](/static/img/green/download-circle-outline.svg)
+
+2. To select the image, select **Flash from file** and select the image you just downloaded.
+
+   ![Selecting the image](/static/img/green/etcher1_file.png)
+
+3. To select the target, insert the SD card to your computer.
+   - Select the **Select target** button and select the SD card as target.
+
+   ![Selecting the target](/static/img/green/etcher3.png)
+
+4. To start writing the image to the SD card, select **Flash!**.
+
+   ![Writing the image](/static/img/green/etcher5.png)
+
+5. Flash complete.
+
+   - Once Balena Etcher has finished writing the image, you will see a confirmation.
+   - You can now remove the SD card.
+
+   ![Flash complete](/static/img/green/etcher6.png)
+
 ## To reset the device using an SD card
 
 1. Shutting down the system.
