@@ -32,3 +32,8 @@ Connecting to Home Assistant Green via console may be required for some troubles
       - Log in with the new password.
       - Go to your [User profile](https://my.home-assistant.io/redirect/profile/) and on the **Security** tab, replace the simple password with a complex one.
    ![Clip showing how to use the Home Assistant command line](/static/img/green/home-assistant-cli.webp)
+
+## Related topics
+
+- [Resetting a password via console](https://www.home-assistant.io/docs/locked_out/#to-reset-a-users-password-via-console)
+- [Home Assistant command line](https://www.home-assistant.io/common-tasks/os/#home-assistant-via-the-command-line)
