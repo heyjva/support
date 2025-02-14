@@ -66,20 +66,36 @@ Perform this procedure if you want to perform a factory reset on your device.
 
    ![Shutting down the system](/static/img/green/shutdown_system.png)
 
-2. Powering up the system.
+2. Inserting the SD card.
 
-   1. Press and hold the button.
-      - Reapply power and make sure the system has an Internet connection.
-      - Keep the button pressed until the yellow LED turns on solid.
-         - **Troubleshooting**: The yellow LED blinks, instead of turning on solid. This means you do not have the HAOS version required to perform this procedure. In this case, [Reset the device using an SD card](/guides/reset_with_sd_card/).
-   2. Release the button.
-         - The LEDs start blinking.
-         - The Home Assistant operating system now downloads the latest version of Home Assistant Supervisor and Home Assistant Core.
-         - Due to the downloads, it can take a while until Home Assistant becomes accessible again.
+   - Insert the SD card with the Home Assistant Green OS installer.
+   - Make sure the Home Assistant Green is connected to the Internet.
 
-   ![Powering up the system](/static/img/green/green_reset.webp)
+   ![Inserting the SD card](/static/img/green/green_reset_insert_sd.webp)
 
-3. Getting started with Home Assistant.
+3. Powering up the system.
+
+   - Press the power button.
+   - The operating system is being written to the eMMC.
+   - During this time, the yellow LED is blinking fast.
+   - Wait for the LEDs to turn off.
+
+   ![Powering up the system](/static/img/green/green_reset_power-up_after_sd-insert.webp)
+
+4. Removing the SD card.
+   - When the LEDs turn off, the operating system has been written to the eMMC.
+   - Remove the SD card.
+
+   ![Removing the SD card](/static/img/green/green_reset_remove_sd-card.webp)
+
+5. Powering up the system.
+
+   - Press the power button.
+   - Once the yellow LED blinks in a heartbeat pattern, the system is ready.
+
+   ![Powering up the system](/static/img/green/green_reset_power-up_heartbeat.webp)
+
+6. Getting started with Home Assistant.
 
    - **Info**: Initial startup may take a while, depending on your internet connection.
    1. Install the app: To access Home Assistant from your mobile device, use the QR code to locate the app in the app store.
