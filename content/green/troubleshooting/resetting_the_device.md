@@ -27,20 +27,20 @@ Perform this procedure if you have Home Assistant 13.1 or later and you want to 
 1. Shut down the system
 
    1. In your Home Assistant UI, go to **Settings** > **System** and in the top right, select the three-dots menu. Select **Restart Home Assistant**.
-   2. Then, select **Shut down system**.
-   3. Wait until all the LEDs turned off.
-   4. In case the shutdown via UI should not work:
+      - Then, select **Shut down system**.
+      - Wait until all the LEDs turned off.
+   2. In case the shutdown via UI should not work:
       - To shutdown gracefully, press the power button for 6 seconds.
       - For a hard shutdown (do this only if all else fails), press the power button for 12 seconds.
-   5. Remove the power cable to remove power from the system.
+   3. Remove the power cable to remove power from the system.
    ![Shutting down the system](/static/img/green/shutdown_system.png)
 
 2. Power up the system
    1. Press and hold the button.
-   2. Reapply power and make sure the system has an Internet connection.
-   3. Keep the button pressed until the yellow LED turns on solid.
+      - Reapply power and make sure the system has an Internet connection.
+      - Keep the button pressed until the yellow LED turns on solid.
       - **Troubleshooting**: The yellow LED blinks, instead of turning on solid. This means you do not have the HAOS version required to perform this procedure. In this case, [Reset the device using an SD card](/guides/reset_with_sd_card/)
-   4. Release the button.
+   2. Release the button.
       - The LEDs start blinking.
       - The Home Assistant operating system now downloads the latest version of Home Assistant Supervisor and Home Assistant Core.
       - Due to the downloads, it can take a while until Home Assistant becomes accessible again.
