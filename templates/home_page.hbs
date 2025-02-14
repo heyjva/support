@@ -17,6 +17,15 @@
                     </div>
                   </div>
                 </a>
+              {{else}}
+                <a href='{{url}}' class="item-card" data-icon="{{ name }}">
+                  <div class="item-card-details">
+                    <div class="item-card-content">
+                      <span class="item-card-title">{{name}}</span>
+                      <span class="item-card-description">{{description}}</span>
+                    </div>
+                  </div>
+                </a>
               {{/if}}
             {{/each}}
           </div>
