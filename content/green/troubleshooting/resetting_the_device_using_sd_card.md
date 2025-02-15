@@ -24,8 +24,6 @@ Perform this procedure if you want to perform a factory reset on your device.
 
 ## To copy the Home Assistant Green OS to the SD card
 
-## To copy the Home Assistant Green OS to the SD card
-
 1. To download the Home Assistant Green OS installer, paste this [URL](https://github.com/NabuCasa/buildroot-installer/releases/tag/green-installer-20240410) into your browser.
    - To start the download, select the file *green-installer-20240410.img.xz*.
    - Download and start [Balena Etcher](https://www.balena.io/etcher).
