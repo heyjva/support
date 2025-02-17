@@ -15,7 +15,7 @@ Follow these steps if you want to shut down the system.
    - Then, select **Shut down system**
    - Wait until all the LEDs turned off.
 
-   ![Image showing the shutdown dialog in the UI](/static/img/green/icons/shutdown_system.png)
+   ![Image showing the shutdown dialog in the UI](/static/img/green/shutdown_system.png)
 
 2. **Option 2**: Shutting down the system using the hardware button
    - Use this option in case the shutdown via UI doesn't work:
@@ -23,4 +23,4 @@ Follow these steps if you want to shut down the system.
    - For a hard shutdown (do this only if all else fails), press the power button for 12 seconds.
    - Wait until all the LEDs turned off.
 
-   ![Clip showing where to press the button on the device](/static/img/green/icons/green_reset_power-up_after_sd-insert.webp)
+   ![Clip showing where to press the button on the device](/static/img/green/green_reset_power-up_after_sd-insert.webp)
