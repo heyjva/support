@@ -28,7 +28,7 @@ The yellow system health LED blinks in a heartbeat pattern if the Home Assistant
 
 This feature requires HAOS version 11.0 or later.
 
-If the LEDs seem to bright for your environment, you can disable them.
+If the LEDs seem too bright for your environment, you can disable them.
 
 1. Go to [**Settings** > **System** > **Hardware**](https://my.home-assistant.io/redirect/hardware/) and select **Configure** > **Configure hardware settings**.
 2. In the dialog, select the toggles to disable the LEDs and submit the changes.
