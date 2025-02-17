@@ -31,7 +31,8 @@ const ZENDESK_API = {
   ),
   base: "https://nabucasa.zendesk.com/api/v2/help_center",
   category: {
-    id: "/categories/{id}/translations/en-us",
+    update: "/en-us/categories/{id}",
+    updateTranslation: "/categories/{id}/translations/en-us",
   },
   section: {
     update: "/en-us/sections/{id}",
@@ -234,7 +235,11 @@ function updateCategory(category) {
 
   fetch(
     ZENDESK_API.base +
-      setParam(ZENDESK_API.category.id, "id", category.frontMatter.category_id),
+      setParam(
+        ZENDESK_API.category.update,
+        "id",
+        category.frontMatter.category_id
+      ),
     {
       method: "PUT",
       headers: {
@@ -242,11 +247,7 @@ function updateCategory(category) {
         Authorization: `Basic ${ZENDESK_API.token}`,
       },
       body: JSON.stringify({
-        translation: {
-          title: category.frontMatter.name,
-          body: category.frontMatter.description,
-          position: category.frontMatter.position,
-        },
+        position: category.frontMatter.position || 0,
       }),
     }
   ).then((response) => {
@@ -257,6 +258,39 @@ function updateCategory(category) {
       console.error(response);
     }
   });
+
+  fetch(
+    ZENDESK_API.base +
+      setParam(
+        ZENDESK_API.category.updateTranslation,
+        "id",
+        category.frontMatter.category_id
+      ),
+    {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Basic ${ZENDESK_API.token}`,
+      },
+      body: JSON.stringify({
+        translation: {
+          title: category.frontMatter.name,
+          body: category.frontMatter.description,
+        },
+      }),
+    }
+  ).then((response) => {
+    if (response.ok) {
+      console.log(
+        `Successfully updated category translation ${category.frontMatter.name}`
+      );
+    } else {
+      console.error(
+        `Failed to update category translation ${category.frontMatter.name}`
+      );
+      console.error(response);
+    }
+  });
 }
 
 let hierarchy = [];
@@ -264,11 +298,11 @@ let hierarchy = [];
 fs.readdirSync(CONSTANTS.content.dir).forEach((category) => {
   if (category === "deploy.js") return; // Skip this file
 
-  let categoryMeta = fs.readFileSync(
-    `${CONSTANTS.content.dir}/${category}/${CONSTANTS.content.categoryMeta}`,
-    "utf-8"
-  );
-  if (!categoryMeta) return;
+  const categoryMetaFile = `${CONSTANTS.content.dir}/${category}/${CONSTANTS.content.categoryMeta}`;
+
+  if (!fs.existsSync(categoryMetaFile)) return;
+
+  let categoryMeta = fs.readFileSync(categoryMetaFile, "utf-8");
 
   categoryMeta = parseFile(
     categoryMeta,
