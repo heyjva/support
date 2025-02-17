@@ -9,7 +9,7 @@
           <div class="item-cards">
             {{#each categories}}
               {{#if ../has_multiple_categories}}
-                <a href='{{url}}' class="item-card" data-icon="{{ name }}">
+                <a href='{{url}}' class="item-card" data-name="{{ name }}">
                   <div class="item-card-details">
                     <div class="item-card-content">
                       <span class="item-card-title">{{name}}</span>
@@ -18,7 +18,7 @@
                   </div>
                 </a>
               {{else}}
-                <a href='{{url}}' class="item-card" data-icon="{{ name }}">
+                <a href='{{url}}' class="item-card" data-name="{{ name }}">
                   <div class="item-card-details">
                     <div class="item-card-content">
                       <span class="item-card-title">{{name}}</span>

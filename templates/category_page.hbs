@@ -22,37 +22,57 @@
   <div class="layout">
     <div class="column">
       <div id="main-content" class="section-tree">
-            {{#if sections}}
-              <div class="item-cards">
-              {{#each sections}}
-                <a href='{{url}}' class="item-card" data-icon="{{ name }}">
-                  <div class="item-card-details">
-                    <div class="item-card-content">
-                      <span class="item-card-title">{{name}}</span>
-                      {{#if description}}
-                        <span class="item-card-description">{{description}}</span>
-                      {{/if}}
-                    </div>
-                      {{#if articles}}
-                      <div class="item-card-pills">
-                        {{#each articles}}
-                          <span class="item-card-pill" data-url="{{url}}">{{title}}</span>
-                        {{/each}}
-                      </div>
-                      {{/if}}
+        {{#if sections}}
+          <div class="item-cards">
+          {{#each sections}}
+            <a href='{{url}}' class="item-card" data-icon="{{ name }}">
+              <div class="item-card-details">
+                <div class="item-card-content">
+                  <span class="item-card-title">{{name}}</span>
+                  {{#if description}}
+                    <span class="item-card-description">{{description}}</span>
+                  {{/if}}
+                </div>
+                  {{#if articles}}
+                  <div class="item-card-pills">
+                    {{#each articles}}
+                      <span class="item-card-pill" data-url="{{url}}">{{title}}</span>
+                    {{/each}}
                   </div>
-                </a>
-              {{/each}}
-            </div>
-            {{else}}
-              <i class="category-empty">
-                <a href="{{category.url}}">{{t 'empty'}}</a>
-              </i>
-            {{/if}}
-          </div>
+                  {{/if}}
+              </div>
+            </a>
+          {{/each}}
+        </div>
+        {{else}}
+          <i class="category-empty">
+            <a href="{{category.url}}">{{t 'empty'}}</a>
+          </i>
+        {{/if}}
+      </div>
     </div>
     <div class="column sidebar">
       <div class="item-cards">
+        {{#is category.name "Home Assistant Green"}}
+        <a href="https://www.home-assistant.io/green" class="item-card product product-green">
+          <div class="item-card-details">
+            <div class="item-card-content">
+              <span class="item-card-title">Home Assistant Green</span>
+              <span class="item-card-description">Click here to learn more about the device and where to buy</span>
+            </div>
+          </div>
+        </a>
+        {{/is}}
+        {{#is category.name "Home Assistant Yellow"}}
+        <a href="https://www.home-assistant.io/yellow" class="item-card product product-yellow">
+          <div class="item-card-details">
+            <div class="item-card-content">
+              <span class="item-card-title">Home Assistant Yellow</span>
+              <span class="item-card-description">Click here to learn more about the device and where to buy</span>
+            </div>
+          </div>
+        </a>
+        {{/is}}
         <div class="item-card primary">
           <div class="item-card-details">
             <div class="item-card-content">
