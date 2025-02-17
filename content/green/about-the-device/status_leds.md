@@ -7,9 +7,10 @@ labels: green, about the system, status
 
 Home Assistant Green has 3 LEDs.
 
-White LED: Power LED
-Green LED: Activity LED
-Yellow LED: Home Assistant Green system health LED
+- White LED: Power LED
+- Green LED: Activity LED
+- Yellow LED: Home Assistant Green system health LED
+
 ![Clip showing the 3 LEDS on Home Assistant Green](/static/img/green/green_yellow_led_heartbeat.webp)
 
 ## Power LED (white)
