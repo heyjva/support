@@ -5,7 +5,7 @@ position: 10
 labels: green, getting started
 ---
 
-There are 2 slightly different start up procedures, depending on the current state of your system.
+There are 2 different start up procedures, depending on the current state of your system.
 
 - [Starting up if the system is still connected to power and Etherent](#starting-up-the-system-if-it-is-still-connected-to-ethernet-and-power)
 - [Starting up if the system has been disconnected ](#starting-up-the-system-if-it-has-been-disconnected)
@@ -53,3 +53,8 @@ Follow these steps if you want to start up the system after it has been powered 
       - **Desktop**: Visit [http://homeassistant.local:8123](http://homeassistant.local:8123) to access the Home Assistant user interface.
 
    ![Screenshot showing a Home Assistant dashboard](/static/img/green/lovelace.png)
+
+## Related topics
+
+- [Getting started](/hc/en-us/articles/24737667232413-Getting-started-with-Home-Assistant-Green)
+- [Shutting down the device](/hc/en-us/articles/25207565119133-Shutting-down-the-device)
