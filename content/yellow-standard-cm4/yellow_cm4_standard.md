@@ -1,0 +1,52 @@
+---
+article_id: 25218199249821
+name: Home Assistant Yellow with CM4 pre-installed
+description: Home Assistant Yellow with a Raspberry Pi Compute Module 4 preinstalled. This variant is no longer manufactured.
+position: 1
+---
+
+> **Note**
+> Although this variant is no longer manufactured, it will continue to receive the same support as the kit models.
+> If you are looking for more of a plug-and-play experience, take a look at the Home Assistant Green.
+
+## Prerequisites
+
+- Home Assistant Yellow
+- Ethernet cable
+- Power supply
+
+![Home Assistant Yellow with Ethernet cable and power supply](/static/img/yellow/yellow-standard-unboxed.jpeg)
+
+## To get started with Home Assistant Green
+
+1. Connect the device to the internet.
+   - Plug in your Ethernet cable and make sure it is locked into place.
+   - The other end of the Ethernet cable will need to be connected to your Router or Switch and connected to the internet.
+   - **Note**: Internet is required because the newly installed Home Assistant OS does not contain all Home Assistant components yet. It downloads the latest version of Home Assistant Core on first start.plug-ethernet.jpeg
+
+   ![Home Assistant Yellow with power supply](/static/img/yellow/yellow-standard-unboxed.jpeg)
+
+2. Power it up.
+
+   - Connect the power to the electrical outlet and then to the Home Assistant Yellow.
+
+   ![Connecting the power cable to the device](/static/img/yellow/plug-ethernet-power.jpeg)
+
+3. Get started with Home Assistant.
+
+   **Notice**: Initial startup may take a while, depending on your internet connection.
+      ![Home Assistant user interface on a screen](/static/img/yellow/HA-get-started-02.png)
+   1. Install the app.
+
+      To access Home Assistant from your mobile device, use the QR code to locate the app in the app store.
+
+   2. Select your Home Assistant server.
+
+      **Mobile**: Confirm the IP address detected by the app. For example `http://192.168.1.196:8123`
+
+      **Desktop**: Visit [http://homeassistant.local:8123](http://homeassistant.local:8123) to access the Home Assistant user interface.
+
+   3. The Home Assistant user interface guides you through the initial onboarding.
+
+   4. For further information, refer to the instructions provided under [https://www.home-assistant.io/getting-started/onboarding/](https://www.home-assistant.io/getting-started/onboarding/).
+
