@@ -2,7 +2,7 @@
 article_id: 25210352599197
 name: About the LEDs
 position: 1
-labels: green, about hte system, status
+labels: green, about the system, status
 ---
 
 Home Assistant Green has 3 LEDs.
