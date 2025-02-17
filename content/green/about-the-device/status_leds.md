@@ -1,7 +1,7 @@
 ---
 article_id: 25210352599197
 name: About the LEDs
-position: 1
+position: 2
 labels: green, about the system, status
 ---
 
