@@ -22,6 +22,9 @@
   <div class="layout">
     <div class="column">
       <div id="main-content" class="section-tree">
+        {{#is category.name "Home Assistant Yellow"}}
+
+        {{else}}
         {{#if sections}}
           <div class="item-cards">
           {{#each sections}}
@@ -49,6 +52,7 @@
             <a href="{{category.url}}">{{t 'empty'}}</a>
           </i>
         {{/if}}
+        {{/is}}
       </div>
     </div>
     <div class="column sidebar">
