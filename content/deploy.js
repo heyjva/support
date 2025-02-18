@@ -9,7 +9,7 @@ showdown.addExtension({
   filter: function (text, converter, options) {
     return text.replace(
       /(src|href)="\/static/g,
-      '$1="https://raw.githubusercontent.com/NabuCasa/support/refs/heads/main/static'
+      '$1="https://raw.githubusercontent.com/NabuCasa/support/refs/heads/static'
     );
   },
 });
