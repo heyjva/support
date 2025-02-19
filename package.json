@@ -17,7 +17,7 @@
     "zcli": "zcli",
     "zendesk-theme-preview": "export $(grep -v -E '^\\s*#|^\\s*$' .env | sed 's/\\s*#.*//' | xargs) && zcli themes:preview --bind 127.0.0.1 --port 4568",
     "zendesk-content-build": "cd content && eleventy",
-    "zendesk-content-deploy": "export $(grep -v -E '^\\s*#|^\\s*$' .env | sed 's/\\s*#.*//' | xargs) && cd content && node deploy-eleventy.js",
+    "zendesk-content-deploy": "export $(grep -v -E '^\\s*#|^\\s*$' .env | sed 's/\\s*#.*//' | xargs) && cd content && node deploy.js",
     "zendesk-content-build-deploy": "npm run zendesk-content-build && npm run zendesk-content-deploy"
   },
   "dependencies": {
