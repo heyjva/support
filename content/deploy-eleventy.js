@@ -1,5 +1,9 @@
 import fs from "fs";
 
+/**
+ * Setup constants
+ */
+
 const ZENDESK_API = {
   token: btoa(
     process.env.ZENDESK_API_USER + ":" + process.env.ZENDESK_API_TOKEN
@@ -29,6 +33,10 @@ const REQUIRED_FIELDS = {
   section: ["section_id", "name"],
   article: ["article_id", "name"],
 };
+
+/**
+ * Setup functions
+ */
 
 function hasValidZendeskMeta(type, path) {
   // check if {path}/{type} exists
@@ -74,15 +82,154 @@ function hasValidZendeskMeta(type, path) {
 
 function stripZendeskMeta(content) {
   let lines = content.split("\n");
-  console.log(lines[0]);
   if (lines[0].startsWith("<!--") && lines[0].endsWith("-->")) {
     lines.shift();
   }
   return lines.join("\n");
 }
 
+function setParam(string, param, value) {
+  return string.replace(`{${param}}`, value);
+}
+
+function deployCategory(category) {
+  fetch(
+    ZENDESK_API.base +
+      setParam(ZENDESK_API.category.update, "id", category.meta.category_id),
+    {
+      method: "PUT",
+      headers: ZENDESK_HEADERS,
+      body: JSON.stringify({
+        position: category.meta.position || 0,
+      }),
+    }
+  ).then((response) => {
+    if (response.ok) {
+      console.log(`[C][\x1b[32m✔\x1b[0m] ${category.meta.name}`);
+    } else {
+      console.error(`[C][\x1b[31m✘\x1b[0m] ${category.meta.name}`);
+      console.error(response);
+    }
+  });
+
+  fetch(
+    ZENDESK_API.base +
+      setParam(
+        ZENDESK_API.category.updateTranslation,
+        "id",
+        category.meta.category_id
+      ),
+    {
+      method: "PUT",
+      headers: ZENDESK_HEADERS,
+      body: JSON.stringify({
+        translation: {
+          title: category.meta.name,
+          body: category.meta.description,
+        },
+      }),
+    }
+  ).then((response) => {
+    if (response.ok) {
+      console.log(`[C][T][\x1b[32m✔\x1b[0m] ${category.meta.name}`);
+    } else {
+      console.error(`[C][T][\x1b[31m✘\x1b[0m] ${category.meta.name}`);
+      console.error(response);
+    }
+  });
+}
+
+function deploySection(section) {
+  // Update section meta
+  fetch(
+    ZENDESK_API.base +
+      setParam(ZENDESK_API.section.update, "id", section.meta.section_id),
+    {
+      method: "PUT",
+      headers: ZENDESK_HEADERS,
+      body: JSON.stringify({
+        section: {
+          name: section.meta.name,
+          description: section.meta.description,
+          position: section.meta.position,
+        },
+      }),
+    }
+  ).then((response) => {
+    if (response.ok) {
+      console.log(`[S][\x1b[32m✔\x1b[0m] -- ${section.meta.name}`);
+    } else {
+      console.error(`[S][\x1b[31m✘\x1b[0m] -- ${section.meta.name}`);
+      console.error(response);
+    }
+  });
+}
+
+function deployArticle(article) {
+  // Update article meta
+  fetch(
+    ZENDESK_API.base +
+      setParam(ZENDESK_API.article.update, "id", article.meta.article_id),
+    {
+      method: "PUT",
+      headers: ZENDESK_HEADERS,
+      body: JSON.stringify({
+        position: article.meta.position || 0,
+      }),
+    }
+  )
+    .then((response) => {
+      if (response.ok) {
+        console.log(`[A][\x1b[32m✔\x1b[0m] ---- ${article.meta.name}`);
+      } else {
+        console.error(`[A][\x1b[31m✘\x1b[0m] ---- ${article.meta.name}`);
+        console.error(response);
+      }
+    })
+    .catch((error) => {
+      console.error(`[A][\x1b[31m✘\x1b[0m] ---- ${article.meta.name}`);
+      console.error(error);
+    });
+
+  // Update article meta
+  fetch(
+    ZENDESK_API.base +
+      setParam(
+        ZENDESK_API.article.updateTranslation,
+        "id",
+        article.meta.article_id
+      ),
+    {
+      method: "PUT",
+      headers: ZENDESK_HEADERS,
+      body: JSON.stringify({
+        body: article.content,
+        title: article.meta.name,
+      }),
+    }
+  )
+    .then((response) => {
+      if (response.ok) {
+        console.log(`[A][T][\x1b[32m✔\x1b[0m] ---- ${article.meta.name}`);
+      } else {
+        console.error(`[A][T][\x1b[31m✘\x1b[0m] ---- ${article.meta.name}`);
+        console.error(response);
+      }
+    })
+    .catch((error) => {
+      console.error(`[A][T][\x1b[31m✘\x1b[0m] ---- ${article.meta.name}`);
+      console.error(error);
+    });
+}
+
+/**
+ * Validation and deployment
+ */
+
 let zendeskData = {};
 let zendeskIds = {};
+
+console.log("=== Validating content structure ===");
 
 // Validation step
 fs.readdirSync("./_site").forEach((category) => {
@@ -100,6 +247,7 @@ fs.readdirSync("./_site").forEach((category) => {
     );
     return;
   }
+
   console.log(`[C][\x1b[32m✔\x1b[0m] ${cMeta.name}`);
 
   zendeskData[category] = { meta: cMeta, sections: {} };
@@ -154,54 +302,20 @@ fs.readdirSync("./_site").forEach((category) => {
 
       zendeskData[category].sections[section].articles[article] = {
         meta: aMeta,
+        content: stripZendeskMeta(
+          fs.readFileSync(
+            `./_site/${category}/${section}/${article}/index.html`,
+            "utf8"
+          )
+        ),
       };
       zendeskIds[aMeta.article_id] = `${category}/${section}/${article}`;
     });
   });
-  console.log("");
 });
 
-function setParam(string, param, value) {
-  return string.replace(`{${param}}`, value);
-}
-
-function deployCategory(category) {
-  return;
-}
-
-function deploySection(section) {
-  return;
-}
-
-function deployArticle(article) {
-  if (article.meta.article_id !== 24791405338525) return;
-
-  fetch(
-    ZENDESK_API.base +
-      setParam(ZENDESK_API.article.update, "id", article.meta.article_id),
-    {
-      method: "PUT",
-      headers: ZENDESK_HEADERS,
-      body: JSON.stringify({
-        position: article.meta.position || 0,
-      }),
-    }
-  )
-    .then((response) => {
-      if (response.ok) {
-        console.log(`Successfully updated article ${article.meta.name}`);
-      } else {
-        console.error(`Failed to update article ${article.meta.name}`);
-        console.error(response);
-      }
-    })
-    .catch((error) => {
-      console.error(`Failed to update article ${article.meta.name}`);
-      console.error(error);
-    });
-}
-
 // Deployment step
+console.log("\n=== Deploying to Zendesk ===");
 Object.keys(zendeskData).forEach((categoryKey) => {
   let category = zendeskData[categoryKey];
   deployCategory(category);
