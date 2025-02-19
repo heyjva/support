@@ -1,9 +1,17 @@
-import path from "path";
+import path, { dirname } from "path";
+import { fileURLToPath } from "url";
+import fs from "fs";
+import { EleventyRenderPlugin } from "@11ty/eleventy";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default async function (eleventyConfig) {
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.setIncludesDirectory("../_includes");
   eleventyConfig.setDataDirectory("../_data");
+
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
 
   eleventyConfig.addTransform(
     "replace-static-links",
@@ -40,5 +48,20 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addShortcode("zendeskData", function (zendeskFrontmatter) {
     return `<!-- ${JSON.stringify({ zendesk: zendeskFrontmatter })} -->`;
+  });
+
+  eleventyConfig.addShortcode("partial", function (filename) {
+    // if no extension in filename, default to .md
+    if (filename.split(".").length === 1) {
+      filename = `${filename}.md`;
+    }
+
+    const partialPath = path.join(__dirname, "./_partials", filename);
+
+    if (!fs.existsSync(partialPath)) {
+      return `Partial not found: ${partialPath}`;
+    }
+
+    return fs.readFileSync(partialPath, "utf-8");
   });
 }

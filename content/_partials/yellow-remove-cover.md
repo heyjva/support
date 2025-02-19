@@ -1,0 +1,2 @@
+- Remove the 4 screws on the bottom of the Home Assistant Yellow Kit.
+- Keep the thumb screws close by; you will need them again later.

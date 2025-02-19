@@ -4,4 +4,6 @@ zendesk:
   name: PCB Guide (old)
 ---
 
-This is pretty cool
+# Removing the cover
+
+{% partial 'yellow-remove-cover' %}
