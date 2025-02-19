@@ -39,6 +39,6 @@ export default async function (eleventyConfig) {
   );
 
   eleventyConfig.addShortcode("zendeskData", function (zendeskFrontmatter) {
-    return `<!-- ${ JSON.stringify({ zendesk: zendeskFrontmatter }) } -->`;
+    return `<!-- ${JSON.stringify({ zendesk: zendeskFrontmatter })} -->`;
   });
 }
