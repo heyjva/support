@@ -22,13 +22,13 @@ const ZENDESK_API = {
 const REQUIRED_FIELDS = {
   category: ["category_id", "name"],
   section: ["section_id", "name"],
-  article: ["article_id", "name"]
+  article: ["article_id", "name"],
 };
 
 function hasValidZendeskMeta(type, path) {
   // check if {path}/{type} exists
   let raw;
-  if (type == 'article') {
+  if (type == "article") {
     if (!fs.existsSync(`./_site/${path}/index.html`)) return false;
     raw = fs.readFileSync(`./_site/${path}/index.html`, "utf8");
   } else {
@@ -88,7 +88,11 @@ fs.readdirSync("./_site").forEach((category) => {
     return;
   }
   if (zendeskIds[cMeta.category_id]) {
-    console.log(`[C][\x1b[31m✘\x1b[0m] ${category} - Duplicate category_id with ${zendeskIds[cMeta.category_id]}`);
+    console.log(
+      `[C][\x1b[31m✘\x1b[0m] ${category} - Duplicate category_id with ${
+        zendeskIds[cMeta.category_id]
+      }`
+    );
     return;
   }
   console.log(`[C][\x1b[32m✔\x1b[0m] ${cMeta.name}`);
@@ -107,7 +111,11 @@ fs.readdirSync("./_site").forEach((category) => {
     }
 
     if (zendeskIds[sMeta.section_id]) {
-      console.log(`[S][\x1b[31m✘\x1b[0m] -- ${section} - Duplicate section_id with ${zendeskIds[sMeta.section_id]}`);
+      console.log(
+        `[S][\x1b[31m✘\x1b[0m] -- ${section} - Duplicate section_id with ${
+          zendeskIds[sMeta.section_id]
+        }`
+      );
       return;
     }
 
@@ -119,20 +127,29 @@ fs.readdirSync("./_site").forEach((category) => {
     fs.readdirSync(`./_site/${category}/${section}`).forEach((article) => {
       if (article.startsWith("_")) return;
       // check for valid meta
-      let aMeta = hasValidZendeskMeta("article", `${category}/${section}/${article}`);
+      let aMeta = hasValidZendeskMeta(
+        "article",
+        `${category}/${section}/${article}`
+      );
       if (!aMeta) {
         console.log(`[A][\x1b[31m✘\x1b[0m] ---- ${article} - Invalid meta`);
         return;
       }
 
       if (zendeskIds[aMeta.article_id]) {
-        console.log(`[A][\x1b[31m✘\x1b[0m] ---- ${article} - Duplicate article_id with ${zendeskIds[aMeta.article_id]}`);
+        console.log(
+          `[A][\x1b[31m✘\x1b[0m] ---- ${article} - Duplicate article_id with ${
+            zendeskIds[aMeta.article_id]
+          }`
+        );
         return;
       }
 
       console.log(`[A][\x1b[32m✔\x1b[0m] ---- ${aMeta.name}`);
 
-      zendeskData[category].sections[section].articles[article] = { meta: aMeta };
+      zendeskData[category].sections[section].articles[article] = {
+        meta: aMeta,
+      };
       zendeskIds[aMeta.article_id] = `${category}/${section}/${article}`;
     });
   });
@@ -160,9 +177,12 @@ Object.keys(zendeskData).forEach((categoryKey) => {
     let section = zendeskData[categoryKey].sections[sectionKey];
     deploySection(section);
 
-    Object.keys(zendeskData[categoryKey].sections[sectionKey].articles).forEach((articleKey) => {
-      let article = zendeskData[categoryKey].sections[sectionKey].articles[articleKey];
-      deployArticle(article);
-    });
+    Object.keys(zendeskData[categoryKey].sections[sectionKey].articles).forEach(
+      (articleKey) => {
+        let article =
+          zendeskData[categoryKey].sections[sectionKey].articles[articleKey];
+        deployArticle(article);
+      }
+    );
   });
 });

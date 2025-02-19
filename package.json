@@ -15,10 +15,14 @@
     "i18n:extract": "node bin/extract-strings.mjs",
     "i18n:update-translations": "node bin/update-modules-translations.mjs",
     "zcli": "zcli",
-    "zendesk-preview": "export $(grep -v -E '^\\s*#|^\\s*$' .env | sed 's/\\s*#.*//' | xargs) && zcli themes:preview --bind 127.0.0.1 --port 4568",
-    "zendesk-deploy": "export $(grep -v -E '^\\s*#|^\\s*$' .env | sed 's/\\s*#.*//' | xargs) && node content/deploy.js"
+    "zendesk-env": "export $(grep -v -E '^\\s*#|^\\s*$' .env | sed 's/\\s*#.*//' | xargs)",
+    "zendesk-theme-preview": "npm run zendesk-env && zcli themes:preview --bind 127.0.0.1 --port 4568",
+    "zendesk-content-build": "cd content && eleventy",
+    "zendesk-content-deploy": "npm run zendesk-env && cd content && node deploy-eleventy.js",
+    "zendesk-content-build-deploy": "npm run zendesk-content-build && npm run zendesk-content-deploy"
   },
   "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
     "@types/dompurify": "3.0.2",
     "@zendesk/help-center-wysiwyg": "0.0.5",
     "@zendeskgarden/container-grid": "^3.0.14",
