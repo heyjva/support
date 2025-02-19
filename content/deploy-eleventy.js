@@ -19,6 +19,11 @@ const ZENDESK_API = {
   },
 };
 
+const ZENDESK_HEADERS = {
+  Authorization: `Basic ${ZENDESK_API.token}`,
+  "Content-Type": "application/json",
+};
+
 const REQUIRED_FIELDS = {
   category: ["category_id", "name"],
   section: ["section_id", "name"],
@@ -156,16 +161,44 @@ fs.readdirSync("./_site").forEach((category) => {
   console.log("");
 });
 
+function setParam(string, param, value) {
+  return string.replace(`{${param}}`, value);
+}
+
 function deployCategory(category) {
-  console.log(category.meta);
+  return;
 }
 
 function deploySection(section) {
-  console.log(section.meta);
+  return;
 }
 
 function deployArticle(article) {
-  console.log(article.meta);
+  if (article.meta.article_id !== 24791405338525) return;
+
+  fetch(
+    ZENDESK_API.base +
+      setParam(ZENDESK_API.article.update, "id", article.meta.article_id),
+    {
+      method: "PUT",
+      headers: ZENDESK_HEADERS,
+      body: JSON.stringify({
+        position: article.meta.position || 0,
+      }),
+    }
+  )
+    .then((response) => {
+      if (response.ok) {
+        console.log(`Successfully updated article ${article.meta.name}`);
+      } else {
+        console.error(`Failed to update article ${article.meta.name}`);
+        console.error(response);
+      }
+    })
+    .catch((error) => {
+      console.error(`Failed to update article ${article.meta.name}`);
+      console.error(error);
+    });
 }
 
 // Deployment step
