@@ -19,6 +19,7 @@ Additionally, make sure you have the following items which are not part of the K
   - USB flash drive
   - Optional: NVMe M.2 SSD drive
   - No. 1 hex screwdriver
+
     ![Image showing the Home Assistant Yellow with a Raspberry Pi Compute Module 4, Heat sink assembly bag, Ethernet cable, power supply, a USB flash drive, and an NVMe M.2 SSD drive](/static/img/yellow/kit-std-with-nvme.jpeg)
 
 ## Opening the case
