@@ -2,7 +2,7 @@
 zendesk:
   article_id: 25298668266269
   name: Home Assistant Yellow Kit with CM4 and NVMe
-  description: Home Assistant Yellow Kit with a Raspberry Pi Compute Module 4, NVMe and No PoE.
+  description: Home Assistant Yellow Kit with a Raspberry Pi Compute Module 4, and NVMe.
   position: 3
 ---
 
@@ -11,13 +11,13 @@ zendesk:
 - Home Assistant Yellow
 - Heat sink assembly bag
 - Ethernet cable
-- Power supply (12 V / 2 A,)
+- Power supply (12 V / 2 A) (Not included if you have a PoE kit)
 
 Additionally, make sure you have the following items which are not part of the Kit
 
 - Raspberry Pi Compute Module 4 (CM4)
 - USB flash drive
-- NVMe M.2 SSD drive
+- Optional: NVMe M.2 SSD drive
 - No. 1 hex screwdriver
   ![Image showing the Home Assistant Yellow with a Raspberry Pi Compute Module 4, Heat sink assembly bag, Ethernet cable, power supply, a USB flash drive, and an NVMe M.2 SSD drive](/static/img/yellow/kit-std-with-nvme.jpeg)
 
@@ -29,7 +29,7 @@ Additionally, make sure you have the following items which are not part of the K
 
 {% partial 'yellow/yellow-install-cm4' %}
 
-## Installing the NVMe drive
+## Optional: Installing the NVMe drive
 
 {% partial 'yellow/yellow-install-nvme' %}
 
@@ -41,6 +41,6 @@ Additionally, make sure you have the following items which are not part of the K
 
 {% partial 'yellow/yellow-install-haos' %}
 
-## Moving the data disk
+## If you have an NVMe: Moving the data disk
 
 {% partial 'yellow/yellow-move-data-disk' %}
