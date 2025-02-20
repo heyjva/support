@@ -1,6 +1,6 @@
 ---
 zendesk:
-  article_id: 25221913804189
+  article_id: 25294024643613
   name: Home Assistant Yellow Kit with CM4
   description: Home Assistant Yellow Kit with a Raspberry Pi Compute Module 4 and a regular power supply (No PoE).
   position: 1
