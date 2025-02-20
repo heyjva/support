@@ -12,15 +12,15 @@
 
 1. Moving to data disk
 
-  - Select your NVMe drive. If it does not show the full name of your disk, select **nvme0n1** and select **MOVE**.
-  - **Info**: For a small instance of 5 GB (incl. 6 add-ons) this takes about 5 minutes.
-    - Depending on the size of your instance, this may take 30 minutes or longer.
+    - Select your NVMe drive. If it does not show the full name of your disk, select **nvme0n1** and select **MOVE**.
+    - **Info**: For a small instance of 5 GB (incl. 6 add-ons) this takes about 5 minutes.
+      - Depending on the size of your instance, this may take 30 minutes or longer.
 
-    ![select-new-datadisk](/static/img/yellow/select-new-datadisk.png)
+      ![select-new-datadisk](/static/img/yellow/select-new-datadisk.png)
 
 1. Viewing the new disk
 
-  - Once the transfer has been completed, hover over the status bar to see how much free disk space there is available.
-  - Note that the eMMC section has disappeared.
+    - Once the transfer has been completed, hover over the status bar to see how much free disk space there is available.
+    - Note that the eMMC section has disappeared.
 
-  ![move-datadisk-02](/static/img/yellow/move-datadisk-02.png)
+    ![move-datadisk-02](/static/img/yellow/move-datadisk-02.png)

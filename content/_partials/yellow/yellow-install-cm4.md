@@ -2,11 +2,11 @@
 
 1. Unpacking the components.
 
-  - Make sure you have all the components:
-    - 1 Raspberry Pi Compute Module 4 (CM4)
-    - 1 heat sink
-    - 2 thermal pads
-    - 2 push pins
+    - Make sure you have all the components:
+      - 1 Raspberry Pi Compute Module 4 (CM4)
+      - 1 heat sink
+      - 2 thermal pads
+      - 2 push pins
 
   ![Clip showing the components layed out, with the case disassembled](/static/img/yellow/step-5-poe-unpacked.jpeg)
 
