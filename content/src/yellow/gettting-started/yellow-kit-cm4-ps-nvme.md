@@ -13,6 +13,7 @@ zendesk:
   - Ethernet cable
   - Power supply (12 V / 2 A) (Not included if you have a PoE kit)
 
+
 Additionally, make sure you have the following items which are not part of the Kit
 
   - Raspberry Pi Compute Module 4 (CM4)

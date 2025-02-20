@@ -8,16 +8,16 @@
       - 2 thermal pads
       - 2 push pins
 
-  ![Clip showing the components layed out, with the case disassembled](/static/img/yellow/step-5-poe-unpacked.jpeg)
+    ![Clip showing the components layed out, with the case disassembled](/static/img/yellow/step-5-poe-unpacked.jpeg)
 
-1. Align the CM4.
+1. Aligning the CM4.
 
     1. Place the board in front of you, the connectors facing to the right.
     1. Orient the CM4: The CE mark needs to be on the bottom.
     1. Use the outline of the chips to help find the correct orientation of the CM4.
         - **Note**: On CM4 Lite variants, the chips on the bottom edge are in a different location.
     1. Carefully place the CM4 without force.
-      - The CM4 should fall into place slightly when correctly aligned.
+       - The CM4 should fall into place slightly when correctly aligned.
 
     ![Top view of the board, without CM4, connectors facing to the right](/static/img/yellow/step-6-poe-align-cm4.jpeg)
 
