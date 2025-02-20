@@ -1,4 +1,4 @@
-## Opening the case
+<!---Opening the case (Raspberry Pi Compute Module 4)-->
 
 1. Protecting from ESD.
 
@@ -10,14 +10,14 @@
 
    ![icon indicating risk of electrostatic discharge (ESD), A triangle including a hand about to touch something](/static/img/yellow/step-2-esd.png)
 
-2. Removing the case - bottom part:
+1. Removing the case - bottom part:
 
    - Remove the 4 screws on the bottom of the Home Assistant Yellow Kit.
    - Keep the thumb screws close by; you will need them again later.
 
    ![image showing the bottom of the Yellow with arrows around the thumb-screws indicating counter-clockwise motion](/static/img/yellow/cm5-remove-thumb-screws.jpg)
 
-3. Removing the case - top part.
+1. Removing the case - top part.
 
    - Make sure the interfaces are facing towards your left.
    - Flip the case over.
