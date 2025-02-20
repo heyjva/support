@@ -10,7 +10,7 @@
 1. Reassembling - bottom part
 
    1. Place the board onto the bottom part of the case.
-   - Make sure the USB connectors are facing upwards, away from you.
+   1. Make sure the USB connectors are facing upwards, away from you.
 
    ![Top view of the board with CM4 and heat sink installed](/static/img/yellow/reassemble-step-2-pcb-on-bottom-plate.jpeg)
 
