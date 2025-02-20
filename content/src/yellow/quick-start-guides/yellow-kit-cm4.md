@@ -19,11 +19,13 @@ Additionally, make sure you have the following items which are not part of the K
 - USB flash drive
   ![Image showing the Home Assistant Yellow with a Raspberry Pi Compute Module 4, Heat sink assembly bag, Ethernet cable, power supply, and a USB flash drive](/static/img/yellow/kit-std.jpeg)
 
+## Opening the case
+
 {% partial 'yellow/yellow-open-case-cm4' %}
 
 ## Installing the Raspberry Pi Compute Module 4
 
-{% partial 'yellow/yellow-install CM4' %}
+{% partial 'yellow/yellow-install-cm4' %}
 
 ## Reassembling your Home Assistant Yellow
 
