@@ -1,9 +1,9 @@
 ---
 zendesk:
-    article_id: 25140903526301
-    name: I can’t access the system via http://homeassistant.local:8123, what can I do?
-    position: 1
-    labels: green, troubleshooting
+  article_id: 25140903526301
+  name: I can’t access the system via http://homeassistant.local:8123, what can I do?
+  position: 1
+  labels: green, troubleshooting
 ---
 
 1.  If [http://homeassistant.local:8123](http://homeassistant.local:8123) doesn't work, try [http://homeassistant:8123](http://homeassistant:8123). If that does not help, you may be able to find the IP address of Home Assistant Green on your router. The URL will be `http://<IP ADDRESS>:8123`.
@@ -17,5 +17,3 @@ zendesk:
     1.  Try using a different port on your router.
 
     2.  Try using a different Ethernet cable.
-
-
