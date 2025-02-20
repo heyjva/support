@@ -3,10 +3,10 @@
 1. Installing the Raspberry Pi Imager
 
    - Install the Raspberry Pi Imager on your computer as described under [https://www.raspberrypi.com/software/](https://www.raspberrypi.com/software/).
-     - **Info**: If your platform doesn't support the Raspberry Pi Imager, you can use another imager (e.g. balenaEtcher) and flash the Home Assistant OS Installer for Yellow directly from [GitHub releases](https://github.com/NabuCasa/yellow-buildroot/releases).
-     - **Important**: If you are using a Raspberry Pi Compute Module 4 (CM4) that already has software on it, this procedure does not work. Ignore this and the following steps.
-       - Instead, follow the procedure [Option 2: Reinstall Home Assistant OS using rpiboot]().
-       - The reason is that by default, the CM4 tries to boot from the internal eMMC before booting from the USB flash drive.
+      - **Info**: If your platform doesn't support the Raspberry Pi Imager, you can use another imager (e.g. balenaEtcher) and flash the Home Assistant OS Installer for Yellow directly from [GitHub releases](https://github.com/NabuCasa/yellow-buildroot/releases).
+      - **Important**: If you are using a Raspberry Pi Compute Module 4 (CM4) that already has software on it, this procedure does not work. Ignore this and the following steps.
+         - Instead, follow the procedure [Option 2: Reinstall Home Assistant OS using rpiboot]().
+         - The reason is that by default, the CM4 tries to boot from the internal eMMC before booting from the USB flash drive.
 
    ![Screenshot of Raspberry Pi Imager Download page](/static/img/yellow/rpi_imager.png)
 
@@ -42,7 +42,7 @@
 
 1. Eject the USB flash drive.
 
-7. Insert the USB flash drive with the Home&nbsp;Assistant OS Installer into your Home&nbsp;Assistant&nbsp;Yellow&nbsp;Kit.
+1. Insert the USB flash drive with the Home&nbsp;Assistant OS Installer into your Home&nbsp;Assistant&nbsp;Yellow&nbsp;Kit.
 
    ![Image showing the flash drive plugged into Home Assistant Yellow](/static/img/yellow/plug-usb-flash.jpeg)
 
@@ -57,39 +57,39 @@
    - If you are not using PoE, connect the power supply to Home Assistant Yellow Kit.
    - **Info**: For CM4 Lite, Home Assistant OS is automatically installed on the NVMe SSD. For regular CM4s, Home Assistant OS is installed onto the eMMC by default.
    - **Advanced**: Forcing installation onto the NVMe SSD when using CM4 with eMMC:
-     - Press the blue button while the yellow LED is on constantly (during the 5s window, see next step).
+      - Press the blue button while the yellow LED is on constantly (during the 5s window, see next step).
 
    ![Image showing the flash drive, Ethernet cable, and power supply all plugged into Home Assistant Yellow](/static/img/yellow/plug-usb-flash-ethernet-power.jpeg)
 
 1. Watching the LEDs.
 
-- Wait for Home Assistant Yellow to start booting from the USB flash drive.
-- During boot, the Yellow LED will blink steadily.
-- Once the installer is ready, the Yellow LED will be constantly on for 5 seconds.
-- **Troubleshooting**: If the LED is stuck in steady blinking or constantly on for an extended period of time, this could indicate that the installer cannot connect to the internet. Follow this procedure to troubleshoot.
+   - Wait for Home Assistant Yellow to start booting from the USB flash drive.
+   - During boot, the Yellow LED will blink steadily.
+   - Once the installer is ready, the Yellow LED will be constantly on for 5 seconds.
+   - **Troubleshooting**: If the LED is stuck in steady blinking or constantly on for an extended period of time, this could indicate that the installer cannot connect to the internet. Follow this procedure to troubleshoot.
 
-![Clip showing the LED pattern with the yellow LED blinking steady](/static/img/yellow/led-pattern-blink-steady.webp)
+   ![Clip showing the LED pattern with the yellow LED blinking steady](/static/img/yellow/led-pattern-blink-steady.webp)
 
 1. Waiting.
-    - During installation, the LED will blink fast.
-    - Wait for Home Assistant Yellow to finish installing the Home Assistant Operating System.
-    - Once the installer finishes installing the Home Assistant Operating System, only the red LED will be on.
+   - During installation, the LED will blink fast.
+   - Wait for Home Assistant Yellow to finish installing the Home Assistant Operating System.
+   - Once the installer finishes installing the Home Assistant Operating System, only the red LED will be on.
 
 ![Clip showing the LED pattern with the yellow LED blinking fast](/static/img/yellow/led-pattern-install-blink-fast.webp)
 
 1. Disconnecting everything.
 
-- Remove the USB flash drive.
-- Remove the power cable.
+   - Remove the USB flash drive.
+   - Remove the power cable.
 
 ![Image showing the connectors of the Yellow with nothing connected to them](/static/img/yellow/plug-nothing.jpeg)
 
 1. Reconnecting power.
 
-- Reinsert the Ethernet cable.
-- Reinsert the power cable to start Home Assistant (if PoE is not used).
+   - Reinsert the Ethernet cable.
+   - Reinsert the power cable to start Home Assistant (if PoE is not used).
 
-![Image showing the the Yellow with Ethernet and power connected](/static/img/yellow/plug-ethernet-power.jpeg)
+   ![Image showing the the Yellow with Ethernet and power connected](/static/img/yellow/plug-ethernet-power.jpeg)
 
 1. Get started with Home Assistant.
 

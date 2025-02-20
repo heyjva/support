@@ -3,6 +3,7 @@
 ## Preparation
 
 1. Preparation
+
   - Unscrew the stand-off nut.
   ![Preparation](/static/img/yellow/step-8.png)
 

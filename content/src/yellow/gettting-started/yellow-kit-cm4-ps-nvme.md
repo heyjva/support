@@ -31,7 +31,7 @@ Additionally, make sure you have the following items which are not part of the K
 
 ## Optional: Installing the NVMe drive
 
-{% partial 'yellow/yellow-install-nvme' %}
+{% partial 'yellow/yellow-install-nvme-cm4' %}
 
 ## Reassembling your Home Assistant Yellow
 
