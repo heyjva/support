@@ -11,7 +11,7 @@ zendesk:
 - Home Assistant Yellow
 - Heat sink assembly bag
 - Ethernet cable
-- Power supply
+- Power supply (12 V / 2 A,)
 
 Additionally, make sure you have the following items which are not part of the Kit
 
