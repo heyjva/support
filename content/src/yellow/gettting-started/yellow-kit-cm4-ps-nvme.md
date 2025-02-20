@@ -35,7 +35,7 @@ Additionally, make sure you have the following items which are not part of the K
 
 ## Reassembling your Home Assistant Yellow
 
-{% partial 'yellow/yellow-reassemble-case-cm4' %}
+{% partial 'yellow/yellow-reassemble-case' %}
 
 ## Installing Home Assistant Software on Kit
 
