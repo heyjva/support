@@ -9,7 +9,14 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "bierner.lit-html",
-        "runem.lit-plugin"
+        "runem.lit-plugin",
+        "davidanson.vscode-markdownlint",
+        "editorconfig.editorconfig",
+        "GitHub.vscode-pull-request-github",
+        "mrmlnc.vscode-scss",
+        "streetsidesoftware.code-spell-checker",
+        "taichi.vscode-textlint",
+        "yzhang.markdown-all-in-one"
       ],
       "settings": {
         "files.eol": "\n",

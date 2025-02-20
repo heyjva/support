@@ -1,3 +1,14 @@
+<section id="main-content" class="section hero" data-category="{{category.id}}">
+  <div class="hero-inner">
+    <div class="container">
+      <div class="hero-heading">
+        <h1 class="visibility-hidden">{{ category.name }} | {{ help_center.name }}</h1>
+        <h2>{{ category.name }}</h2>
+        <p>{{ category.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
 <div class="container">
   <div class="layout">
     <div class="column">
@@ -7,10 +18,7 @@
       <div class="category-container">
         <div class="category-content">
           <header class="page-header">
-            <h1>{{category.name}}</h1>
-            {{#if category.description}}
-              <p class="page-header-description">{{category.description}}</p>
-            {{/if}}
+            <div class="h2">Choose a category</div>
           </header>
         </div>
       </div>
@@ -22,9 +30,6 @@
   <div class="layout">
     <div class="column">
       <div id="main-content" class="section-tree">
-        {{#is category.name "Home Assistant Yellow (ignore)"}}
-
-        {{else}}
         {{#if sections}}
           <div class="item-cards">
           {{#each sections}}
@@ -52,7 +57,6 @@
             <a href="{{category.url}}">{{t 'empty'}}</a>
           </i>
         {{/if}}
-        {{/is}}
       </div>
     </div>
     <div class="column sidebar">
@@ -77,6 +81,27 @@
           </div>
         </a>
         {{/is}}
+        {{#is category.name "Home Assistant Voice Preview Edition"}}
+        <a href="https://www.home-assistant.io/voice-pe" class="item-card product product-voice-pe">
+          <div class="item-card-details">
+            <div class="item-card-content">
+              <span class="item-card-title">Home Assistant Voice Preview Edition</span>
+              <span class="item-card-description">Click here to learn more about the device and where to buy</span>
+            </div>
+          </div>
+        </a>
+        {{/is}}
+        {{#is category.name "Home Assistant ZBT-1"}}
+        <a href="https://www.home-assistant.io/connectzbt1" class="item-card product product-zbt-1">
+          <div class="item-card-details">
+            <div class="item-card-content">
+              <span class="item-card-title">Home Assistant Voice Preview Edition</span>
+              <span class="item-card-description">Click here to learn more about the device and where to buy</span>
+            </div>
+          </div>
+        </a>
+        {{/is}}
+
         <div class="item-card primary">
           <div class="item-card-details">
             <div class="item-card-content">

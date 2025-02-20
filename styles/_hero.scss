@@ -1,6 +1,16 @@
 /***** Hero component *****/
 section.section.hero {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
+
+  @include tablet {
+    margin-bottom: 2rem;
+  }
+
+  @include desktop {
+    margin-bottom: 2.5rem;
+  }
+
+  &[data-category="Home Assistant Green"] {}
 }
 
 .hero {
