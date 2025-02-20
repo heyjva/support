@@ -50,7 +50,7 @@ export default async function (eleventyConfig) {
     return `<!-- ${JSON.stringify({ zendesk: zendeskFrontmatter })} -->`;
   });
 
-  eleventyConfig.addShortcode("partial", function (filename) {
+  eleventyConfig.addShortcode("partial", function (filename, data) {
     // if no extension in filename, default to .md
     if (filename.split(".").length === 1) {
       filename = `${filename}.md`;
