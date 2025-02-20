@@ -52,7 +52,7 @@
 
    ![Image showing the flash drive and the Ethernet cable plugged into Home Assistant Yellow](/static/img/yellow/plug-usb-flash-ethernet.jpeg)
 
-1. Connecting the power supply.
+1. Connecting the power supply (if you don't have PoE).
 
    - If you are not using PoE, connect the power supply to Home Assistant Yellow Kit.
    - **Info**: For CM4 Lite, Home Assistant OS is automatically installed on the NVMe SSD. For regular CM4s, Home Assistant OS is installed onto the eMMC by default.
@@ -75,14 +75,14 @@
    - Wait for Home Assistant Yellow to finish installing the Home Assistant Operating System.
    - Once the installer finishes installing the Home Assistant Operating System, only the red LED will be on.
 
-![Clip showing the LED pattern with the yellow LED blinking fast](/static/img/yellow/led-pattern-install-blink-fast.webp)
+   ![Clip showing the LED pattern with the yellow LED blinking fast](/static/img/yellow/led-pattern-install-blink-fast.webp)
 
 1. Disconnecting everything.
 
    - Remove the USB flash drive.
    - Remove the power cable.
 
-![Image showing the connectors of the Yellow with nothing connected to them](/static/img/yellow/plug-nothing.jpeg)
+   ![Image showing the connectors of the Yellow with nothing connected to them](/static/img/yellow/plug-nothing.jpeg)
 
 1. Reconnecting power.
 
@@ -94,6 +94,7 @@
 1. Get started with Home Assistant.
 
     **Notice**: Initial startup may take a while, depending on your internet connection.
+
     ![Home Assistant user interface on a screen](/static/img/yellow/HA-get-started-02.png)
 
    1. Install the app.
