@@ -3,7 +3,7 @@ zendesk:
   article_id: 25298324648861
   name: Home Assistant Yellow with Raspberry Pi Compute Module 4 and PoE
   description: Home Assistant Yellow Kit with a Raspberry Pi Compute Module 4 and PoE.
-  position: 1
+  position: 2
 ---
 
 ## Prerequisites

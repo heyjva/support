@@ -3,7 +3,7 @@ zendesk:
   article_id: 25294047501341
   name: Home Assistant Yellow with CM4 pre-installed
   description: Home Assistant Yellow with a Raspberry Pi Compute Module 4 preinstalled. This variant is no longer manufactured.
-  position: 1
+  position: 10
 ---
 
 > **Note**
