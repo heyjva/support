@@ -51,10 +51,4 @@ As the Home Assistant OS Installer is not used for the Raspberry Pi Compute Modu
 | Fast blinking (~3-5 min) ![Fast blinking](/static/img/yellow/led-pattern-install-blink-fast.webp) | Downloading and installing Home Assistant OS.                                                     |
 | Off                                                                                               | Installer finished. Green LED blinks a few times before turning off. Only the red LED remains on. |
 
-## Disabling the LEDs
-
-If the LEDs seem too bright for your environment, you can disable them.
-
-1. Go to [**Settings** > **System** > **Hardware**](https://my.home-assistant.io/redirect/hardware/) and select **Configure** > **Configure hardware settings**.
-2. In the dialog, select the toggles to disable the LEDs and submit the changes.
-    - **Result**: The LEDs are now disabled.
+{% partial 'disable-leds.md' %}
