@@ -1,6 +1,15 @@
 @use "sass:map";
 /***** Item Cards *****/
 
+@each $product, $details in $home-assistant-products {
+  $slug: str-replace($product, " ", "-");
+  $lowercase-slug: to-lower-case($slug);
+
+  main>.visibility-hidden:has(ol li a[href$="#{$slug}"])~.container .layout .column.sidebar .item-card.product.product-#{$lowercase-slug} {
+    display: flex;
+  }
+}
+
 .item-cards {
   display: flex;
   flex-direction: column;
@@ -64,22 +73,19 @@
       flex-shrink: 0;
     }
 
-    @each $icon, $url in $icon-images {
-      &[data-name="#{$icon}"] {
+    @each $product, $details in $home-assistant-products {
+      &[data-name="Home Assistant #{$product}"] {
         &:before {
-          background-image: url("#{$url}");
+          background-image: url(map-get($details, icon));
           content: '';
+        }
+
+        &:hover {
+          border-color: map-get($details, color);
         }
       }
     }
 
-    @each $icon, $color in $icon-colors {
-      &[data-name="#{$icon}"] {
-        &:hover {
-          border-color: $color;
-        }
-      }
-    }
 
     &.primary {
       background-color: #CCEFFE;
@@ -105,6 +111,10 @@
       background-size: cover;
       height: 16rem;
       padding: 1rem;
+
+      &[data-product-card-hide] {
+        display: none;
+      }
 
       &:before {
         content: '';
@@ -147,22 +157,12 @@
         font-size: 14px;
       }
 
-
-      &-green {
-        background-image: url(map.get($product-images, "Home Assistant Green"));
+      @each $product, $details in $home-assistant-products {
+        &-#{to-lower-case(str-replace($product, " ", "-"))} {
+          background-image: url(map-get($details, product-image));
+        }
       }
 
-      &-yellow {
-        background-image: url(map.get($product-images, "Home Assistant Yellow"));
-      }
-
-      &-voice-pe {
-        background-image: url(map.get($product-images, "Home Assistant Voice Preview Edition"));
-      }
-
-      &-zbt-1 {
-        background-image: url(map.get($product-images, "Home Assistant ZBT-1"));
-      }
     }
 
     &-details {
@@ -190,6 +190,7 @@
       font-size: 22px;
       font-weight: 600;
       line-height: 1.2;
+      text-wrap: balance;
 
       @include tablet {
         font-size: 28px;

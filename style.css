@@ -1261,6 +1261,121 @@ ul {
 }
 
 /***** Hero component *****/
+main > .visibility-hidden:has(ol li a[href$=Green]) + section.hero,
+section.section.hero[data-category="Home Assistant Green"] {
+  background-image: url("https://raw.githubusercontent.com/NabuCasa/support/refs/heads/static/img/hero-green.webp");
+}
+main > .visibility-hidden:has(ol li a[href$=Green]) + section.hero:after,
+section.section.hero[data-category="Home Assistant Green"]:after {
+  content: "";
+  background-color: rgba(23, 75, 98, 0.58);
+  position: absolute;
+  inset: 0;
+}
+main > .visibility-hidden:has(ol li a[href$=Green]) + section.hero .hero-inner,
+section.section.hero[data-category="Home Assistant Green"] .hero-inner {
+  color: #fff;
+}
+main > .visibility-hidden:has(ol li a[href$=Green]) + section.hero [data-title]:before,
+section.section.hero[data-category="Home Assistant Green"] [data-title]:before {
+  content: "Home Assistant Green";
+}
+main > .visibility-hidden:has(ol li a[href$=Green]) + section.hero [data-description]:before,
+section.section.hero[data-category="Home Assistant Green"] [data-description]:before {
+  content: "The affordable Home Assistant Green is the easiest way you can start using Home Assistant. It's plug-and-play and comes with Home Assistant already installed.";
+}
+
+main > .visibility-hidden:has(ol li a[href$=Yellow]) + section.hero,
+section.section.hero[data-category="Home Assistant Yellow"] {
+  background-image: url("https://raw.githubusercontent.com/NabuCasa/support/refs/heads/static/img/hero-yellow.webp");
+}
+main > .visibility-hidden:has(ol li a[href$=Yellow]) + section.hero:after,
+section.section.hero[data-category="Home Assistant Yellow"]:after {
+  content: "";
+  background-color: rgba(23, 75, 98, 0.58);
+  position: absolute;
+  inset: 0;
+}
+main > .visibility-hidden:has(ol li a[href$=Yellow]) + section.hero .hero-inner,
+section.section.hero[data-category="Home Assistant Yellow"] .hero-inner {
+  color: #fff;
+}
+main > .visibility-hidden:has(ol li a[href$=Yellow]) + section.hero [data-title]:before,
+section.section.hero[data-category="Home Assistant Yellow"] [data-title]:before {
+  content: "Home Assistant Yellow";
+}
+main > .visibility-hidden:has(ol li a[href$=Yellow]) + section.hero [data-description]:before,
+section.section.hero[data-category="Home Assistant Yellow"] [data-description]:before {
+  content: "The foundation of your smart home needs to be local and private. Home Assistant Yellow is that foundation.";
+}
+
+main > .visibility-hidden:has(ol li a[href$=Voice-Preview-Edition]) + section.hero,
+section.section.hero[data-category="Home Assistant Voice Preview Edition"] {
+  background-image: url("https://raw.githubusercontent.com/NabuCasa/support/refs/heads/static/img/hero-voice-pe.webp");
+}
+main > .visibility-hidden:has(ol li a[href$=Voice-Preview-Edition]) + section.hero:after,
+section.section.hero[data-category="Home Assistant Voice Preview Edition"]:after {
+  content: "";
+  background-color: rgba(23, 75, 98, 0.58);
+  position: absolute;
+  inset: 0;
+}
+main > .visibility-hidden:has(ol li a[href$=Voice-Preview-Edition]) + section.hero .hero-inner,
+section.section.hero[data-category="Home Assistant Voice Preview Edition"] .hero-inner {
+  color: #fff;
+}
+main > .visibility-hidden:has(ol li a[href$=Voice-Preview-Edition]) + section.hero [data-title]:before,
+section.section.hero[data-category="Home Assistant Voice Preview Edition"] [data-title]:before {
+  content: "Home Assistant Voice Preview Edition";
+}
+main > .visibility-hidden:has(ol li a[href$=Voice-Preview-Edition]) + section.hero [data-description]:before,
+section.section.hero[data-category="Home Assistant Voice Preview Edition"] [data-description]:before {
+  content: "Built for Home Assistant - Easy Setup - one USB-C cable and setup wizard, no assembly required.";
+}
+
+main > .visibility-hidden:has(ol li a[href$=ZBT-1]) + section.hero,
+section.section.hero[data-category="Home Assistant ZBT-1"] {
+  background-image: url("https://raw.githubusercontent.com/NabuCasa/support/refs/heads/static/img/hero-zbt-1.webp");
+}
+main > .visibility-hidden:has(ol li a[href$=ZBT-1]) + section.hero:after,
+section.section.hero[data-category="Home Assistant ZBT-1"]:after {
+  content: "";
+  background-color: rgba(23, 75, 98, 0.58);
+  position: absolute;
+  inset: 0;
+}
+main > .visibility-hidden:has(ol li a[href$=ZBT-1]) + section.hero .hero-inner,
+section.section.hero[data-category="Home Assistant ZBT-1"] .hero-inner {
+  color: #fff;
+}
+main > .visibility-hidden:has(ol li a[href$=ZBT-1]) + section.hero [data-title]:before,
+section.section.hero[data-category="Home Assistant ZBT-1"] [data-title]:before {
+  content: "Home Assistant ZBT-1";
+}
+main > .visibility-hidden:has(ol li a[href$=ZBT-1]) + section.hero [data-description]:before,
+section.section.hero[data-category="Home Assistant ZBT-1"] [data-description]:before {
+  content: "The easiest way to add Zigbee support to your Home Assistant instance.";
+}
+
+main > .visibility-hidden:has(ol li a[href$=Cloud]) + section.hero,
+section.section.hero[data-category="Home Assistant Cloud"] {
+  background-image: url("https://raw.githubusercontent.com/NabuCasa/support/refs/heads/static/img/hero-generic.webp");
+}
+main > .visibility-hidden:has(ol li a[href$=Cloud]) + section.hero:after,
+section.section.hero[data-category="Home Assistant Cloud"]:after {
+  content: "";
+  background-color: rgba(23, 75, 98, 0.58);
+  position: absolute;
+  inset: 0;
+}
+main > .visibility-hidden:has(ol li a[href$=Cloud]) + section.hero .hero-inner,
+section.section.hero[data-category="Home Assistant Cloud"] .hero-inner {
+  color: #fff;
+}
+main > .visibility-hidden:has(ol li a[href$=Cloud]) + section.hero [data-title]:before,
+section.section.hero[data-category="Home Assistant Cloud"] [data-title]:before {
+  content: "Home Assistant Cloud";
+}
 section.section.hero {
   margin-bottom: 1rem;
 }
@@ -1274,13 +1389,131 @@ section.section.hero {
     margin-bottom: 2.5rem;
   }
 }
+section.section.hero[data-category="Home Assistant Green"] {
+  margin-bottom: 1rem;
+  background-image: url("https://raw.githubusercontent.com/NabuCasa/support/refs/heads/static/img/hero-green.webp");
+}
+@media (min-width: 768px) {
+  section.section.hero[data-category="Home Assistant Green"] {
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  section.section.hero[data-category="Home Assistant Green"] {
+    margin-bottom: 1rem;
+  }
+}
+section.section.hero[data-category="Home Assistant Green"]:after {
+  content: "";
+  background-color: rgba(23, 75, 98, 0.58);
+  position: absolute;
+  inset: 0;
+}
+section.section.hero[data-category="Home Assistant Green"] .hero-inner {
+  color: #fff;
+}
+section.section.hero[data-category="Home Assistant Yellow"] {
+  margin-bottom: 1rem;
+  background-image: url("https://raw.githubusercontent.com/NabuCasa/support/refs/heads/static/img/hero-yellow.webp");
+}
+@media (min-width: 768px) {
+  section.section.hero[data-category="Home Assistant Yellow"] {
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  section.section.hero[data-category="Home Assistant Yellow"] {
+    margin-bottom: 1rem;
+  }
+}
+section.section.hero[data-category="Home Assistant Yellow"]:after {
+  content: "";
+  background-color: rgba(23, 75, 98, 0.58);
+  position: absolute;
+  inset: 0;
+}
+section.section.hero[data-category="Home Assistant Yellow"] .hero-inner {
+  color: #fff;
+}
+section.section.hero[data-category="Home Assistant Voice Preview Edition"] {
+  margin-bottom: 1rem;
+  background-image: url("https://raw.githubusercontent.com/NabuCasa/support/refs/heads/static/img/hero-voice-pe.webp");
+}
+@media (min-width: 768px) {
+  section.section.hero[data-category="Home Assistant Voice Preview Edition"] {
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  section.section.hero[data-category="Home Assistant Voice Preview Edition"] {
+    margin-bottom: 1rem;
+  }
+}
+section.section.hero[data-category="Home Assistant Voice Preview Edition"]:after {
+  content: "";
+  background-color: rgba(23, 75, 98, 0.58);
+  position: absolute;
+  inset: 0;
+}
+section.section.hero[data-category="Home Assistant Voice Preview Edition"] .hero-inner {
+  color: #fff;
+}
+section.section.hero[data-category="Home Assistant ZBT-1"] {
+  margin-bottom: 1rem;
+  background-image: url("https://raw.githubusercontent.com/NabuCasa/support/refs/heads/static/img/hero-zbt-1.webp");
+}
+@media (min-width: 768px) {
+  section.section.hero[data-category="Home Assistant ZBT-1"] {
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  section.section.hero[data-category="Home Assistant ZBT-1"] {
+    margin-bottom: 1rem;
+  }
+}
+section.section.hero[data-category="Home Assistant ZBT-1"]:after {
+  content: "";
+  background-color: rgba(23, 75, 98, 0.58);
+  position: absolute;
+  inset: 0;
+}
+section.section.hero[data-category="Home Assistant ZBT-1"] .hero-inner {
+  color: #fff;
+}
+section.section.hero[data-category="Home Assistant Cloud"] {
+  margin-bottom: 1rem;
+  background-image: url("https://raw.githubusercontent.com/NabuCasa/support/refs/heads/static/img/hero-generic.webp");
+}
+@media (min-width: 768px) {
+  section.section.hero[data-category="Home Assistant Cloud"] {
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  section.section.hero[data-category="Home Assistant Cloud"] {
+    margin-bottom: 1rem;
+  }
+}
+section.section.hero[data-category="Home Assistant Cloud"]:after {
+  content: "";
+  background-color: rgba(23, 75, 98, 0.58);
+  position: absolute;
+  inset: 0;
+}
+section.section.hero[data-category="Home Assistant Cloud"] .hero-inner {
+  color: #fff;
+}
+
 .hero {
-  background-image: url($assets-hero-webp);
+  background-color: #c5f4fb;
+  background-image: url("https://raw.githubusercontent.com/NabuCasa/support/refs/heads/static/img/hero-generic.webp");
   background-position: center;
   background-size: cover;
   padding: 36px 0px;
   text-align: center;
   width: 100%;
+  position: relative;
 }
 @media (min-width: 768px) {
   .hero {
@@ -1289,11 +1522,12 @@ section.section.hero {
 }
 .hero-inner {
   position: relative;
+  z-index: 1;
 }
 .hero-inner h2 {
   font-size: 48px;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   margin: 0 0 1rem 0;
 }
 @media (min-width: 768px) {
@@ -1305,6 +1539,7 @@ section.section.hero {
   max-width: 800px;
   margin: 0 auto;
   text-wrap: balance;
+  font-weight: 300;
   font-size: 18px;
 }
 @media (min-width: 768px) {
@@ -1669,6 +1904,26 @@ section.section.hero {
 }
 
 /***** Item Cards *****/
+main > .visibility-hidden:has(ol li a[href$=Green]) ~ .container .layout .column.sidebar .item-card.product.product-green {
+  display: flex;
+}
+
+main > .visibility-hidden:has(ol li a[href$=Yellow]) ~ .container .layout .column.sidebar .item-card.product.product-yellow {
+  display: flex;
+}
+
+main > .visibility-hidden:has(ol li a[href$=Voice-Preview-Edition]) ~ .container .layout .column.sidebar .item-card.product.product-voice-preview-edition {
+  display: flex;
+}
+
+main > .visibility-hidden:has(ol li a[href$=ZBT-1]) ~ .container .layout .column.sidebar .item-card.product.product-zbt-1 {
+  display: flex;
+}
+
+main > .visibility-hidden:has(ol li a[href$=Cloud]) ~ .container .layout .column.sidebar .item-card.product.product-cloud {
+  display: flex;
+}
+
 .item-cards {
   display: flex;
   flex-direction: column;
@@ -1727,33 +1982,33 @@ section.section.hero {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Cpath d='M40 0H4C1.79086 0 0 1.79086 0 4V40C0 42.2091 1.79086 44 4 44H40C42.2091 44 44 42.2091 44 40V4C44 1.79086 42.2091 0 40 0Z' fill='%2314CC9E'/%3E%3Cpath d='M30.0231 28.9584C30.0231 29.5441 29.5417 30.0233 28.9533 30.0233H15.0459C14.4575 30.0233 13.9761 29.5441 13.9761 28.9584V23.1012C13.9761 22.5155 14.3184 21.6955 14.7303 21.2855L21.24 14.8054C21.6573 14.3901 22.3366 14.3901 22.7538 14.8054L29.2636 21.2855C29.6808 21.7008 30.0231 22.5181 30.0231 23.1038V28.9584Z' fill='%23fff'/%3E%3C/svg%3E");
   content: "";
 }
+.item-cards .item-card[data-name="Home Assistant Green"]:hover {
+  border-color: #14CC9E;
+}
 .item-cards .item-card[data-name="Home Assistant Yellow"]:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Cpath d='M40 0H4C1.79086 0 0 1.79086 0 4V40C0 42.2091 1.79086 44 4 44H40C42.2091 44 44 42.2091 44 40V4C44 1.79086 42.2091 0 40 0Z' fill='%23FBB03B'/%3E%3Cpath d='M30.0241 28.9591C30.0241 29.5448 29.5427 30.024 28.9543 30.024H15.0469C14.4585 30.024 13.9771 29.5448 13.9771 28.9591V23.102C13.9771 22.5162 14.3194 21.6962 14.7313 21.2862L21.241 14.8061C21.6582 14.3908 22.3376 14.3908 22.7548 14.8061L29.2645 21.2862C29.6818 21.7016 30.0241 22.5188 30.0241 23.1045V28.9591Z' fill='white'/%3E%3C/svg%3E");
   content: "";
+}
+.item-cards .item-card[data-name="Home Assistant Yellow"]:hover {
+  border-color: #FBB03B;
 }
 .item-cards .item-card[data-name="Home Assistant Voice Preview Edition"]:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Cpath d='M40 0H4C1.79086 0 0 1.79086 0 4V40C0 42.2091 1.79086 44 4 44H40C42.2091 44 44 42.2091 44 40V4C44 1.79086 42.2091 0 40 0Z' fill='%23DB582E'/%3E%3Cpath d='M22 29.5059C17.8634 29.5059 14.4941 26.1366 14.4941 22C14.4941 17.8634 17.8634 14.4941 22 14.4941C26.1366 14.4941 29.5059 17.8634 29.5059 22C29.5059 26.1366 26.1366 29.5059 22 29.5059Z' fill='white'/%3E%3C/svg%3E");
   content: "";
 }
+.item-cards .item-card[data-name="Home Assistant Voice Preview Edition"]:hover {
+  border-color: #DB582E;
+}
 .item-cards .item-card[data-name="Home Assistant ZBT-1"]:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Cpath d='M40 0H4C1.79086 0 0 1.79086 0 4V40C0 42.2091 1.79086 44 4 44H40C42.2091 44 44 42.2091 44 40V4C44 1.79086 42.2091 0 40 0Z' fill='%2300AEF8'/%3E%3Cpath d='M27.9527 13.6545C27.9527 12.6887 27.154 11.9058 26.1688 11.9058H18.3488C17.3637 11.9058 16.5649 12.6887 16.5649 13.6545L16.5649 28.4705H18.6355V33.6469H25.8826V28.4705H27.9532L27.9527 13.6545Z' fill='white'/%3E%3C/svg%3E");
   content: "";
 }
+.item-cards .item-card[data-name="Home Assistant ZBT-1"]:hover {
+  border-color: #00AEF8;
+}
 .item-cards .item-card[data-name="Home Assistant Cloud"]:before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Cpath d='M40 0H4C1.79086 0 0 1.79086 0 4V40C0 42.2091 1.79086 44 4 44H40C42.2091 44 44 42.2091 44 40V4C44 1.79086 42.2091 0 40 0Z' fill='%23174B62'/%3E%3Cpath d='M31.6404 21.9952C31.6404 21.9201 31.6466 21.8461 31.6466 21.7701C31.6454 20.1893 31.1182 18.6516 30.1445 17.3895C29.1708 16.1276 27.8037 15.2098 26.2494 14.775C24.6953 14.3402 23.0386 14.4118 21.5297 14.9793C20.0209 15.5467 18.7418 16.579 17.886 17.9201C17.0104 17.6077 16.0757 17.4867 15.1473 17.5653C14.2188 17.644 13.3193 17.9208 12.5119 18.3758C11.7046 18.831 11.0088 19.4535 10.4738 20.1997C9.93869 20.9459 9.57737 21.7977 9.415 22.6953C9.25263 23.5927 9.29318 24.5141 9.53389 25.3946C9.77459 26.2751 10.2096 27.0934 10.8083 27.7918C11.4071 28.4902 12.1549 29.052 12.9994 29.4375C13.8438 29.8231 14.7644 30.023 15.6961 30.0233H25.9792L26.1412 30.0234H26.4L27.6954 30.0233H31.0521C32.099 30.0293 33.1089 29.6456 33.8771 28.9502C34.6453 28.2548 35.1145 27.2998 35.1892 26.2785C35.2641 25.2574 34.939 24.2465 34.2798 23.4511C33.6209 22.6557 32.6774 22.1352 31.6404 21.9952Z' fill='white'/%3E%3C/svg%3E");
   content: "";
-}
-.item-cards .item-card[data-name="Home Assistant Green"]:hover {
-  border-color: #14CC9E;
-}
-.item-cards .item-card[data-name="Home Assistant Yellow"]:hover {
-  border-color: #FBB03B;
-}
-.item-cards .item-card[data-name="Home Assistant Voice Preview Edition"]:hover {
-  border-color: #DB582E;
-}
-.item-cards .item-card[data-name="Home Assistant ZBT-1"]:hover {
-  border-color: #00AEF8;
 }
 .item-cards .item-card[data-name="Home Assistant Cloud"]:hover {
   border-color: #174B62;
@@ -1776,6 +2031,9 @@ section.section.hero {
   background-size: cover;
   height: 16rem;
   padding: 1rem;
+}
+.item-cards .item-card.product[data-product-card-hide] {
+  display: none;
 }
 .item-cards .item-card.product:before {
   content: "";
@@ -1818,11 +2076,14 @@ section.section.hero {
 .item-cards .item-card.product-yellow {
   background-image: url("https://www.home-assistant.io/images/frontpage/yellow-frontpage.jpg");
 }
-.item-cards .item-card.product-voice-pe {
+.item-cards .item-card.product-voice-preview-edition {
   background-image: url("https://www.home-assistant.io/images/frontpage/voice-pe-frontpage.jpg");
 }
 .item-cards .item-card.product-zbt-1 {
   background-image: url("https://www.home-assistant.io/images/frontpage/feature-zbt1.jpg");
+}
+.item-cards .item-card.product-cloud {
+  background-image: url();
 }
 .item-cards .item-card-details {
   display: flex;
@@ -1849,6 +2110,7 @@ section.section.hero {
   font-size: 22px;
   font-weight: 600;
   line-height: 1.2;
+  text-wrap: balance;
 }
 @media (min-width: 768px) {
   .item-cards .item-card-title {

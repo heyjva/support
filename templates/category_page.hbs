@@ -1,10 +1,11 @@
-<section id="main-content" class="section hero" data-category="{{category.id}}">
+<div class="visibility-hidden">{{ breadcrumbs }}</div>
+<section id="main-content" class="section hero" data-category="{{category.name}}">
   <div class="hero-inner">
     <div class="container">
       <div class="hero-heading">
-        <h1 class="visibility-hidden">{{ category.name }} | {{ help_center.name }}</h1>
-        <h2>{{ category.name }}</h2>
-        <p>{{ category.description }}</p>
+        <h1 class="visibility-hidden" data-title=""></h1>
+        <h2 data-title=""></h2>
+        <p data-description=""></p>
       </div>
     </div>
   </div>
@@ -61,8 +62,7 @@
     </div>
     <div class="column sidebar">
       <div class="item-cards">
-        {{#is category.name "Home Assistant Green"}}
-        <a href="https://www.home-assistant.io/green" class="item-card product product-green">
+        <a href="https://www.home-assistant.io/green" class="item-card product product-green" data-product-card-hide>
           <div class="item-card-details">
             <div class="item-card-content">
               <span class="item-card-title">Home Assistant Green</span>
@@ -70,9 +70,7 @@
             </div>
           </div>
         </a>
-        {{/is}}
-        {{#is category.name "Home Assistant Yellow"}}
-        <a href="https://www.home-assistant.io/yellow" class="item-card product product-yellow">
+        <a href="https://www.home-assistant.io/yellow" class="item-card product product-yellow" data-product-card-hide>
           <div class="item-card-details">
             <div class="item-card-content">
               <span class="item-card-title">Home Assistant Yellow</span>
@@ -80,9 +78,7 @@
             </div>
           </div>
         </a>
-        {{/is}}
-        {{#is category.name "Home Assistant Voice Preview Edition"}}
-        <a href="https://www.home-assistant.io/voice-pe" class="item-card product product-voice-pe">
+        <a href="https://www.home-assistant.io/voice-pe" class="item-card product product-voice-preview-edition" data-product-card-hide>
           <div class="item-card-details">
             <div class="item-card-content">
               <span class="item-card-title">Home Assistant Voice Preview Edition</span>
@@ -90,18 +86,14 @@
             </div>
           </div>
         </a>
-        {{/is}}
-        {{#is category.name "Home Assistant ZBT-1"}}
-        <a href="https://www.home-assistant.io/connectzbt1" class="item-card product product-zbt-1">
+        <a href="https://www.home-assistant.io/connectzbt1" class="item-card product product-zbt-1" data-product-card-hide>
           <div class="item-card-details">
             <div class="item-card-content">
-              <span class="item-card-title">Home Assistant Voice Preview Edition</span>
+              <span class="item-card-title">Home Assistant Connect ZBT-1</span>
               <span class="item-card-description">Click here to learn more about the device and where to buy</span>
             </div>
           </div>
         </a>
-        {{/is}}
-
         <div class="item-card primary">
           <div class="item-card-details">
             <div class="item-card-content">
