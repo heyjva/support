@@ -1,6 +1,6 @@
 ---
 zendesk:
-  article_id: 
+  article_id: 25410366475165
   name: About the LEDs
   position: 2
   labels: yellow, about the system, status
