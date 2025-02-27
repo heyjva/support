@@ -8,3 +8,5 @@ zendesk:
 
 
 {% partial 'backups-about.md' %}
+
+{% partial 'backups-create.md' %}
