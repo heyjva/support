@@ -26,12 +26,4 @@ The activity LED indicates various firmware and boot loader states at startup. O
 
 The yellow system health LED blinks in a heartbeat pattern if the Home Assistant operating system is running.
 
-## Disabling the LEDs
-
-This feature requires HAOS version 11.0 or later.
-
-If the LEDs seem too bright for your environment, you can disable them.
-
-1. Go to [**Settings** > **System** > **Hardware**](https://my.home-assistant.io/redirect/hardware/) and select **Configure** > **Configure hardware settings**.
-2. In the dialog, select the toggles to disable the LEDs and submit the changes.
-    - **Result**: The LEDs are now disabled.
+{% partial 'disable-leds.md' %}
