@@ -3,8 +3,8 @@ zendesk:
   article_id: 25454640981533
   name: Creating a backup
   position: 1
-  labels: yellow, handling data
+  labels: yellow, data
 ---
 
 
-
+{% partial 'backups-about.md' %}
