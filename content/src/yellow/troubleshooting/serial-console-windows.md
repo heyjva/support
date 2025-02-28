@@ -20,9 +20,9 @@ Connecting to Yellow via serial console can be helpful for troubleshooting. For 
    - At the end of the entry, you see **COM#**. This is the port Yellow is using.
      ![Device Manager: ports with Yellow](/static/img/yellow/win-device-manager-2.png)
    - **Troubleshooting**: If the device doesn't appear in the Device Manager, check if the jumper JP1 is set to UART:
-        1. Power off and unplug Yellow. [Open the case](/power-supply/#opening-the-case).
+        1. Power off and unplug Yellow. [Open the case](/hc/en-us/articles/25298668266269-Home-Assistant-Yellow-Kit-with-CM4-and-optional-NVMe).
         2. Make sure JP1 is set to UART.
-        3. [Close the case](/power-supply/#reassembling-your-home-assistant-yellow).
+        3. [Close the case](/hc/en-us/articles/25298668266269-Home-Assistant-Yellow-Kit-with-CM4-and-optional-NVMe).
         4. Connect Yellow to your router again via Ethernet and make sure there is an internet connection.
         5. Plug power back in.
 5. Start PuTTY.
@@ -52,3 +52,8 @@ Connecting to Yellow via serial console can be helpful for troubleshooting. For 
     - In PuTTY, enter `reboot` and press the **Enter** key.
     - **Result**: The system reboots and you can observe the boot logs from start.
     - If logging has been enabled, the boot process is also stored in the configured log file.
+
+## Related topics
+
+- [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+- [Opening and closing the case](/hc/en-us/articles/25298668266269-Home-Assistant-Yellow-Kit-with-CM4-and-optional-NVMe)
