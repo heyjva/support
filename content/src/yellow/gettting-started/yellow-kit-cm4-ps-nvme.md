@@ -25,24 +25,24 @@ Additionally, make sure you have the following items which are not part of the K
 
 ## Opening the case
 
-{% partial 'yellow/yellow-open-case-cm4' %}
+{% partial 'yellow/yellow-open-case-cm4.md' %}
 
 ## Installing the Raspberry Pi Compute Module 4
 
-{% partial 'yellow/yellow-install-cm4' %}
+{% partial 'yellow/yellow-install-cm4.md' %}
 
 ## Optional: Installing the NVMe drive
 
-{% partial 'yellow/yellow-install-nvme-cm4' %}
+{% partial 'yellow/yellow-install-nvme-cm4.md' %}
 
 ## Reassembling your Home Assistant Yellow
 
-{% partial 'yellow/yellow-reassemble-case' %}
+{% partial 'yellow/yellow-reassemble-case.md' %}
 
 ## Installing Home Assistant Software on Kit
 
-{% partial 'yellow/yellow-install-haos' %}
+{% partial 'yellow/yellow-install-haos.md' %}
 
 ## If you have an NVMe: Moving the data disk
 
-{% partial 'yellow/yellow-move-data-disk' %}
+{% partial 'yellow/yellow-move-data-disk.md' %}
