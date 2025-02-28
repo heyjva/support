@@ -8,6 +8,8 @@ zendesk:
 
 Connecting to Yellow via serial console can be helpful for troubleshooting. For example, if you need to export a log file.
 
+## To connect the serial console from Yellow to a Linux or macOS machine
+
 1. Make sure *GNU Screen* is installed on your system.
    - On Linux, use your distribution's package manager (e.g. `sudo apt install screen`).
    - On macOS, use [Homebrew](https://formulae.brew.sh/formula/screen): `brew install screen`.
