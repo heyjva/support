@@ -1,6 +1,6 @@
 <!---Opening the case (Raspberry Pi Compute Module 4)-->
 
-{% partial 'fragments/protect-from-esd.md' %}
+{% partial '../fragments/protect-from-esd.md' %}
 
 1. Removing the case - bottom part:
 
