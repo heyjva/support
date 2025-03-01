@@ -41,7 +41,7 @@ Additionally, make sure you have the following items which are not part of the K
 
 ## Installing Home Assistant Software on Kit
 
-{% partial 'yellow/yellow-install-haos.md' %}
+{% partial 'yellow/yellow-install-haos-cm4.md' %}
 
 ## If you have an NVMe: Moving the data disk
 
