@@ -23,7 +23,7 @@ zendesk:
 1. Connect the device to the internet.
 
    - Plug in your Ethernet cable and make sure it is locked into place.
-   - The other end of the Ethernet cable will need to be connected to your Router or Switch and connected to the internet.
+   - The other end of the Ethernet cable will need to be connected to your router or switch and connected to the internet.
    - **Note**: Internet is required because the newly installed Home Assistant OS does not contain all Home Assistant components yet. It downloads the latest version of Home Assistant Core on first start.plug-ethernet.jpeg
 
    ![Home Assistant Yellow with power supply](/static/img/yellow/yellow-standard-unboxed.jpeg)
