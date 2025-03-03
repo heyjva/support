@@ -24,4 +24,4 @@
    1. Slightly lift off the enclosure on your left.
    1. Slide the enclosure off towards your right.
 
-   ![Clip showing the device from the top, then how to tilt the device and lifting the cover starting on the side away from the connectors](/static/img/yellow/scm5_remove_cover_480.webp)
+   ![Clip showing the device from the top, then how to tilt the device and lifting the cover starting on the side away from the connectors](/static/img/yellow/cm5_remove_cover_480.webp)
