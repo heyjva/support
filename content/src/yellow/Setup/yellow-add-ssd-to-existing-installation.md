@@ -36,4 +36,4 @@ Step-by-step instructions on adding an NVMe M.2 SSD drive to your Home Assistant
 
 ## Related topics
 
-[- Using external data disk](https://www.home-assistant.io/common-tasks/os/#using-external-data-disk)
+- [Using external data disk](https://www.home-assistant.io/common-tasks/os/#using-external-data-disk)
