@@ -23,6 +23,8 @@ Step-by-step instructions on removing the compute module from Home Assistant Yel
 
 {% partial 'yellow/yellow-reassemble-case.md' %}
 
+## Removing the Raspberry Pi Compute Module
 
+{% partial 'yellow/yellow-remove-cm.md' %}
 
 ## Related topics
