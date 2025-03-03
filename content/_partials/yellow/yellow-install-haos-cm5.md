@@ -17,11 +17,13 @@
    - Choose **Home assistants and home automation**.
    - Choose **Home Assistant**.
    - Choose **Home Assistant OS x.y (Yellow)**.
+
    ![yellow_rpi-imager_cm5_module_image.webp](/static/img/yellow/yellow_rpi-imager_cm5_module_image.webp)
 
 4. Choosing storage.
 
    - Select **Choose storage** and from the dropdown menu, select your Raspberry Pi module.
+
    ![rpi_choose_storage_cm5.png](/static/img/yellow/rpi_choose_storage_cm5.png)
 
 5. Writing the installer onto the drive
@@ -30,6 +32,7 @@
    2. Wait for the Home Assistant OS Installer to be written to the internal eMMC storage on your module.
    3. Follow the wizard.
    4. When the steps are complete, close the rpi-installer.
+
    ![rpi_choose_next.png](/static/img/yellow/rpi_choose_next.png)
 
 6. Unplug and set to UART
@@ -37,4 +40,5 @@
    1. Unplug the USB cable.
    2. Unplug the power cable.
    3. Set the JP1 jumper to UART.
+
    ![yellow_jp1_to_uart.png](/static/img/yellow/yellow_jp1_to_uart.png)
