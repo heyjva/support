@@ -6,11 +6,12 @@ zendesk:
   position: 1
 ---
 
-Step-by-step instructions on adding an NVMe M.2 SSD drive to your Home Assistant Yellow with an aleady existing Home Assistant installation.
+Step-by-step instructions on adding an NVMe M.2 SSD drive to your Home Assistant Yellow with an existing Home Assistant installation.
 
 ## Prerequisites
 
 - Home Assistant Yellow, powered off
+- Administrator rights on Home Assistant
 - Additionally, make sure you have the following items
 
   - NVMe M.2 SSD drive
