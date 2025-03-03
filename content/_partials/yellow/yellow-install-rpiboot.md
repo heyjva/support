@@ -1,4 +1,6 @@
 
+<!--Installing the rpiboot on your computer and then running rpiboot to install the HAOS on Yellow-->
+
 1. Install rpiboot on your computer.
 
    1. **rpiboot** is a command line utility for booting a Raspberry Pi in USB device mode. This is needed because the CM5 cannot boot from the USB 2.0 ports of the Yellow.

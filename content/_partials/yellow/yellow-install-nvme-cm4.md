@@ -1,4 +1,4 @@
-<!--Installing the NVMe CM4-->
+<!--Installing the NVMe on Yellow with CM4-->
 
 1. Unscrew the stand-off nut.
 

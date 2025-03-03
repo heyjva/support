@@ -1,4 +1,5 @@
-# Installation Steps
+<!--Installing the HAOS on CM5 using the rpi Imager-->
+
 
 1. Installing the Raspberry Pi Imager.
 
