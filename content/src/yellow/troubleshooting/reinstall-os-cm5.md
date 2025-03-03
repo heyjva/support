@@ -14,7 +14,7 @@ Note: It is very unlikely that reinstalling the Home Assistant OS is necessary. 
 - Connected to the Internet
 - USB-C cable
 - [Reset the device](/hc/en-us/articles/25463622043165-Resetting-the-device)
-yellow_cm5_ucb-c.jpg
+
  ![prerequisites image showing a Yellow, USB-C cable, and a Raspberry Pi Compute Module 5](/static/img/yellow/yellow_cm5_ucb-c.jpg)
 
 ## Opening the case
