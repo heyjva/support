@@ -6,7 +6,7 @@
    1. **rpiboot** is a command line utility for booting a Raspberry Pi in USB device mode. This is needed because the CM5 cannot boot from the USB 2.0 ports of the Yellow.
    2. Install rpiboot on your PC.
       - **Windows**: Download and run the [Windows Installer from Raspberry Pi Github](https://github.com/raspberrypi/usbboot/raw/master/win32/rpiboot_setup.exe).
-      - **MacOS or Linux**: Install from [source code](https://github.com/raspberrypi/usbboot?tab=readme-ov-file#building).
+      - **macOS or Linux**: Install from [source code](https://github.com/raspberrypi/usbboot?tab=readme-ov-file#building).
    3. Install rpiboot, but do not run it yet!
 
     ![source_code.png](/static/img/yellow/source_code.png)
