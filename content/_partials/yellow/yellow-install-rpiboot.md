@@ -40,4 +40,4 @@
    3. Afterwards, only the green LED should be on.
    4. The module is now ready to have the Home Assistant Operating System installed on it (next steps).
 
-  ![led-pattern-install-green.png](/static/img/yellow/led-pattern-install-green.png)
+      ![led-pattern-install-green.png](/static/img/yellow/led-pattern-install-green.png)
