@@ -15,7 +15,7 @@ Step-by-step instructions on removing the compute module from Home Assistant Yel
 
   ![Home Assistant Yellow and flat nose pliers](/static/img/yellow/unseat-cm4-tools.jpg)
 
-  ## Opening the case
+## Opening the case
 
 {% partial 'yellow/yellow-open-case-cm5.md' %}
 
