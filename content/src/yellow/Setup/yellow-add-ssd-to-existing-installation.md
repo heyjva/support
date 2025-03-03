@@ -16,5 +16,4 @@ Step-by-step instructions on adding an NVMe M.2 SSD drive to your Home Assistant
   - NVMe M.2 SSD drive
   - No. 1 hex screwdriver
 
-  ![Home Assistant Yellow with Ethernet cable, NVMe M.2 SSD drive, and No. 1 hex screwdriver](/static/img/yellow/ kit-poe-with-nvme.jpeg)
-
+  ![Home Assistant Yellow with Ethernet cable, NVMe M.2 SSD drive, and No. 1 hex screwdriver](/static/img/yellow/kit-poe-with-nvme.jpeg)
