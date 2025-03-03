@@ -2,7 +2,7 @@
 zendesk:
   article_id: 25454972435357
   name: Using the serial console for debugging (Linux/macOS)
-  position: 1
+  position: 2
   labels: yellow, troubleshooting
 ---
 
