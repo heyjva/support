@@ -10,6 +10,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.setIncludesDirectory("../_includes");
   eleventyConfig.setDataDirectory("../_data");
+  eleventyConfig.addGlobalData("layout", "base.njk");
 
   eleventyConfig.addPlugin(EleventyRenderPlugin);
 
