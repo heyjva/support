@@ -33,7 +33,7 @@
 
 1. Securing the heat sink.
 
-    - Take the entire board off your workplace and push the pins firmly through the carrier board.
-    - Ensure that the CM4 is still fully seated after securing the heat sink.
+    1. Take the entire board off your workplace and push the pins firmly through the carrier board.
+    1. Ensure that the CM4 is still fully seated after securing the heat sink.
 
     ![Top view of the board, showing how to fasten the heat sink pins](/static/img/yellow/step-9-push-pins-heatsink.webp)

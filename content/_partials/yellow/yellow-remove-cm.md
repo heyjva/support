@@ -2,9 +2,9 @@
 
 
 1. Removing the heat sink.
-  - Use the pliers and squeeze the front of the pin so that it fits through the hole.
-  - Repeat the procedure for the other pin.
-  ![Removing pins](/static/img/yellow/remove-pins-03.webp)
+   - Use the pliers and squeeze the front of the pin so that it fits through the hole.
+   - Repeat the procedure for the other pin.
+    ![Removing pins](/static/img/yellow/remove-pins-03.webp)
 
 1. Removing the Raspberry Pi Compute Module.
    - **Info**: The image shows a Raspberry Pi Compute Module 4. The steps are the same for the Compute Module 5.
