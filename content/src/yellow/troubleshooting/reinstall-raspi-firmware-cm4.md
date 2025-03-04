@@ -43,6 +43,8 @@ To resolve this issue, you need to reinstall the Raspberry Pi bootloader onto th
      - Typically, the system should boot now.
      - If Home Assistant OS is installed, the yellow LED should show a heartbeat pattern after ~5 seconds.
 
+       ![Clip showing the LED pattern](/static/img/yellow/yellow_heartbeat_yellow_led.webp)
+
 ## Related topics
 
 - [Re-installing the operating system on CM4](/hc/en-us/articles/25484982657309-Reinstall-the-Home-Assistant-Operating-System-on-Raspberry-Pi-CM4)
