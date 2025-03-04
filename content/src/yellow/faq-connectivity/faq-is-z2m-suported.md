@@ -13,7 +13,7 @@ The [Zigbee2MQTT](https://www.zigbee2mqtt.io/) project has [experimental support
 
 **Note**: The Zigbee Home Automation integration is active by default! If you are using Zigbee2MQTT, remember to delete and ignore the discovered Zigbee Home Automation integration to avoid interference.
 
-**Note**: When setting up Zigbee2MQTT with Home Assistant Yellow, you will need to configure the adapter type in Zigbee2MQTT. Make sure the following is present in your Zigbee2MQTT [configuration file](https://www.home-assistant.io/docs/glossary/#configuration-file):
+**Note**: When setting up Zigbee2MQTT with Home Assistant Yellow, you need to configure the adapter type in Zigbee2MQTT. Make sure the following is present in your Zigbee2MQTT [configuration file](https://www.home-assistant.io/docs/glossary/#configuration-file):
 
 ```yaml
 serial:
