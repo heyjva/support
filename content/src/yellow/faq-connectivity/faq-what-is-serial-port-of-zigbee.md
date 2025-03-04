@@ -6,4 +6,4 @@ zendesk:
   labels: yellow, faq, connectivity
 ---
 
-The Zigbee/Thread (IEEE 802.15.4) radio is directly connected via serial port to the Raspberry Pi Compute Module 4 on /dev/ttyAMA1. Note that there is no /dev/serial/by-id path for this serial port as its not connected through USB. The above tty path will remain static.
+The Zigbee/Thread (IEEE 802.15.4) radio is directly connected via serial port to the Raspberry Pi Compute Module 4 on `/dev/ttyAMA1`. Note that there is no `/dev/serial/by-id` path for this serial port as it's not connected through USB. The above `tty` path will remain static.
