@@ -5,8 +5,12 @@
   $slug: str-replace($product, " ", "-");
   $lowercase-slug: to-lower-case($slug);
 
-  main>.visibility-hidden:has(ol li a[href$="#{$slug}"])~.container .layout .column.sidebar .item-card.product.product-#{$lowercase-slug} {
-    display: flex;
+  main>.visibility-hidden:has(ol li a[href$="#{$slug}"]),
+  section.section.hero[data-category="Home Assistant #{$product}"] {
+    ~.container .layout .column.sidebar .item-card.product.product-#{$lowercase-slug} {
+      @debug "Found product card for #{$lowercase-slug}";
+      display: flex;
+    }
   }
 }
 

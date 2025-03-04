@@ -7,6 +7,16 @@
   section.section.hero[data-category="Home Assistant #{$product}"] {
     background-image: url(map-get($details, hero-image));
 
+    margin-bottom: 1rem;
+
+    @include tablet {
+      margin-bottom: 1rem;
+    }
+
+    @include desktop {
+      margin-bottom: 1rem;
+    }
+
     &:after {
       content: '';
       background-color: rgba(23, 75, 98, .58);
@@ -42,15 +52,6 @@ section.section.hero {
 
   @each $product, $details in $home-assistant-products {
     &[data-category="Home Assistant #{$product}"] {
-      margin-bottom: 1rem;
-
-      @include tablet {
-        margin-bottom: 1rem;
-      }
-
-      @include desktop {
-        margin-bottom: 1rem;
-      }
 
       background-image: url(map-get($details, hero-image));
 
