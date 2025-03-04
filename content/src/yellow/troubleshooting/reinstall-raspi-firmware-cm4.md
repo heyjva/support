@@ -1,20 +1,20 @@
 ---
 zendesk:
   article_id: 25455063533853
-  name: Reinstall Raspberry Pi CM4 EEPROM firmware
+  name: Green LED flashes 4 times short and 5 times long
   position: 1
   labels: yellow, troubleshooting
 ---
 
 ## Symptom
 
-You have a Home Assistant Yellow with Compute Module 4 and the green LED flashes 4 times short and 5 times long.
+You have a Home Assistant Yellow with a Compute Module 4 and the green LED flashes 4 times short and 5 times long.
 
 ## Cause: firmware error
 
 This LED pattern indicates a firmware error on the Compute Module 4 (CM4).
 
-## Resolution (on Windows): Reinstall the firmware
+## Resolution
 
 To resolve this issue, you need to reinstall the Raspberry Pi bootloader onto the CM4.
 
