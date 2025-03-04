@@ -15,7 +15,7 @@ There are currently 2 options on how to reinstall the Home Assistant OS:
 - **Option 1** disables booting of Home Assistant OS (from eMMC or NVMe SSD), which makes it possible to start the Installer again from a USB flash drive. This option only works if you currently have Home Assistant OS installed!
 - **Option 2** uses rpiboot. Use this option if option 1 doesn't work for you.
 
-## Option 1 (recommended): Reinstalling Home Assistant OS on CM4 using Red + Blue button
+## Option 1 (recommended): Reinstalling Home Assistant OS on CM4 using red and blue button
 
 1. Make sure no USB device is plugged into the device. Remove power from your system.
 2. Power up the system.
