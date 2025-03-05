@@ -23,14 +23,17 @@ Other terms you may have seen to designate this firmware: EmberZNet firmware, EZ
 
 ### Thread firmware
 
-This firmware allows to use Yellow or Connect ZBT-1 as a dedicated Thread border router when used with the Open Thread Border Router addon.
+This firmware allows using Yellow or Connect ZBT-1 as a dedicated Thread border router when used with the Open Thread Border Router addon.
 Bundled in the Open Thread Border Router add-on.
 Other terms you may have seen to designate this firmware: OpenThread RCP, RCP OT
-Overview of Zigbee and Thread firmware options, add-ons, and integrations in Home Assistant.
+
+#### Overview of Zigbee and Thread firmware options, add-ons, and integrations in Home Assistant.
+
+![Chart illustrating the relationships between Zigbee and Thread firmware options, add-ons, and integrations in Home Assistant.](/static/img/yellow/firmware-options-no-multiprotocol.svg)
 
 Chart illustrating the relationships between Zigbee and Thread firmware options, add-ons, and integrations in Home Assistant.
 
 ## Related topics
 
-Zigbee Home Automation integration documentation
-Thread integration documentation
+[Zigbee Home Automation integration documentation](https://www.home-assistant.io/integrations/zha/)
+[Thread integration documentation](https://www.home-assistant.io/integrations/thread/)
