@@ -9,12 +9,12 @@ zendesk:
 
 # Prerequisites
 
-- Home&nbsp;Assistant Yellow installation with NVMe SSD drive and CM4
+- Home&nbsp;Assistant Yellow installation with NVMe SSD drive and CM4 Lite
 - Ethernet cable
 
 Additionally, make sure you have the following items which are not part of the Kit
 
-- Raspberry Pi Compute Module 5 (CM5)
+- Raspberry Pi Compute Module 5 Lite
 - USB-C cable
 - Heat sink: You can use the heat sink shipped with Yellow.
   - If you want, you can also use the Raspberry Pi Compute Module 5 Passive Cooler.
