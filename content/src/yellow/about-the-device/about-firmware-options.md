@@ -1,6 +1,6 @@
 ---
 zendesk:
-  article_id: 25405433080093
+  article_id: 25616122309405
   name: About firmware options
   position: 3
   labels: yellow, about, Zigbee, Thread, mulitprotocol
