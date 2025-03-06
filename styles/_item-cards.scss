@@ -101,12 +101,14 @@
     }
 
     &.small {
-      padding: 1.5rem;
-    }
+      padding: 1.25rem 1.4rem;
 
-    &.small & {
-      &-title {
-        font-size: 18px;
+      .item-card-content {
+        gap: .5rem;
+      }
+
+      .item-card-title {
+        font-size: 20px;
       }
     }
 

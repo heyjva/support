@@ -374,6 +374,10 @@ ul {
   white-space: nowrap;
 }
 
+.section-content {
+  width: 100%;
+}
+
 /***** Buttons *****/
 .button, .pagination-next-link, .pagination-prev-link, .pagination-first-link, .pagination-last-link, .subscriptions-subscribe button, .requests-table-toolbar .organization-subscribe button, .community-follow button, .article-subscribe button, .section-subscribe button, .split-button button {
   background-color: transparent;
@@ -2036,10 +2040,13 @@ section.section.hero[data-category="Home Assistant Cloud"] ~ .container .layout 
   color: #174B62;
 }
 .item-cards .item-card.small {
-  padding: 1.5rem;
+  padding: 1.25rem 1.4rem;
 }
-.item-cards .item-card.small .item-cards .item-card-title {
-  font-size: 18px;
+.item-cards .item-card.small .item-card-content {
+  gap: 0.5rem;
+}
+.item-cards .item-card.small .item-card-title {
+  font-size: 20px;
 }
 .item-cards .item-card.product {
   background-position: center;

@@ -178,3 +178,7 @@ ul {
 .visibility-hidden {
   @include visually-hidden;
 }
+
+.section-content {
+  width: 100%;
+}
