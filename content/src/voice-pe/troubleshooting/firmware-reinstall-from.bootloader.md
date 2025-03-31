@@ -56,4 +56,4 @@ Reinstalling the firmware from bootloader mode is an **extreme measure**. Only d
 
 - [Reinstalling the firmware of the Home Assistant Voice Preview Edition](/hc/en-us/articles/25800241218717)
 - [Home Assistant installation documentation](https://www.home-assistant.io/installation/)
-- [Getting started with Home Assistant Voice Preview Edition](/hc/en-us/sections/24980017436701)
+- [Getting started with Home Assistant Voice Preview Edition](/hc/en-us/articles/25918770371229)
