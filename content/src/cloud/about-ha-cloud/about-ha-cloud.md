@@ -12,7 +12,7 @@ Home Assistant Cloud provides the following features:
 - Easy integration with popular voice assistants, such as [Home Assistant Assist](https://www.home-assistant.io/voice_control/), [Amazon Alexa](/hc/en-us/articles/25619363899677), or [Google Assistant](/hc/en-us/articles/25619376817053)
 - [Improved text-to-speech](/hc/en-us/articles/25619386304541) to have text read aloud with natural sounding voices.
 - [Cloud storage of your latest Home Assistant backup](/hc/en-us/articles/25619338169501)
-- [Webhooks](/hc/en-us/articles/25619382358685), for example to turn
+- [Webhooks](/hc/en-us/articles/25619382358685), for example to trigger automations.
 - [Improved camera streaming with WebRTC](/hc/en-us/articles/25619464018461-Improved-camera-streaming-with-WebRTC)
 
 To make use of these features, follow these steps:

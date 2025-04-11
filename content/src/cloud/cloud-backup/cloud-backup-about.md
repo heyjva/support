@@ -10,13 +10,13 @@ You have the option to store an encrypted [Home Assistant backup](https://www.ho
 
 The Home Assistant Cloud backup option is available if you have a Home Assistant Cloud subscription, at no additional cost.
 
-- If Home Assistant Cloud backup is enabled in Home Assistant, 1 encrypted backup file is stored on Home Assistant Cloud
+- If Home Assistant Cloud backup is enabled in Home Assistant, 1 encrypted backup file is stored on Home Assistant Cloud.
 - Home Assistant Cloud will only store the latest backup. Older versions will be deleted automatically.
 - The backup file must be smaller than 5GB in size. Larger files cannot be stored on Home Assistant Cloud.
   - If the backup file is larger, you’ll be [notified to repair](/hc/en-us/articles/26323079049245-Backup-is-too-large).
 - The backup on Home Assistant Cloud is always [encrypted](#encrypted-and-private).
   - The key required to decrypt the backup is stored in the [backup emergency kit](https://www.home-assistant.io/more-info/backup-emergency-kit/)
-- Nabu Casa can not access your data.
+- Nabu Casa can not access your data or the encryption key required to decrypt your backup.
 
 ## Why store a backup in Home Assistant Cloud?
 
