@@ -236,6 +236,11 @@ export default async function (eleventyConfig) {
       }
     );
   } else {
+    eleventyConfig.addShortcode("indexMeta", function (indexMeta) {
+      if (!indexMeta) return "";
+      return `<meta name="robots" content="noindex" />`;
+    });
+
     eleventyConfig.addTransform(
       "replace-static-links",
       function (content, outputPath) {
