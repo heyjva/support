@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26198603111581
   name: Disabling MFA (multi-factor authentication) for Home Assistant Cloud

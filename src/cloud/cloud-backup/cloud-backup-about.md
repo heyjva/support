@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25619338169501
   name: About the Home Assistant Cloud backup

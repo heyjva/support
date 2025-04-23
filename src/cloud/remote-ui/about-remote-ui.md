@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26469707849629
   name: About Home Assistant Remote UI

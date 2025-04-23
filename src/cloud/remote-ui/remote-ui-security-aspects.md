@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26508882007581
   name: Remote UI - Security aspects

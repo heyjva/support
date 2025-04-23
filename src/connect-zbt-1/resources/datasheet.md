@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26539484237981
   name: Home Assistant Connect ZBT-1 - Datasheet

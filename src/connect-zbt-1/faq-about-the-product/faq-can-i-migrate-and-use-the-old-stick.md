@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26152445484573
   name: Can I migrate from a deCONZ or Zigbee2MQTT stick to Home Assistant Connect ZBT-1 and keep using the old stick?

@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26205061961373
   name: Remote control is being prepared

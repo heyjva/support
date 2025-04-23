@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26179726556701
   name: What happens if I don't enter a payment method?

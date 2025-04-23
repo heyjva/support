@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26709825280797
   name: Installation on Yellow Kit - The yellow LED keeps blinking

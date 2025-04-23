@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26123541989661
   name: Forming a new Zigbee network

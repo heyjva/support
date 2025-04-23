@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25160431579165
   name: Restoring or migrating from a backup

@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25455230601501
   name: Can I reinstall Home Assistant OS on CM4 again using the USB flash drive with the Home Assistant OS Installer for Yellow?

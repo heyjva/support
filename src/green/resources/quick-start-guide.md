@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26536395793053
   name: Home Assistant Green - Quick Start Guide

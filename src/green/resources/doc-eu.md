@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26536249322653
   name: Home Assistant Green - Declaration of Conformity for EU

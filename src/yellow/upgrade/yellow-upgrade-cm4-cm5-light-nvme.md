@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25608059150237
   name: Migrating from CM4 Lite with NVMe to CM5 Lite with NVMe

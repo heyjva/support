@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26523862491165
   name: Remote UI - Limitations

@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25140903526301
   name: I can’t access the system via http://homeassistant.local:8123, what can I do?

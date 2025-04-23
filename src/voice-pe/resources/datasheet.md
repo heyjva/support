@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26195164741533
   name: Home Assistant Voice Preview Edition - Datasheet

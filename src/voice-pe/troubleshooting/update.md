@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25800097313053
   name: Updating the device

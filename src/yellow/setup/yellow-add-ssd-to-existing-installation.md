@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25549332241949
   name: Adding an SSD to a Yellow with an existing Home Assistant installation

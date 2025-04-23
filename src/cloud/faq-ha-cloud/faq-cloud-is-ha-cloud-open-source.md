@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26177541625245
   name: Is Home Assistant Cloud open source?

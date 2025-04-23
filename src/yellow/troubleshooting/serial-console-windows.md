@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25454894609693
   name: Using the serial console for debugging (Windows)

@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25141560076701
   name: Can I connect a Wi-Fi dongle?

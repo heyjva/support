@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25649130769949
   name: Enabling Home Assistant Cloud

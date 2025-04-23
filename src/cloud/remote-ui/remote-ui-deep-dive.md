@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25619268678557
   name: Remote UI - Deep dive

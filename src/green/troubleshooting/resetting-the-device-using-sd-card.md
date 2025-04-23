@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25162566451485
   name: Resetting the device using an SD card

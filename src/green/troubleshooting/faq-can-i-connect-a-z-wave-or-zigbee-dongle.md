@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25144236984093
   name: Can I connect a Z-Wave or Zigbee USB dongle?

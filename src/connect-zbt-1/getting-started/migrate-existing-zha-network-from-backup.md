@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26700478689949
   name: Migrating an existing Zigbee Home Automation (ZHA) network via Zigbee2MQTT backup

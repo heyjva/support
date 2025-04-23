@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26123745634845
   name: Migrate a Zigbee2MQTT network using Zigbee Home Automation (ZHA)

@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26125034371357
   name: Connection failed

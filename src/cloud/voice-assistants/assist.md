@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25619427296413
   name: Assist

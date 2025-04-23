@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25455205167517
   name: My Home Assistant Yellow appears broken, no LED is lighting up.

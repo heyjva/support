@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25154828325917
   name: Creating a backup

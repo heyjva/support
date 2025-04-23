@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25800285426589
   name: Reinstalling the firmware from bootloader mode

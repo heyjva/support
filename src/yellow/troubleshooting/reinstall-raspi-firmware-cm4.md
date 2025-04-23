@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25455063533853
   name: Green LED flashes 4 times short and 5 times long

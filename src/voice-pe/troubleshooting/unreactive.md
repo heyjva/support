@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25800444360733
   name: My device lights up red and is unreactive

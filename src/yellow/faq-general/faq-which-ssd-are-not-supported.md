@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25592268332445
   name: Which SSDs are not supported?

@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25651116591901
   name: Changing your Nabu Casa account information

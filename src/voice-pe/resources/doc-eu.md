@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26195231223325
   name: Home Assistant Voice Preview Edition - Declaration of Conformity for EU

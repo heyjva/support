@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25405433080093
   name: About Home Assistant Yellow

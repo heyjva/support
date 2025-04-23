@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26539535048093
   name: Home Assistant Connect ZBT-1 - Quick Start Guide

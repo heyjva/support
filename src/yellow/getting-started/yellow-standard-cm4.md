@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25294047501341
   name: Home Assistant Yellow Standard (with CM4 pre-installed)

@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25550630605341
   name: Removing the Raspberry Pi Compute Module

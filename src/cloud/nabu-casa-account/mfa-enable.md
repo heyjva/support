@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25807025727005
   name: Enabling multi-factor authentication (MFA) for Home Assistant Cloud

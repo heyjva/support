@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26179807663517
   name: Why has my subscription been cancelled?

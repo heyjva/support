@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25161225495837
   name: Resetting the device

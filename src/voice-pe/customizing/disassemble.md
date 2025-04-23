@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25938306296605
   name: Disassembling the enclosure

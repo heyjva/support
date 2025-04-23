@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26203603012509
   name: Unable to reach Home Assistant Cloud - 403 forbidden

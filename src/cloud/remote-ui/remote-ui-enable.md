@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26474279202973
   name: Enabling Remote Access to Home Assistant (Remote UI)

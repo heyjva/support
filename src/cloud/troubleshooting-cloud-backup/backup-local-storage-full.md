@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26323082445085
   name: Backup - Local storage is full

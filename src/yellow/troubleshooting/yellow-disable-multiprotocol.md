@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25744235797661
   name: Disabling multiprotocol support

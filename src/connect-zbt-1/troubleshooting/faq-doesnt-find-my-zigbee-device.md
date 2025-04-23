@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26125119364381
   name: Home Assistant doesn't find my Zigbee device

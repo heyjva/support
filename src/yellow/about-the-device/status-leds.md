@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25410366475165
   name: About the LEDs

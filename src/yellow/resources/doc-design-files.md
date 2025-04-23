@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26537697264925
   name: Home Assistant Yellow - Design files

@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26124710072861
   name: Enabling Thread support

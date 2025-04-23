@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25207565119133
   name: Shutting down the device

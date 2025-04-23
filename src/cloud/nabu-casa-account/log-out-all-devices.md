@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26170426881693
   name: Logging out all devices from Home Assistant Cloud

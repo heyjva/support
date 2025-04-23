@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26124447269917
   name: Firmware updates for Connect ZBT-1

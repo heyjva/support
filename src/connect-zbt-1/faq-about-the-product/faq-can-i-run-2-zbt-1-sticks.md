@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26152239385629
   name: Can I run 2 sticks with ZHA simultaneously?

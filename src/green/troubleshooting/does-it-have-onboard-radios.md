@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25143653817501
   name: Does Home Assistant Green have Zigbee, Thread, Wi-Fi, or Bluetooth?

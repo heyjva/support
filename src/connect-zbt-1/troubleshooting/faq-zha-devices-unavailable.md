@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26125387134877
   name: Some of my Zigbee Home Automation (ZHA) devices are unavailable

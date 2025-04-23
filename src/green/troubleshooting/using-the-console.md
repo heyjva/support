@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25153288092829
   name: Using the console on the HDMI display

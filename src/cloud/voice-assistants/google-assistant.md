@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25619376817053
   name: Google Assistant

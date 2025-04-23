@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25209783508125
   name: Starting up the device

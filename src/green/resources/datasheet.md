@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26536174437661
   name: Home Assistant Green - Datasheet

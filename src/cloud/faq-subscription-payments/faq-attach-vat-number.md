@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26179753444381
   name: I want my VAT number to be attached on the invoice

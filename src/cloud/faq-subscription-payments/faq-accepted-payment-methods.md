@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26179711177501
   name: Which payment methods are accepted?

@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26539525657629
   name: Home Assistant Connect ZBT-1 - Warranty and Safety Information

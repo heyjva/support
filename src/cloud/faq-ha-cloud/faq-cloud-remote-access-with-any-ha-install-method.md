@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26178660073501
   name: Can I use remote access with any Home Assistant installation method?

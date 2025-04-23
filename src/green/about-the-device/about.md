@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25212448491165
   name: About Home Assistant Green

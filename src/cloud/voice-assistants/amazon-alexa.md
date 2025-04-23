@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25619363899677
   name: Configuring Amazon Alexa to work with Home Assistant

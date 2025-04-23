@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25606333033501
   name: Home Assistant Yellow Kit with CM5

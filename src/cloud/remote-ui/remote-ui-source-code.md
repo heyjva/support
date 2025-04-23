@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26510075061021
   name: Remote UI - Source code on GitHub

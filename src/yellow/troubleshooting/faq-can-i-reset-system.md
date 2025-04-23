@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25455253040797
   name: Can I reset the system?

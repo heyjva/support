@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26152190133533
   name: Does Home Assistant Connect ZBT-1 support Z-Wave?

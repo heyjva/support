@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25298668266269
   name: Home Assistant Yellow Kit with CM4 and optional NVMe

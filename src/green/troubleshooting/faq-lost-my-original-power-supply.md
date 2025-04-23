@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25152018945821
   name: I lost the original power supply. What type do I need to get?

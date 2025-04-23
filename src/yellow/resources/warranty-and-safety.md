@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26537204584093
   name: Home Assistant Yellow - Warranty and Safety Information

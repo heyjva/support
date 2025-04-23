@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25619464018461
   name: Improved camera streaming with WebRTC

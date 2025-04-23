@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26123655295261
   name: Migrating an existing Zigbee Home Automation (ZHA) network

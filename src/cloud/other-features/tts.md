@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25619386304541
   name: Text-to-speech (TTS)

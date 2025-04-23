@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26154370157981
   name: Is Zigbee Green Power (ZGP) supported?

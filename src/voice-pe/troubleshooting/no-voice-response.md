@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25800392162717
   name: I don't get a voice response

@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26323093151901
   name: Backup - Can't find encryption key

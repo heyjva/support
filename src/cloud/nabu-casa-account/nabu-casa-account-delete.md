@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26167476727581
   name: Cancelling the subscription and deleting the account

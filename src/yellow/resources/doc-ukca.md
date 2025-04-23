@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26537117620509
   name: Home Assistant Yellow - Declaration of Conformity for UK

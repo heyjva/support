@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25773395022237
   name: Changing the volume

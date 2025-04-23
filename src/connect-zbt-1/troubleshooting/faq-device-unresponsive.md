@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26125541118365
   name: My Home Assistant Connect ZBT-1 is unresponsive

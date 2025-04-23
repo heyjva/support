@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26124431414557
   name: Connectivity issues due to interference

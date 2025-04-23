@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26205125179549
   name: Remote control - Computer not allowed

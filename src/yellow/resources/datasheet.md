@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26537153454109
   name: Home Assistant Yellow - Datasheet

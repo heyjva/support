@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25212058857373
   name: Interfaces

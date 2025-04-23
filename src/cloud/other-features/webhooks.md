@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25619382358685
   name: Triggering an automation with a webhook trigger

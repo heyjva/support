@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25485061432093
   name: Reinstall the Home Assistant Operating System on Raspberry Pi CM5

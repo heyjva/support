@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26152323062685
   name: Can I run 2 sticks with different Zigbee solutions simultaneously?

@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25559796268829
   name: Installing the Raspberry Pi Compute Module 4 (CM4)

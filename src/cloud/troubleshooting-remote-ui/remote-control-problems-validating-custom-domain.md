@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25620466293533
   name: Remote control - Problems validating custom domain

@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26536349723037
   name: Home Assistant Green - Warranty and Safety Information

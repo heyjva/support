@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26195276802205
   name: Home Assistant Voice Preview Edition - Firmware source code

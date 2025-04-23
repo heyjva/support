@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 25616122309405
   name: About firmware options

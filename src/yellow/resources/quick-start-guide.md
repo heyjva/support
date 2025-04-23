@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26537180423709
   name: Home Assistant Yellow - Quick Start Guide

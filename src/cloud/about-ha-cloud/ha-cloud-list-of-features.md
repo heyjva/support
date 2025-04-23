@@ -1,4 +1,5 @@
 ---
+noindex: true
 zendesk:
   article_id: 26260474250269
   name: List of Home Assistant Cloud features
