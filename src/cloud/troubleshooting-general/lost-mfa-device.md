@@ -6,7 +6,6 @@ zendesk:
   labels: cloud, troubleshooting
 ---
 
-
 ## Symptom
 
 You have multi-factor authentication enabled to log in to Home Assistant Cloud. Now, you lost the device that is used to generate the multi-factor authentication token. For example, you lost the phone that has the authenticator app installed.

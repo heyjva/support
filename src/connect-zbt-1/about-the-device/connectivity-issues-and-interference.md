@@ -16,7 +16,7 @@ The video below demonstrates this effect: when the stick is moved closely to a s
 **Technical note**: Home Assistant Connect&nbsp;ZBT-1's IEEE&nbsp;802.15.4 radio (like any Zigbee radio) uses a technique called Clear Channel Assessment (CCA). Before transmitting, the radio listens on the channel it intends to use. If there is traffic on the channel, it prevents the sender from becoming active. This traffic is not limited to the Zigbee protocol; it also includes other protocols using the same 2.4&nbsp;GHz band, as well as electromagnetic interference from other devices.
 
 For an in-depth description of the issue, refer to the white paper issued in 2012 by Intel Corporation:
-[USB 3.0* Radio Frequency Interference Impact on 2.4&nbsp;GHz Wireless Devices](https://www.usb.org/sites/default/files/327216.pdf)
+[USB 3.0\* Radio Frequency Interference Impact on 2.4&nbsp;GHz Wireless Devices](https://www.usb.org/sites/default/files/327216.pdf)
 
 ## Countering interference
 
@@ -30,4 +30,4 @@ In some cases, the extension cable delivered with Home Assistant Connect&nbsp;ZB
 
 ## Related topics
 
-- [USB 3.0* Radio Frequency Interference Impact on 2.4&nbsp;GHz Wireless Devices](https://www.usb.org/sites/default/files/327216.pdf)
+- [USB 3.0\* Radio Frequency Interference Impact on 2.4&nbsp;GHz Wireless Devices](https://www.usb.org/sites/default/files/327216.pdf)

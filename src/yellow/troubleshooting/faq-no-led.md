@@ -6,7 +6,6 @@ zendesk:
   labels: yellow, troubleshooting
 ---
 
-
 The Compute Module 4 or 5 might not be seated correctly.
 
 1. [Open the Yellow case](/hc/en-us/articles/25298668266269-Home-Assistant-Yellow-Kit-with-CM4-and-optional-NVMe) and check if the green PCB (CM4 or CM5) is parallel to the Yellow PCB.

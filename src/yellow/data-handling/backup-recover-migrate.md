@@ -6,9 +6,7 @@ zendesk:
   labels: yellow, handling data
 ---
 
-
 {% partial 'backups-about-restoring.md' %}
-
 
 ## Restoring from a backup during onboarding
 

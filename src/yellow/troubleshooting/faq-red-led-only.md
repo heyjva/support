@@ -6,7 +6,6 @@ zendesk:
   labels: yellow, troubleshooting
 ---
 
-
 **Note**: The resolution described below only applies to revision 1.2 and older. Starting with revision 1.3, there is no JP2 jumper that could cause this issue.
 
 Most likely your Compute Module is in USB boot mode. Make sure that the jumper JP2 is not connected. This means the jumper is only touching one of the pins, not both.

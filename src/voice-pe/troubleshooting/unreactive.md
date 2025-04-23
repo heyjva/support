@@ -10,7 +10,7 @@ zendesk:
 
 The device status light is red and the device does not respond.
 
-  ![Image showing the red status light](/static/img/voice-pe/status_muted.png)
+![Image showing the red status light](/static/img/voice-pe/status_muted.png)
 
 ## Resolution
 

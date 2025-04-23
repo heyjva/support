@@ -25,20 +25,22 @@ To resolve this issue, you need to reinstall the Raspberry Pi bootloader onto th
 3. On Windows, open the Command Prompt window (cmd).
 4. Run the following commands:
 
-    ```text
-    cd \
-    cd "Program Files (x86)"
-    cd "Raspberry Pi"
-    rpiboot.exe -d recovery
-    ```
+   ```text
+   cd \
+   cd "Program Files (x86)"
+   cd "Raspberry Pi"
+   rpiboot.exe -d recovery
+   ```
 
-    **Result**: The green LED lights up solid, then starts flashing.
+   **Result**: The green LED lights up solid, then starts flashing.
 
 5. Wait for about 1 minute.
 6. Then, from Home Assistant Yellow, unplug the power cable.
 7. Ensure JP1 is set to UART.
 8. On Home Assistant Yellow, connect the power cable.
+
    - **Result**: The error blink pattern should no longer occur.
+
      - The LED pattern depends on what is already installed on Yellow.
      - Typically, the system should boot now.
      - If Home Assistant OS is installed, the yellow LED should show a heartbeat pattern after ~5 seconds.

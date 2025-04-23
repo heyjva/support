@@ -26,16 +26,18 @@ Perform this procedure if you want to perform a factory reset on your device.
 ## To copy the Home Assistant Green OS to the SD card
 
 1. To download the Home Assistant Green OS installer, paste this [URL](https://github.com/NabuCasa/buildroot-installer/releases/tag/green-installer-20240410) into your browser.
-   - To start the download, select the file *green-installer-20240410.img.xz*.
+
+   - To start the download, select the file _green-installer-20240410.img.xz_.
    - Download and start [Balena Etcher](https://www.balena.io/etcher).
-      - You may need to run it with administrator privileges on Windows.
-   ![Downloading the required software](/static/img/green/download-circle-outline.svg)
+     - You may need to run it with administrator privileges on Windows.
+       ![Downloading the required software](/static/img/green/download-circle-outline.svg)
 
 2. To select the image, select **Flash from file** and select the image you just downloaded.
 
    ![Selecting the image](/static/img/green/etcher1_file.png)
 
 3. To select the target, insert the SD card to your computer.
+
    - Select the **Select target** button and select the SD card as target.
 
    ![Selecting the target](/static/img/green/etcher3.png)
@@ -82,6 +84,7 @@ Perform this procedure if you want to perform a factory reset on your device.
    ![Powering up the system](/static/img/green/green_reset_power-up_after_sd-insert.webp)
 
 4. Removing the SD card.
+
    - When the LEDs turn off, the operating system has been written to the eMMC.
    - Remove the SD card.
 
@@ -97,6 +100,7 @@ Perform this procedure if you want to perform a factory reset on your device.
 6. Getting started with Home Assistant.
 
    - **Info**: Initial startup may take a while, depending on your internet connection.
+
    1. Install the app: To access Home Assistant from your mobile device, use the QR code to locate the app in the app store.
    2. Select your Home Assistant server:
       - **Mobile**: Confirm the IP address detected by the app. For example `http://192.168.1.196:8123`.

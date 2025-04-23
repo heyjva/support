@@ -41,25 +41,25 @@ You can use [`light.turn_on`](https://www.home-assistant.io/integrations/light/#
 
 You can turn it on or off when something happens and define color and effects.
 
-  ```yaml
-  action: light.turn_on
-    data:
-      rgb_color:
-        - 255
-        - 105
-        - 180
-    target:
-      entity_id: light.home_assistant_voice_012345_led_ring
-  action: light.turn_off
+```yaml
+action: light.turn_on
+  data:
+    rgb_color:
+      - 255
+      - 105
+      - 180
   target:
     entity_id: light.home_assistant_voice_012345_led_ring
-  ```
+action: light.turn_off
+target:
+  entity_id: light.home_assistant_voice_012345_led_ring
+```
 
-  ![Screenshot showing a light automation in the automation editor](/static/img/voice-pe/voice_light_turn_on_script.png)
+![Screenshot showing a light automation in the automation editor](/static/img/voice-pe/voice_light_turn_on_script.png)
 
 ## Example 3: Changing the selected assistant
 
-1. To select a different assistant when something happens, use the [`select.select_option`](https://www.home-assistant.io/integrations/select/#action-selectselect_option) action. For example, when a button is pressed.
+1.  To select a different assistant when something happens, use the [`select.select_option`](https://www.home-assistant.io/integrations/select/#action-selectselect_option) action. For example, when a button is pressed.
 
         ```yaml
         action: select.select_option
@@ -69,16 +69,17 @@ You can turn it on or off when something happens and define color and effects.
             entity_id: select.home_assistant_voice_012345_assist_pipeline
         ```
 
-2. Under **Options**, enter the name of the voice assistant.
-   - Make sure to spell it exactly as you named it. For example `Spanish`.
-3. To learn how to set up an automation based on a button press, follow the steps on [Automating on a button press](https://www.home-assistant.io/integrations/event/#automating-on-a-button-press).
-   - **Info**: Those instructions are based on a Matter device. The process is very similar for other devices featuring a button.
+2.  Under **Options**, enter the name of the voice assistant.
+    - Make sure to spell it exactly as you named it. For example `Spanish`.
+3.  To learn how to set up an automation based on a button press, follow the steps on [Automating on a button press](https://www.home-assistant.io/integrations/event/#automating-on-a-button-press).
 
-   ![Image showing the automation editor](/static/img/voice-pe/voice_select_assistant_spanish.png)
+    - **Info**: Those instructions are based on a Matter device. The process is very similar for other devices featuring a button.
+
+    ![Image showing the automation editor](/static/img/voice-pe/voice_select_assistant_spanish.png)
 
 ## Example 4: Changing the wake word
 
-1. To select a different wake word when something happens, use the [`select.select_option`](https://www.home-assistant.io/integrations/select/#action-selectselect_option) action.
+1.  To select a different wake word when something happens, use the [`select.select_option`](https://www.home-assistant.io/integrations/select/#action-selectselect_option) action.
 
           ```yaml
           action: select.select_option
@@ -88,10 +89,11 @@ You can turn it on or off when something happens and define color and effects.
               entity_id: select.home_assistant_voice_012345_wake_word
           ```
 
-2. Under **Options**, enter the preferred wake word. The default options are `Hey Jarvis`, `Hey Mycroft`, and `Okay Nabu`.
-   - Make sure to spell it exactly as you named it.
+2.  Under **Options**, enter the preferred wake word. The default options are `Hey Jarvis`, `Hey Mycroft`, and `Okay Nabu`.
 
-   ![Screenshot showing an automation to change the wake word to Mycroft](/static/img/voice-pe/voice_select_wake_word_mycroft.png)
+    - Make sure to spell it exactly as you named it.
+
+    ![Screenshot showing an automation to change the wake word to Mycroft](/static/img/voice-pe/voice_select_wake_word_mycroft.png)
 
 ## Related topics
 

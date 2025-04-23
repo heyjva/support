@@ -51,4 +51,3 @@ Additionally, make sure you have the following items which are not part of the K
 ## Powering up and finishing the migration
 
 {% partial 'yellow/yellow-powerup-cm5nvme.md' %}
-

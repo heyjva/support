@@ -33,7 +33,7 @@ All Home Assistant users can use WebRTC connections, even if they do not have a 
 
 ## Disabling WebRTC relay server connection
 
- If, for some reason, you would like to turn this feature off and only use peer-to-peer connections without the relay functionality, this setting is available.
+If, for some reason, you would like to turn this feature off and only use peer-to-peer connections without the relay functionality, this setting is available.
 
 1. In Home Assistant, go to [Settings > Home Assistant Cloud](https://my.home-assistant.io/redirect/cloud/).
 2. Under **WebRTC connections**, disable the toggle.

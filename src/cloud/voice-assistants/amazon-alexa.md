@@ -23,6 +23,7 @@ The [Alexa integration](https://www.home-assistant.io/integrations/alexa/) allow
    <img src="/static/img/cloud/alexa-enable.png" alt="Enable Alexa">
 
 3. On the **Expose** tab, expose at least one entity to Alexa.
+
    - Open the **Expose** tab.
 
      <img src="/static/img/cloud/assistant-expose-05.png" alt="Open the Expose tab">

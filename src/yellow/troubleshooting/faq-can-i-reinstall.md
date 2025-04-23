@@ -6,7 +6,6 @@ zendesk:
   labels: yellow, troubleshooting
 ---
 
-
 By default, the Raspberry Pi Compute Module 4 (CM4) tries to boot from internal eMMC before trying to boot from the USB flash drive. Therefore, the Home Assistant OS Installer for Yellow will only get started if the CM4 is empty.
 
 If you have a Raspberry Pi Compute Module 4 (CM4) and Home Assistant OS 8.5 or newer versions:

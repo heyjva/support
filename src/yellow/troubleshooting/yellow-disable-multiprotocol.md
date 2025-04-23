@@ -21,18 +21,20 @@ This guide assumes you have already completed the following steps:
 ## Disabling multiprotocol support
 
 1. Configure radio multiprotocol support.
+
    1. Go to [**Settings** > **System** > **Hardware**](https://my.home-assistant.io/redirect/hardware/).
    2. Under **Home Assistant Yellow**, select **Configure**.
    3. Select the **Configure IEEE 802.15.4 radio multiprotocol support** option.
 
-    ![Screenshot showing where to Configure IEEE 802.15.4 radio multiprotocol support](/static/img/yellow/disable_multiprotocol_01.png)
+   ![Screenshot showing where to Configure IEEE 802.15.4 radio multiprotocol support](/static/img/yellow/disable_multiprotocol_01.png)
 
 2. Configure Yellow for Thread support.
+
    1. Select **Remove 802.15.4 radio multiprotocol support**.
    2. Then, select the **Disable multiprotocol support** checkbox.
    3. Wait for the setup to complete.
 
-    ![Screenshot showing where to Remove 802.15.4 radio multiprotocol support](/static/img/yellow/disable_multiprotocol_02.png)
+   ![Screenshot showing where to Remove 802.15.4 radio multiprotocol support](/static/img/yellow/disable_multiprotocol_02.png)
 
 ## Related topics
 

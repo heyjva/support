@@ -20,13 +20,16 @@ If this LED pattern persists during the installation and the LED never changes t
 You can install Home Assistant OS directly onto the internal eMMC using the `rpiboot` boot method. Follow these steps to do so:
 
 1. Download the Yellow operating system:
+
    - Go to the [operating system repository release page](https://github.com/home-assistant/operating-system/releases) on GitHub and download the latest stable version of the `haos_yellow-xx.x.img.xz` file.
 
 2. Install `rpiboot` onto your computer:
+
    - Using [Windows Installer](https://github.com/raspberrypi/usbboot/raw/master/win32/rpiboot_setup.exe)
    - From [source code](https://www.raspberrypi.com/documentation/computers/compute-module.html#building-rpiboot-on-your-host-system-cygwinlinux)
 
 3. Reinstall the operating system on Yellow:
+
    - Open the procedure on [how to reinstall the operating system](/hc/en-us/articles/25484982657309).
    - Follow the procedure **Option 2: Reinstall Home Assistant OS using rpiboot** up to step 8.
    - To install the Home Assistant Operating System directly, follow these steps:

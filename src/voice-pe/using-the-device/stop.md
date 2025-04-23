@@ -7,6 +7,7 @@ zendesk:
 ---
 
 1. **Option 1**: Pressing the center button.
+
    - To stop whatever the device is doing, press the center button.
      - **Result**: The device stops the following:
        - Stops the timer.
@@ -20,6 +21,7 @@ zendesk:
     </div>
 
 1. **Option 2**: Say "stop".
+
    - To stop the timer or the response, you can say “stop”.
 
    ![Speech bubble saying stop](/static/img/voice-pe/voice_say_stop.png)

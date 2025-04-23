@@ -8,7 +8,7 @@ zendesk:
 
 ### Symptom
 
-You are in Home Assistant and when trying to log into Home Assistant Cloud, you are getting a message saying  _"Authentication failed"_, with something like _"Unexpected error - software token MFA"_. You can't log into Home Assistant Cloud.
+You are in Home Assistant and when trying to log into Home Assistant Cloud, you are getting a message saying _"Authentication failed"_, with something like _"Unexpected error - software token MFA"_. You can't log into Home Assistant Cloud.
 
 ### Cause
 

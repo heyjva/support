@@ -15,12 +15,12 @@ Before you can use the [features provided by Home Assistant Cloud](/hc/en-us/art
    <img src="/static/img/cloud/ha-settings-panel.png" alt="Home Assistant Settings panel">
 
    - **Troubleshooting**: If you do not see **Home Assistant Cloud** under **Settings**, you might have removed the [`default_config`](https://www.home-assistant.io/integrations/default_config/) integration from your `configuration.yaml`.
-   Add `cloud:` to the `configuration.yaml` file.
+     Add `cloud:` to the `configuration.yaml` file.
 
-    ```yml
-    # configuration.yaml entry to enable the cloud integration
-    cloud:
-    ```
+   ```yml
+   # configuration.yaml entry to enable the cloud integration
+   cloud:
+   ```
 
 2. If you already have an account, sign in.
    - The account name is case-sensitive.

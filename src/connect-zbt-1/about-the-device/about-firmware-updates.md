@@ -6,7 +6,7 @@ zendesk:
   labels: connect zbt-1, about the device, firmware
 ---
 
-The Home Assistant Connect&nbsp;ZBT-1 ships with a full-fledged Zigbee firmware. *At this point, there are no known issues with the factory-flashed firmware.*
+The Home Assistant Connect&nbsp;ZBT-1 ships with a full-fledged Zigbee firmware. _At this point, there are no known issues with the factory-flashed firmware._
 
 Firmware updates for the Connect&nbsp;ZBT-1 are natively supported in Home Assistant 2025.4 and newer if you are running the ZHA integration or OTBR:
 

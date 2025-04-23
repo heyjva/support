@@ -6,7 +6,6 @@ zendesk:
   labels: connect zbt-1, troubleshooting
 ---
 
-
 We’ve found an issue in Home Assistant Connect&nbsp;ZBT-1 that is the result of a faulty part incorporated in the first batch of Connect&nbsp;ZBT-1 devices (sold between June and October of 2024).
 
 - These devices can fail if plugged into certain USB-A ports, but can operate without issue if plugged into most devices.

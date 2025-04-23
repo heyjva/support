@@ -25,14 +25,17 @@ Connecting to Home Assistant Green via console may be required for some troubles
    ![USB keyboard connected to Home Assistant Green](/static/img/green/icons/usb_keyboard.png)
 
 3. Check the console.
+
    - The console should open automatically and show up on the monitor.
    - In the Home Assistant command line, you can now enter a [command](https://www.home-assistant.io/common-tasks/os/#home-assistant-via-the-command-line).
-      - For example, if you are locked out, you can change your password:
 
-         `auth reset --username 'existing_user' --password 'new_password'`
-      - Log in with the new password.
-      - Go to your [User profile](https://my.home-assistant.io/redirect/profile/) and on the **Security** tab, replace the simple password with a complex one.
-   ![Clip showing how to use the Home Assistant command line](/static/img/green/home-assistant-cli.webp)
+     - For example, if you are locked out, you can change your password:
+
+       `auth reset --username 'existing_user' --password 'new_password'`
+
+     - Log in with the new password.
+     - Go to your [User profile](https://my.home-assistant.io/redirect/profile/) and on the **Security** tab, replace the simple password with a complex one.
+       ![Clip showing how to use the Home Assistant command line](/static/img/green/home-assistant-cli.webp)
 
 ## Related topics
 

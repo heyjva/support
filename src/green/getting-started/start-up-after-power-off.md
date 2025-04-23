@@ -23,15 +23,17 @@ There are 2 different start up procedures, depending on the current state of you
 ## Starting up the system if it is still connected to Ethernet and power
 
 1. Powering up the system.
+
    - Press the power button.
    - Once the yellow LED blinks in a heard beat pattern, the system is ready.
 
    ![Clip showing how to plug i the Ethernet cable](/static/img/green/green_connect_ethernet.webp)
 
 2. Connect to Home Assistant.
+
    - Select your Home Assistant server:
-      - **Mobile**: Confirm the IP address detected by the app. For example `http://192.168.1.196:8123`
-      - **Desktop**: Visit [http://homeassistant.local:8123](http://homeassistant.local:8123) to access the Home Assistant user interface.
+     - **Mobile**: Confirm the IP address detected by the app. For example `http://192.168.1.196:8123`
+     - **Desktop**: Visit [http://homeassistant.local:8123](http://homeassistant.local:8123) to access the Home Assistant user interface.
 
    ![Screenshot showing a Home Assistant dashboard](/static/img/green/lovelace.png)
 
@@ -40,18 +42,21 @@ There are 2 different start up procedures, depending on the current state of you
 Follow these steps if you want to start up the system after it has been powered off.
 
 1. Connect the device to the Internet.
+
    - Plug in your Ethernet cable and make sure it is locked into place.
    - Connect the other end of the Ethernet cable to your router or switch.
 
    ![Clip showing the where to press the button on the device](/static/img/green/green_reset_power-up_heartbeat.webp)
+
 2. Connect the power to the electrical outlet and then to the Home Assistant Green.
 
    ![Clip showing the where to press the button on the device](/static/img/green/green_connect_power.webp)
 
 3. Connect to Home Assistant.
+
    - Select your Home Assistant server:
-      - **Mobile**: Confirm the IP address detected by the app. For example `http://192.168.1.196:8123`
-      - **Desktop**: Visit [http://homeassistant.local:8123](http://homeassistant.local:8123) to access the Home Assistant user interface.
+     - **Mobile**: Confirm the IP address detected by the app. For example `http://192.168.1.196:8123`
+     - **Desktop**: Visit [http://homeassistant.local:8123](http://homeassistant.local:8123) to access the Home Assistant user interface.
 
    ![Screenshot showing a Home Assistant dashboard](/static/img/green/lovelace.png)
 

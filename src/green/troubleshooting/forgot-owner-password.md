@@ -17,6 +17,7 @@ If you forgot the owner's password, you need to connect an external monitor and 
    - Enter the following command: `auth reset --username 'existing_user' --password 'new_password'`
 
      **Info**: The ha command line does not support all special characters.
+
      - When resetting via the command line, use a short and simple password without special characters.
      - Once reset, go and replace it with a complex one in the UI.
 
@@ -28,7 +29,7 @@ If you forgot the owner's password, you need to connect an external monitor and 
 
 4. Replace the simple password with a complex one.
 
-    - Go to your [User profile](https://my.home-assistant.io/redirect/profile/) and, on the **Security** tab, update the password to a more complex one.
+   - Go to your [User profile](https://my.home-assistant.io/redirect/profile/) and, on the **Security** tab, update the password to a more complex one.
 
 ## Related topics
 

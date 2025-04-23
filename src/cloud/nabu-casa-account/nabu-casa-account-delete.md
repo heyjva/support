@@ -21,5 +21,5 @@ If you want to delete your Nabu Casa account, you need to cancel your subscripti
        - Cloud storage of your latest backup
 2. If you are using the Home Assistant Cloud skills from Amazon Alexa and Google Assistant, disconnect them.
 3. To delete your Nabu Casa account, select **Manage account**.
-   - In the **Danger**  section, select **Delete account**.
+   - In the **Danger** section, select **Delete account**.
    - **Result**: If you deleted your account while there was still time left on your subscription, your account is not deleted immediately. Instead, it will be scheduled for deletion once your subscription expires.
