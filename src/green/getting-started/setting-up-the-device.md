@@ -1,6 +1,5 @@
 ---
 noindex: true
-noindex: true
 zendesk:
   article_id: 24737667232413
   name: Getting started with Home Assistant Green
