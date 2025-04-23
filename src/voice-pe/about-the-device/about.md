@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 25764286546717
   name: About Home Assistant Voice Preview Edition

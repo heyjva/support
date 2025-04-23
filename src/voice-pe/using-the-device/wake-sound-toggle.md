@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 25774481113629
   name: Turning the wake sound on or off

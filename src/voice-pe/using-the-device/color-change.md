@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 25774541357597
   name: Changing the active color

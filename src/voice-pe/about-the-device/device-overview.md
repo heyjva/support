@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 25764488568605
   name: Device overview

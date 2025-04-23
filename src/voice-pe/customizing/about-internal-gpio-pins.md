@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 25938342327581
   name: About the internal GPIO pins

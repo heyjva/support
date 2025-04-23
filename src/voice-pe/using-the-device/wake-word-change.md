@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 25775743017629
   name: Changing the wake word

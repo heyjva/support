@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 26195222499101
   name: Home Assistant Voice Preview Edition - Enclosure on Makerworld

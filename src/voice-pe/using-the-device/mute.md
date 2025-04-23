@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 25774403768477
   name: Muting the device

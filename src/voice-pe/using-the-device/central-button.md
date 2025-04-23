@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 25774619221661
   name: Using the center button to trigger automations

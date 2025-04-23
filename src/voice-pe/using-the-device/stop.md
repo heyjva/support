@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 25774498553629
   name: Stopping the current process

@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 26195275149469
   name: Home Assistant Voice Preview Edition - Enclosure on printables

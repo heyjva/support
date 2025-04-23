@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 25800521996829
   name: I plugged in an external speaker but I only hear one channel

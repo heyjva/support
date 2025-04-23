@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 26195328865949
   name: Home Assistant Voice Preview Edition - Warranty and Safety Information

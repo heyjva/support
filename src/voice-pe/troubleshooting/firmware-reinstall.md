@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 25800241218717
   name: Reinstalling the firmware

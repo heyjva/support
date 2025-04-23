@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 26195279589277
   name: Home Assistant Voice Preview Edition - PCB design files

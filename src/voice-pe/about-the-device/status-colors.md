@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 25764604971421
   name: Status colors

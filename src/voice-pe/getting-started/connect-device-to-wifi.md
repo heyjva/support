@@ -1,5 +1,4 @@
 ---
-noindex: true
 zendesk:
   article_id: 25918770371229
   name: Getting started with Home Assistant Preview Edition
