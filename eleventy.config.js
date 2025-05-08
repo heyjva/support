@@ -18,6 +18,9 @@ const __dirname = dirname(__filename);
 
 const isPreview = process.env.PREVIEW_BUILD || process.argv.includes("--serve");
 
+const languageDisplayNames = new Intl.DisplayNames(["en"], {
+  type: "language",
+});
 const currentGitSha = childProcess
   .execSync(`git log -1 --format=format:%H`)
   .toString()
@@ -79,6 +82,10 @@ export default async function (eleventyConfig) {
       };
     }
     return data;
+  });
+
+  eleventyConfig.addFilter("languageDisplayName", function (code) {
+    return languageDisplayNames.of(code);
   });
 
   eleventyConfig.addCollection("zendeskCategories", function (collection) {
