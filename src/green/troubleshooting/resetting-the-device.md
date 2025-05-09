@@ -58,7 +58,7 @@ Perform this procedure if you have Home Assistant 13.1 or later and you want to 
 {% image "/static/img/green/getting_started_04.png" "Getting started with Home Assistant" %}
 {% stepContent %}
 
-- **Info** "Initial startup may take a while, depending on your internet connection.
+- **Info** Initial startup may take a while, depending on your internet connection.
 
    1. Installing the app.
       - To access Home Assistant from your mobile device, use the QR code to locate the app in the app store.
