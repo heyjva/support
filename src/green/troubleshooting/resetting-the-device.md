@@ -66,7 +66,7 @@ Perform this procedure if you have Home Assistant 13.1 or later and you want to 
       - **Mobile**: Confirm the IP address detected by the app. For example `http://192.168.1.196:8123`
       - **Desktop**: Visit [http://homeassistant.local:8123](http://homeassistant.local:8123) to access the Home Assistant user interface.
    3. The Home Assistant user interface guides you through the initial onboarding.
-      - **Info** "For further information, refer to the instructions.
+      - **Info** For further information, refer to the instructions.
 
 {% endstepContent %}
 {% endstep %}
