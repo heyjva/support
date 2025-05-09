@@ -8,7 +8,8 @@ zendesk:
 
 Follow this guide if you have a Zigbee2MQTT network running and want to migrate to Home Assistant Connect&nbsp;ZBT-1 and Zigbee Home Automation (ZHA).
 
->**Note**: this procedure only helps migrate basic network settings to your Home Assistant Connect ZBT-1.
+> **Note**: this procedure only helps migrate basic network settings to your Home Assistant Connect ZBT-1.
+>
 > - Customizations like device names will be lost and automations will need to be updated.
 > - Most powered devices like lightbulbs will be re-discovered over time (you can speed this up by rebooting the device) but your battery-powered devices may need to be re-joined to the network for the migration to complete.
 >
@@ -78,7 +79,6 @@ If you no longer have the old stick, you can migrate via a Zigbee2MQTT backup.
 
 1. Choose the serial device path of your old radio stick.
 2. Select **Submit**.
-
 {% endstepContent %}
 {% endstep %}
 
