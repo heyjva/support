@@ -12,7 +12,7 @@ Perform this procedure if you have Home Assistant 13.1 or later and you want to 
 
 - Home Assistant Green
 - Home Assistant Operating System 13.1 or later installed.
-   - To see which version you have, go to [**Settings** > **About**](https://my.home-assistant.io/redirect/info/).
+  - To see which version you have, go to [**Settings** > **About**](https://my.home-assistant.io/redirect/info/).
 - PC with internet access
 - You have [created a backup](/hc/en-us/articles/25154828325917) and stored it on another system.
 
@@ -58,7 +58,7 @@ Perform this procedure if you have Home Assistant 13.1 or later and you want to 
 {% image "/static/img/green/getting_started_04.png" "Getting started with Home Assistant" %}
 {% stepContent %}
 
-   - {% stepInfo "Initial startup may take a while, depending on your internet connection." %}
+- **Info** "Initial startup may take a while, depending on your internet connection.
 
    1. Installing the app.
       - To access Home Assistant from your mobile device, use the QR code to locate the app in the app store.
@@ -66,7 +66,7 @@ Perform this procedure if you have Home Assistant 13.1 or later and you want to 
       - **Mobile**: Confirm the IP address detected by the app. For example `http://192.168.1.196:8123`
       - **Desktop**: Visit [http://homeassistant.local:8123](http://homeassistant.local:8123) to access the Home Assistant user interface.
    3. The Home Assistant user interface guides you through the initial onboarding.
-      - {% stepInfo "For further information, refer to the instructions." %}
+      - **Info** "For further information, refer to the instructions.
 
 {% endstepContent %}
 {% endstep %}
