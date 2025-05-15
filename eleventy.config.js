@@ -324,13 +324,13 @@ export default async function (eleventyConfig) {
     return `<div class="callout ${type}"><div class="callout-prefix">${calloutMap.icon} ${calloutMap.text}:</div><div class="callout-content">${md.renderInline(content)}</div></div>`;
   });
 
-  eleventyConfig.addShortcode("stepInfo", function (content) {
+  eleventyConfig.addPairedShortcode("stepInfo", function (content) {
     // if type not in array of strings
     if (!content) {
       throw new Error("Step info shortcode requires content");
     }
 
-    return `<div class="step-info"><div class="step-info-prefix">${STEP_INFO_ICON} Info:</div><div>${md.renderInline(content)}</div></div>`;
+    return `<div class="step-info"><div class="step-info-prefix">${STEP_INFO_ICON} Info:</div><div>${content}</div></div>`;
   });
 
   eleventyConfig.addShortcode("stepResult", function (content) {

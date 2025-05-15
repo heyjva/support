@@ -43,9 +43,7 @@ This guide assumes you have already completed the following steps:
 1. Select **Remove 802.15.4 radio multiprotocol support**.
 2. Then, select the **Disable multiprotocol support** checkbox.
 3. Wait for the setup to complete.
-
-{% stepInfo "Your Zigbee devices will continue to work. Your Thread devices will continue working only if you have another Thread border router set up." %}
-
+- {% stepInfo %}Your Zigbee devices will continue to work. Your Thread devices will continue working only if you have another Thread border router set up.{% endstepInfo %}
 {% endstepContent %}
 {% endstep %}
 {% endsteps %}
