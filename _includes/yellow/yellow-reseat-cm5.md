@@ -6,7 +6,7 @@
 {% stepContent %}
 
 1. Place the board in front of you, the connectors facing to the right.
-2. Orient the CM5: he Raspberry Pi text needs to be on the right hand side.
+2. Orient the CM5: the Raspberry Pi text needs to be on the right hand side.
 3. Carefully place the CM5 without force.
     - The CM5 should fall into place slightly when correctly aligned.
 
