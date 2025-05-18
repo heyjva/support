@@ -1,7 +1,7 @@
 <!---Steps on reseating the Raspberry Pi Compute Module 4. The steps are almost the same as the ones fo rinstalling the CM4, except the heat pads don't need to be placed, as they are already there from the previous installation. -->
 
 {% steps %}
-{% step "Aligning the CM4" %}
+{% step "Aligning the CM5" %}
 {% image "/static/img/yellow/step-6-poe-align-cm4.jpeg" "Top view of the board, without CM4, connectors facing to the right" %}
 {% stepContent %}
 
@@ -17,7 +17,7 @@
 {% image "/static/img/yellow/cm5_place_board_480.webp" "Top view of the board, with CM5, connectors facing to the right" %}
 {% stepContent %}
 
-- Press the CM4 board onto the board-to-board connectors until it clicks into place.
+- Press the CM5 board onto the board-to-board connectors until it clicks into place.
 
   1. Make sure you press on both sides (the two long edges).
      - This requires quite a bit of force.
